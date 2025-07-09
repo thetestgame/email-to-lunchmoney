@@ -1,5 +1,5 @@
 import {createExecutionContext, env, waitOnExecutionContext} from 'cloudflare:test';
-import {describe, it, vi, beforeEach} from 'vitest';
+import {beforeEach, describe, it, vi} from 'vitest';
 
 import fixtureEmail from '../fixtures/amazon.eml?raw';
 import fixtureOrder from '../fixtures/amazon.json';
