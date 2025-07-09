@@ -11,9 +11,9 @@ export interface AmazonOrder {
    */
   orderItems: AmazonOrderItem[];
   /**
-   * The total cost of the order in USD, found at the bottom of the email.
+   * The total cost of the order in cents USD, found at the bottom of the email.
    */
-  totalCostUsd: number;
+  totalCostCents: number;
 }
 
 /**
@@ -33,7 +33,7 @@ export interface AmazonOrderItem {
    */
   quantity: number;
   /**
-   * The price of a single unit in USD.
+   * The price of a single unit in cents USD.
    */
-  priceEachUsd: number;
+  priceEachCents: number;
 }

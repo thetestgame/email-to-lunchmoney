@@ -25,35 +25,37 @@ export function extractOrderBlock(emailText: string): string | null {
 /**
  * Computes the tax amount for each item in an order by proportionally
  * allocating the total tax across all items based on their pre-tax cost.
- * Ensures exact distribution of tax without rounding errors by applying
- * correction to the last item.
+ * Works with cents (integers) to avoid floating-point precision issues.
+ * Returns tax amounts in cents.
  */
-export function computeItemTaxes(items: AmazonOrderItem[], totalCost: number): number[] {
-  const subtotal = items.reduce(
-    (sum, item) => sum + item.priceEachUsd * item.quantity,
+export function computeItemTaxes(items: AmazonOrderItem[], totalCostCents: number): number[] {
+  const subtotalCents = items.reduce(
+    (sum, item) => sum + item.priceEachCents * item.quantity,
     0
   );
 
-  const totalTax = totalCost - subtotal;
-  if (totalTax < 0) {
+  const totalTaxCents = totalCostCents - subtotalCents;
+  
+  if (totalTaxCents < 0) {
     throw new Error('Total cost is less than subtotal.');
   }
 
-  const unroundedTaxes = items.map(
-    item => ((item.priceEachUsd * item.quantity) / subtotal) * totalTax
-  );
+  if (totalTaxCents === 0) {
+    return items.map(() => 0);
+  }
 
-  const roundedTaxes = unroundedTaxes.map((tax, i) =>
-    i === unroundedTaxes.length - 1
-      ? 0 // temp placeholder
-      : parseFloat(tax.toFixed(2))
-  );
+  // Calculate proportional tax for each item in cents
+  const taxCents = items.map(item => {
+    const itemCostCents = item.priceEachCents * item.quantity;
+    return Math.round((itemCostCents / subtotalCents) * totalTaxCents);
+  });
 
-  const sumSoFar = roundedTaxes.reduce((sum, t) => sum + t, 0);
-  const lastTax = parseFloat((totalTax - sumSoFar).toFixed(2));
-  roundedTaxes[roundedTaxes.length - 1] = lastTax;
+  // Adjust for rounding errors by adding/subtracting from the last item
+  const calculatedTotalTax = taxCents.reduce((sum, tax) => sum + tax, 0);
+  const difference = totalTaxCents - calculatedTotalTax;
+  taxCents[taxCents.length - 1] += difference;
 
-  return roundedTaxes;
+  return taxCents;
 }
 
 export async function processAmazonEmail(email: Email, env: Env) {
@@ -66,11 +68,11 @@ export async function processAmazonEmail(email: Email, env: Env) {
   }
 
   const order = await extractOrder(orderText, env);
-  const itemTax = computeItemTaxes(order.orderItems, order.totalCostUsd);
+  const itemTaxCents = computeItemTaxes(order.orderItems, order.totalCostCents);
 
   console.log(
     order,
-    itemTax.map((tax, i) => order.orderItems[i].priceEachUsd + tax)
+    itemTaxCents.map((tax, i) => order.orderItems[i].priceEachCents + tax)
   );
 }
 
