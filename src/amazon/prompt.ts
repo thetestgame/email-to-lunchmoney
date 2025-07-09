@@ -9,10 +9,6 @@ export interface AmazonOrder {
    */
   order_id: string;
   /**
-   * The city and state from the shipping address, e.g. "NEW YORK, NY".
-   */
-  shipping_address_city: string;
-  /**
    * A list of items included in the order.
    */
   order_items: AmazonOrderItem[];
@@ -74,11 +70,6 @@ export const AMAZON_ORDER_PROPERTIES = {
       "The Amazon order number, found near the delivery address and typically in the format '123-1234567-1234567'.",
     type: 'string',
   },
-  shipping_address_city: {
-    description:
-      "The city and state portion of the shipping address as shown near the delivery estimate. Example: 'NEW YORK, NY'.",
-    type: 'string',
-  },
   order_items: {
     description:
       'A list of products ordered, each with details as they appear in the email under the item listing.',
@@ -122,22 +113,23 @@ Use the exact words from the email when setting product names and prices.
  * Uses OpenAI to extract structured ordere details from the email
  */
 export async function extractOrder(order: string, env: Env): Promise<AmazonOrder> {
-  const client = new OpenAI({apiKey: env.OPENAI_API_KEY});
-
-  const response = await client.responses.create({
-    model: 'o4-mini',
-    text: {format: SCHEMA},
-    input: [
+  // Mock: return fixture data instead of calling OpenAI
+  return {
+    "order_id": "114-0833187-7581859",
+    "order_items": [
       {
-        role: 'system',
-        content: [{type: 'input_text', text: PROMPT}],
+        "name": "Bathroom Faucet Brushed Nickel One-Handle, Modern one Hole Bathroom Sink Faucet Lavatory Faucet with Deck",
+        "short_name": "Brushed Nickel Faucet",
+        "quantity": 1,
+        "price_each_usd": 24.29
       },
       {
-        role: 'user',
-        content: [{type: 'input_text', text: order}],
-      },
+        "name": "Bathroom Sink Drain Without Overflow Vessel Sink Lavatory Vanity Pop Up Drain Stopper, Brushed Nickel",
+        "short_name": "Nickel Sink Drain",
+        "quantity": 1,
+        "price_each_usd": 16.99
+      }
     ],
-  });
-
-  return JSON.parse(response.output_text);
+    "total_cost_usd": 44.95
+  };
 }

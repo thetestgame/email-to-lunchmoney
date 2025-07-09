@@ -25,7 +25,7 @@ export async function processAmazonEmail(email: Email, env: Env) {
   const emailText = email.text ?? '';
   const orderText = extractOrderBlock(emailText);
 
-  console.log(orderText);
+  console.log(emailText);
 
   if (orderText === null) {
     console.error({orderText});

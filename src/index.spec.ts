@@ -1,9 +1,8 @@
 import {createExecutionContext, env, waitOnExecutionContext} from 'cloudflare:test';
 import {describe, it, vi} from 'vitest';
 
+import fixtureEmail from '../fixtures/amazon.eml?raw';
 import worker from '../src/index';
-
-import fixtureEmail from './fixtures/amazon.eml?raw';
 
 function messageMock(content: string): ForwardableEmailMessage {
   const raw = new ReadableStream({
