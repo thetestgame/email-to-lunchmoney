@@ -5,15 +5,15 @@ export interface AmazonOrder {
   /**
    * The Amazon order number, e.g. "114-9193968-9091445".
    */
-  order_id: string;
+  orderId: string;
   /**
    * A list of items included in the order.
    */
-  order_items: AmazonOrderItem[];
+  orderItems: AmazonOrderItem[];
   /**
    * The total cost of the order in USD, found at the bottom of the email.
    */
-  total_cost_usd: number;
+  totalCostUsd: number;
 }
 
 /**
@@ -27,7 +27,7 @@ export interface AmazonOrderItem {
   /**
    * A concise 2–4 word summary of the item (brand + descriptor).
    */
-  short_name: string;
+  shortName: string;
   /**
    * The number of units ordered for this item.
    */
@@ -35,5 +35,5 @@ export interface AmazonOrderItem {
   /**
    * The price of a single unit in USD.
    */
-  price_each_usd: number;
+  priceEachUsd: number;
 }

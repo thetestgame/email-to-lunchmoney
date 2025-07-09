@@ -7,7 +7,7 @@ export const AMAZON_ORDER_ITEM_PROPERTIES = {
     description: "The full product title exactly as listed in the email under 'Ordered'.",
     type: 'string',
   },
-  short_name: {
+  shortName: {
     description:
       'A concise 2–4 word summary of the product, combining brand and primary descriptor.',
     type: 'string',
@@ -18,7 +18,7 @@ export const AMAZON_ORDER_ITEM_PROPERTIES = {
     type: 'integer',
     minimum: 1,
   },
-  price_each_usd: {
+  priceEachUsd: {
     description:
       "The price per unit of the product in USD, as shown beneath the quantity. Example: '24.95 USD'.",
     type: 'number',
@@ -27,12 +27,12 @@ export const AMAZON_ORDER_ITEM_PROPERTIES = {
 } as const satisfies Record<keyof AmazonOrderItem, any>;
 
 export const AMAZON_ORDER_PROPERTIES = {
-  order_id: {
+  orderId: {
     description:
       "The Amazon order number, found near the delivery address and typically in the format '123-1234567-1234567'.",
     type: 'string',
   },
-  order_items: {
+  orderItems: {
     description:
       'A list of products ordered, each with details as they appear in the email under the item listing.',
     type: 'array',
@@ -43,7 +43,7 @@ export const AMAZON_ORDER_PROPERTIES = {
       additionalProperties: false,
     },
   },
-  total_cost_usd: {
+  totalCostUsd: {
     description:
       "The total cost of the order in USD, shown at the end of the email under 'Total'. Example: '27.16 USD'.",
     type: 'number',
