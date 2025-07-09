@@ -1,12 +1,14 @@
 import {createExecutionContext, env, waitOnExecutionContext} from 'cloudflare:test';
-import {beforeEach, describe, it, vi} from 'vitest';
+import {beforeEach, describe, expect, it, vi} from 'vitest';
 
 import fixtureEmail from '../fixtures/amazon.eml?raw';
 import fixtureOrder from '../fixtures/amazon.json';
-import worker from '../src/index';
 
-// Mock the extractOrder function
-vi.mock('./amazon/prompt');
+import * as amazonPrompt from './amazon/prompt';
+
+const extractOrderSpy = vi.spyOn(amazonPrompt, 'extractOrder');
+
+import worker from '../src/index';
 
 function messageMock(content: string): ForwardableEmailMessage {
   const raw = new ReadableStream({
@@ -31,18 +33,17 @@ function messageMock(content: string): ForwardableEmailMessage {
 }
 
 describe('Email Handler', () => {
-  beforeEach(async () => {
-    const {extractOrder} = vi.mocked(await import('./amazon/prompt'));
-    extractOrder.mockResolvedValue(fixtureOrder);
+  beforeEach(() => {
+    extractOrderSpy.mockReturnValue(Promise.resolve(fixtureOrder));
   });
 
-  it('processes fixture email without errors', async () => {
+  it('processes fixture email and stores action in database', async () => {
     const ctx = createExecutionContext();
 
     // Create a mock email message
     const mockMessage = messageMock(fixtureEmail);
 
-    // Test that the email handler doesn't throw an error
+    // Process the email
     worker.email?.(mockMessage, env, ctx);
 
     await waitOnExecutionContext(ctx);
