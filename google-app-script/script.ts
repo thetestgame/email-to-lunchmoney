@@ -10,20 +10,22 @@ const INGEST_EMAIL = 'lunchmoney-details@evanpurkhiser.com';
  * multipart email.
  */
 function findAndForwardEmails() {
-	// Get the threads matching some criteria (e.g., label or query)
-	const threads = GmailApp.search(`label:${LABEL}`);
+  const label = GmailApp.getUserLabelByName(LABEL);
+  const threads = label.getThreads();
 
-	for (const thread of threads) {
-		const messages = thread.getMessages();
-		const lastMessage = messages[messages.length - 1];
+  if (threads.length > 0) {
+    Logger.log(`Found ${threads.length} emails to forward...`);
+  }
 
-		const rawBody = lastMessage.getRawContent();
-		const subject = lastMessage.getSubject();
+  for (const thread of threads) {
+    const messages = thread.getMessages();
+    const lastMessage = messages[messages.length - 1];
 
-		GmailApp.sendEmail(INGEST_EMAIL, subject, rawBody);
+    const subject = lastMessage.getSubject();
+    const rawBody = lastMessage.getRawContent();
 
-		// Optionally mark as read or remove label
-		thread.markRead();
-		thread.removeLabel(GmailApp.getUserLabelByName(LABEL));
-	}
+    GmailApp.sendEmail(INGEST_EMAIL, subject, rawBody);
+
+    thread.removeLabel(label);
+  }
 }

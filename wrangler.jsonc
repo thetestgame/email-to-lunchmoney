@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "email-to-lunchmoney",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-07-08",
+  "observability": {
+    "enabled": true,
+  },
+  "vars": {
+    "ACCEPTED_EMAIL": "evanpurkhiser@gmail.com",
+  },
+}
