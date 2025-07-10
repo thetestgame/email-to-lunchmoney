@@ -34,6 +34,8 @@ export async function processActions(env: Env) {
     return;
   }
 
+  console.log(`Got ${actions.length} pending actions`);
+
   const now = new Date();
   const twoWeeksAgo = subDays(now, LOOKBACK_DAYS);
 
@@ -46,7 +48,7 @@ export async function processActions(env: Env) {
 
   const txnsResp = await lunchMoneyApi(env, `/transactions?${params}`);
 
-  console.log(txnsResp);
+  console.log(`Got ${txnsResp.transactions.length} Lunch Money Transactions`);
 
   // iterate through all actions and then use transactions.find to locate a
   // transaction that has a matching payee name to what's expected in the
@@ -70,7 +72,10 @@ export async function processActions(env: Env) {
       continue;
     }
 
-    console.log(`Found matching transaction for action ${actionRow.id}`);
+    console.log(`Found matching transaction for action ${actionRow.id}`, {
+      matchingTransaction,
+      actionRow,
+    });
 
     // In a try catch try to process the lunch money action with the found
     // transaction. Either `update` which will just set the note, or `split`
