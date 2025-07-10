@@ -2,9 +2,10 @@ import PostalMime, {Email} from 'postal-mime';
 
 import {amazonProcessor} from './amazon';
 import {processActions} from './lunchmoney';
+import {lyftBikeProcessor} from './lyft-bike';
 import {EmailProcessor, LunchMoneyAction} from './types';
 
-const EMAIL_PROCESSORS: EmailProcessor[] = [amazonProcessor];
+const EMAIL_PROCESSORS: EmailProcessor[] = [amazonProcessor, lyftBikeProcessor];
 
 /**
  * Records a LunchMoney actions to the database
@@ -21,8 +22,12 @@ async function processEmail(email: Email, env: Env) {
   const processors = EMAIL_PROCESSORS.filter(processor => processor.matchEmail(email));
 
   const results = processors.map(async processor => {
-    const action = await processor.process(email, env);
-    await recordAction(action, processor.identifier, env);
+    try {
+      const action = await processor.process(email, env);
+      await recordAction(action, processor.identifier, env);
+    } catch (error) {
+      console.error('Failed to process email', error);
+    }
   });
 
   await Promise.all(results);
