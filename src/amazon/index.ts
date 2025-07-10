@@ -6,7 +6,7 @@ import {
   LunchMoneyMatch,
   LunchMoneySplit,
   LunchMoneyUpdate,
-} from '../types';
+} from 'src/types';
 
 import {extractOrder} from './prompt';
 import {AmazonOrder, AmazonOrderItem} from './types';

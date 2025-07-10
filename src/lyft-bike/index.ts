@@ -2,7 +2,7 @@ import {addDays, differenceInMinutes, format, isBefore, parse} from 'date-fns';
 import {convert as htmlToText} from 'html-to-text';
 import {Email} from 'postal-mime';
 
-import {EmailProcessor, LunchMoneyMatch, LunchMoneyUpdate} from '../types';
+import {EmailProcessor, LunchMoneyMatch, LunchMoneyUpdate} from 'src/types';
 
 /**
  * Matches ride details

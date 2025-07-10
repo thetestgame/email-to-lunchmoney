@@ -1,9 +1,10 @@
 import PostalMime, {Email} from 'postal-mime';
 
-import {amazonProcessor} from './amazon';
+import {amazonProcessor} from 'src/amazon';
+import {lyftBikeProcessor} from 'src/lyft-bike';
+import {EmailProcessor, LunchMoneyAction} from 'src/types';
+
 import {processActions} from './lunchmoney';
-import {lyftBikeProcessor} from './lyft-bike';
-import {EmailProcessor, LunchMoneyAction} from './types';
 
 let EMAIL_PROCESSORS: EmailProcessor[] = [amazonProcessor, lyftBikeProcessor];
 

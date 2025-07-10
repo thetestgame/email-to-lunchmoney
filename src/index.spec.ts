@@ -1,9 +1,8 @@
 import {createExecutionContext, env, waitOnExecutionContext} from 'cloudflare:test';
 import {beforeEach, describe, it, vi} from 'vitest';
 
-import worker, {overrideProcessors} from '../src/index';
-
 import fixtureEmail from './fixtures/example.eml?raw';
+import worker, {overrideProcessors} from './index';
 import {EmailProcessor, LunchMoneyAction} from './types';
 
 function messageMock(content: string): ForwardableEmailMessage {
