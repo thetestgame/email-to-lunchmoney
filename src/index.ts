@@ -5,7 +5,14 @@ import {processActions} from './lunchmoney';
 import {lyftBikeProcessor} from './lyft-bike';
 import {EmailProcessor, LunchMoneyAction} from './types';
 
-const EMAIL_PROCESSORS: EmailProcessor[] = [amazonProcessor, lyftBikeProcessor];
+let EMAIL_PROCESSORS: EmailProcessor[] = [amazonProcessor, lyftBikeProcessor];
+
+/**
+ * Used in tests. replaces all email processors
+ */
+export function overrideProcessors(processors: EmailProcessor[]) {
+  EMAIL_PROCESSORS = processors;
+}
 
 /**
  * Records a LunchMoney actions to the database

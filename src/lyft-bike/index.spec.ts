@@ -6,9 +6,8 @@ import fixtureEmail from './fixtures/example.eml?raw';
 import {lyftBikeProcessor} from '.';
 
 describe('Lyft Bike EmailProcessor', () => {
-  it('Processes and creates a LunchMoneyAction for a lyft bike receipt', async () => {
+  it('processes and creates a LunchMoneyAction for a lyft bike receipt', async () => {
     const email = await PostalMime.parse(fixtureEmail);
-
     const result = await lyftBikeProcessor.process(email, env);
 
     expect(result).toEqual({

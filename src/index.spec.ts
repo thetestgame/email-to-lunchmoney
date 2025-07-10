@@ -1,14 +1,10 @@
 import {createExecutionContext, env, waitOnExecutionContext} from 'cloudflare:test';
-import {beforeEach, describe, expect, it, vi} from 'vitest';
+import {beforeEach, describe, it, vi} from 'vitest';
 
-import fixtureEmail from '../fixtures/amazon.eml?raw';
-import fixtureOrder from '../fixtures/amazon.json';
+import worker, {overrideProcessors} from '../src/index';
 
-import * as amazonPrompt from './amazon/prompt';
-
-const extractOrderSpy = vi.spyOn(amazonPrompt, 'extractOrder');
-
-import worker from '../src/index';
+import fixtureEmail from './fixtures/example.eml?raw';
+import {EmailProcessor, LunchMoneyAction} from './types';
 
 function messageMock(content: string): ForwardableEmailMessage {
   const raw = new ReadableStream({
@@ -33,8 +29,22 @@ function messageMock(content: string): ForwardableEmailMessage {
 }
 
 describe('Email Handler', () => {
+  const exampleProcessor: EmailProcessor = {
+    identifier: 'example',
+    matchEmail: vi.fn(() => true),
+    process: vi.fn(() => {
+      const action: LunchMoneyAction = {
+        type: 'update',
+        match: {expectedPayee: 'Example Payee', expectedTotal: 100},
+        note: 'Updated note',
+      };
+
+      return Promise.resolve(action);
+    }),
+  };
+
   beforeEach(() => {
-    extractOrderSpy.mockReturnValue(Promise.resolve(fixtureOrder));
+    overrideProcessors([exampleProcessor]);
   });
 
   it('processes fixture email and stores action in database', async () => {

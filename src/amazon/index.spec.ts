@@ -1,12 +1,44 @@
-import {describe, expect, it} from 'vitest';
+import {env} from 'cloudflare:test';
+import PostalMime from 'postal-mime';
+import {beforeEach, describe, expect, it, vi} from 'vitest';
 
-import amazonEmailText from '../../fixtures/amazon.txt';
+import fixtureEmail from './fixtures/example.eml?raw';
+import fixtureOrder from './fixtures/example.json';
+import fixtureEmailText from './fixtures/example.txt';
+import {amazonProcessor, computeItemTaxes, extractOrderBlock} from './index';
+import * as prompt from './prompt';
 
-import {computeItemTaxes, extractOrderBlock} from './index';
+const extractOrderSpy = vi.spyOn(prompt, 'extractOrder');
+
+describe('Amazon order EmailProcessor', () => {
+  beforeEach(() => {
+    extractOrderSpy.mockReturnValue(Promise.resolve(fixtureOrder));
+  });
+
+  it('processes and creates a LunchMoneyAction for amazon orders', async () => {
+    const email = await PostalMime.parse(fixtureEmail);
+
+    const result = await amazonProcessor.process(email, env);
+
+    expect(extractOrderSpy).toHaveBeenCalled();
+
+    expect(result).toEqual({
+      match: {expectedPayee: 'Amazon', expectedTotal: 4495},
+      type: 'split',
+      split: [
+        {
+          note: 'Brushed Nickel Faucet (114-0833187-7581859)',
+          amount: 2645,
+        },
+        {note: 'Nickel Sink Drain (114-0833187-7581859)', amount: 1850},
+      ],
+    });
+  });
+});
 
 describe('extractOrderBlock', () => {
   it('extracts order block from Amazon email text', () => {
-    const result = extractOrderBlock(amazonEmailText);
+    const result = extractOrderBlock(fixtureEmailText);
 
     expect(result).toContain('Order #');
     expect(result).toContain('114-0833187-7581859');
