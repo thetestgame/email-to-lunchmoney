@@ -24,9 +24,11 @@ async function lunchMoneyApi(env: Env, endpoint: string, options: RequestInit = 
 }
 
 export async function processActions(env: Env) {
-  const stmt = env.DB.prepare('SELECT * FROM lunchmoney_actions');
+  const stmt = env.DB.prepare(
+    'SELECT * FROM lunchmoney_actions ORDER BY date_created DESC'
+  );
   const actionsResult = await stmt.all<LunchMoneyActionRow>();
-  const actions = actionsResult.results;
+  const actions = actionsResult.results.reverse();
 
   // bail if there's no pending actions to process
   if (actions.length === 0) {
@@ -58,13 +60,15 @@ export async function processActions(env: Env) {
   for (const actionRow of actions) {
     const action: LunchMoneyAction = JSON.parse(actionRow.action);
 
-    // Find matching transaction by payee name and amount
-    // Convert to_base to cents for comparison with expectedTotal
-    const matchingTransaction = txnsResp.transactions.find(
-      (txn: any) =>
-        txn.payee === action.match.expectedPayee &&
-        txn.amount === (action.match.expectedTotal / 100).toFixed(4)
-    );
+    // Find matching transaction by payee name. Look for newest transactions
+    // first, since we're processing actions in order of newest to oldest
+    const matchingTransaction = txnsResp.transactions
+      .reverse()
+      .find(
+        (txn: any) =>
+          txn.payee === action.match.expectedPayee &&
+          txn.amount === (action.match.expectedTotal / 100).toFixed(4)
+      );
 
     // if we can't find the transaction skip it
     if (matchingTransaction === undefined) {
