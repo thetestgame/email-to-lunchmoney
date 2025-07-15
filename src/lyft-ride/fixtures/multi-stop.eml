@@ -1,0 +1,1898 @@
+Delivered-To: evanpurkhiser@gmail.com
+Received: by 2002:a17:505:2c8d:b0:1cd2:b196:9bab with SMTP id xx13csp5600979njc;
+        Thu, 3 Jul 2025 17:10:57 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEDuSgMn8Tw/poWd8pJRqNMmufTxP8OA7YZU4Gc57DWJnAkUhTB/oaRR2O2MU9cvy/iT6j2
+X-Received: by 2002:a17:90b:57c7:b0:311:e358:c4af with SMTP id 98e67ed59e1d1-31aadda3684mr5250a91.16.1751587856977;
+        Thu, 03 Jul 2025 17:10:56 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1751587856; cv=none;
+        d=google.com; s=arc-20240605;
+        b=OS39nK5g00HCtjBmC6oq5SQ9/3Iqn0s2yk/8GnzyHGcDX+5sZdZjUO3L9lFPfFGkOs
+         T7FPgHhJpC+DijsT82UIVwBEEwQ89LLr8CLWrrq6YsgzfGXiXfnizsorhxbXR6y2h+po
+         TP7Y3cheLBeKOUgrUHLhZSD3zWdU9PICPV+ph3E5uqBSAhHEfkKn0mKB8Xdia6oXpnHf
+         2ldHW8zrV4Q0Eb01Mpi7xySqadOBzSw2hjNat9kg+gt7jEAhHDQRfYJ4+GcbFOjEPez9
+         F5WZxbXn7SyhsnX66bFYxNmwpVB73XIRSS+UU+dxXQ0ymLSBJw7YKFIKFcE6PoXmouYR
+         ODrA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=content-transfer-encoding:message-id:to:from:subject:mime-version
+         :date:sender:dkim-signature:dkim-signature;
+        bh=AaLaXqXtG7LT7bHYRPcamy2v7zLn5ydz/gYQrhPYxCI=;
+        fh=169V9/7R5Hr0c84w09Eb6qts8GXB7/FdpMEMd03Gbs8=;
+        b=MW7O69/Dj3wuHExjL6JYGpbwftH6SoZckA3zGed1ZgAlswu9X8NPTYDiJzSMjy8K4M
+         UANEI5080SePUg+JwqMAiOMaQVFkVeXsvEKSU2/V15Mv87tIjypotlGKvPxeMRGMLAhr
+         t3grk7UuI6Kzc787si+y80d8JXI1jqYp9wisI4RfVQV7axiW/KbV9PunT4A2RF8xx8rC
+         twjrihHZIlGFvTn8BVE1m2GQ9eRD02AjPrl7stZ596mwWx2zf6FrWN0FFmecteDnk9ZM
+         Z+VkQWdP9NCg184gt6sRG+jx88R1qc7ykM0RuyXXGygFu5EeRvQ0csR5jJCedu8cTfgg
+         BMbg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@lyftmail.com header.s=mg header.b=Xq9t+8cW;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=X0gBaSGm;
+       spf=pass (google.com: domain of bounce+6ebad7.a9d1e-evanpurkhiser=gmail.com@lyftmail.com designates 161.38.201.148 as permitted sender) smtp.mailfrom="bounce+6ebad7.a9d1e-evanpurkhiser=gmail.com@lyftmail.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=lyftmail.com
+Return-Path: <bounce+6ebad7.a9d1e-evanpurkhiser=gmail.com@lyftmail.com>
+Received: from m201-148.mailgun.net (m201-148.mailgun.net. [161.38.201.148])
+        by mx.google.com with UTF8SMTPS id 98e67ed59e1d1-31a9cd0ff5dsi3659026a91.105.2025.07.03.17.10.56
+        for <evanpurkhiser@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 03 Jul 2025 17:10:56 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+6ebad7.a9d1e-evanpurkhiser=gmail.com@lyftmail.com designates 161.38.201.148 as permitted sender) client-ip=161.38.201.148;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@lyftmail.com header.s=mg header.b=Xq9t+8cW;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=X0gBaSGm;
+       spf=pass (google.com: domain of bounce+6ebad7.a9d1e-evanpurkhiser=gmail.com@lyftmail.com designates 161.38.201.148 as permitted sender) smtp.mailfrom="bounce+6ebad7.a9d1e-evanpurkhiser=gmail.com@lyftmail.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=lyftmail.com
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=lyftmail.com; q=dns/txt; s=mg; t=1751587856; x=1751595056;
+ h=Content-Transfer-Encoding: Content-Type: Message-Id: To: To: From: From: Subject: Subject: Mime-Version: Date: Sender: Sender: X-Feedback-Id;
+ bh=AaLaXqXtG7LT7bHYRPcamy2v7zLn5ydz/gYQrhPYxCI=;
+ b=Xq9t+8cW9WzGPjan5Ti0hKlT7isvutaOi1TQ3XoKwlHIj7QglCkIcZZtTAEd/82l6ORWD5GQXpqjivL6uLkM7/dj3QSeKxKXYtO3q9TfazKkw7kyzvfwXyiOEpLncWGiAQfSdeeg1UfY2GDOgR1o6KGaycfkHhuDNN9imQGoGE0=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg; t=1751587856; x=1751595056;
+ h=Content-Transfer-Encoding: Content-Type: Message-Id: To: To: From: From: Subject: Subject: Mime-Version: Date: Sender: Sender: X-Feedback-Id;
+ bh=AaLaXqXtG7LT7bHYRPcamy2v7zLn5ydz/gYQrhPYxCI=;
+ b=X0gBaSGmPKvw3t96TIvaLX1m9n6xP25r8fwPgln5sp5ppEP2aIpdd+X+fjiacBmduHVXZ82fjRlWoI3HFAc1XBJxEKYG9oLct0do/dO9d1/MSwrjNE9PxkFoWtLYTWSkgr2POuTCahj3NleBkz10PwLTxyJeP3fHfjMIg6pT7Lg=
+X-Mailgun-Sid: WyI3ZjNjMSIsImV2YW5wdXJraGlzZXJAZ21haWwuY29tIiwiYTlkMWUiXQ==
+X-Feedback-Id: no-reply@lyftmail.com:ride_receipts-receipt:5266f7d75a7618418e1e4cef:mailgun
+Received: by f9f0d7b1b244 with HTTP id 68671c10e64bcc69ad09f14e; Fri, 04 Jul 2025
+ 00:10:56 GMT
+X-Mailgun-Sending-Ip: 161.38.201.148
+Sender: no-reply@lyftmail.com
+Date: Fri, 04 Jul 2025 00:10:56 +0000
+Mime-Version: 1.0
+Subject: Your ride with Akmal on July 3
+From: Lyft Receipts <no-reply@lyftmail.com>
+To: evanpurkhiser@gmail.com
+X-Mailgun-Tag: ride_receipts
+X-Mailgun-Tag: receipt
+X-Mailgun-Variables: {"lyft_message_id": "d75c358d-2ba9-4ecb-8cfa-47f256aed922"}
+Message-Id: <20250704001056.bc740b2b9b06a78d@lyftmail.com>
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!-- Automatically generated by make_email v1.4.1. Do not edit this file. -=
+->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+" />
+    <meta charset=3D"utf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta name=3D"apple-mobile-web-app-capable" content=3D"yes">
+    <meta content=3D"yes" name=3D"apple-touch-fullscreen">
+    <meta name=3D"apple-mobile-web-app-status-bar-style" content=3D"black">
+    <meta name=3D"format-detection" content=3D"telephone=3Dno">
+    <meta name=3D"format-detection" content=3D"date">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <meta name=3D"x-apple-disable-message-reformatting" />
+    <title>Lyft</title>
+    <style type=3D"text/css">
+    /*******************FONT STYLING LYFT*********************/
+    /* Both %20 and + link versions */
+    @import url('https://lyft-assets.s3.amazonaws.com/font/Lyft+Pro+2.0/Lyf=
+tPro2.0-Bold.otf');
+
+    @font-face {
+        font-family: 'LyftProUI-Bold';
+        src: url('https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro%202.=
+0/LyftPro2.0-Bold.otf') format('opentype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @import url('https://lyft-assets.s3.amazonaws.com/font/Lyft+Pro+2.0/Lyf=
+tPro2.0-Regular.otf');
+
+    @font-face {
+        font-family: 'LyftProUI-Regular';
+        src: url('https://lyft-assets.s3.amazonaws.com/font/Lyft+Pro+2.0/Ly=
+ftPro2.0-Regular.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @import url('https://lyft-assets.s3.amazonaws.com/font/Lyft+Pro+2.0/Lyf=
+tPro2.0-SemiBold.otf');
+
+    @font-face {
+        font-family: 'LyftProUI-SemiBold';
+        src: url('https://lyft-assets.s3.amazonaws.com/font/Lyft+Pro+2.0/Ly=
+ftPro2.0-SemiBold.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @media print {
+        .do-not-print {
+            display: none;
+        }
+    }
+
+    /************************* END FONT STYLING ***************************=
+*********/
+    /* standard resets */
+    div,
+    p,
+    a,
+    li,
+    td {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    table td {
+        border-collapse: collapse;
+    }
+
+    .ExternalClass {
+        width: 100%;
+    }
+
+    .ExternalClass *,
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass a,
+    .ExternalClass div {
+        line-height: 100%;
+    }
+
+    img {
+        -ms-interpolation-mode: bicubic;
+        border: 0 !important;
+        outline: none !important;
+    }
+
+    table {
+        margin: 0 auto;
+    }
+
+    /* control text changed to links by phones */
+    @media only screen {
+
+        a[href^=3D"tel"],
+        a[href^=3D"sms"] {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    /* Stops automatic email inks in iOS */
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+
+    a[href^=3D"x-apple-data-detectors:"] {
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    /********* CTA Style - fixed padding *********/
+    .cta-shadow {
+        -webkit-box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        text-decoration: none;
+    }
+
+    /************************* Fixing Auto Styling for Gmail***************=
+******/
+    u+#body a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+    }
+
+    /* Carry over styles from old receipt */
+    .charge-failed h3 {
+        margin-top: 0;
+        font-size: 16px;
+        color: #E60000;
+    }
+
+    .charge-success h3 {
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    .bill-callout-box {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        background-color: #F4F4FA;
+        text-align: center;
+    }
+
+    .ride-requested-box {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        background-color: #FAFAFA;
+        border-radius: 4px;
+    }
+
+    .green-mode-box {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        background-color: #D1FFEE;
+        text-align: left;
+        border-radius: 4px;
+    }
+
+    .big-border-divide {
+        border-top: 1px solid #000000;
+        height: 1px;
+        font-size: 1px;
+    }
+
+    .break-on-desktop {
+        display: block;
+    }
+
+    /* recipient.ride.pickup and recipient.ride.dropoff */
+    table {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        border-collapse: separate;
+    }
+
+    table.collapse-border {
+        border-collapse: collapse !important;
+    }
+
+    td {
+        border-collapse: collapse !important;
+        mso-line-height-rule: exactly;
+    }
+
+    a,
+    span {
+        mso-line-height-rule: exactly;
+    }
+
+    .ride-location {
+        padding-top: 16px;
+        font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Aria=
+l, sans-serif;
+    }
+
+    .ride-location td {
+        font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Aria=
+l, sans-serif;
+        line-height: 20px;
+    }
+
+    .ride-location-heading {
+        font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Aria=
+l, sans-serif;
+    }
+
+    .state-time {
+        font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Aria=
+l, sans-serif;
+        font-size: 14px;
+        color: #728099;
+    }
+
+    .location-marker {
+        width: 20px;
+    }
+
+    .location-marker img {
+        width: 10px;
+        height: 10px;
+    }
+
+    /* recipient.ride.receipt.email_token_urls */
+    .header {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-top: 0;
+        color: #333447;
+    }
+
+    .verification-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #ffffff;
+    }
+
+    .btn {
+        display: inline-block;
+        width: 160px;
+        margin-left: 3px;
+        margin-right: 3px;
+        border-radius: 4px;
+        padding: 8px;
+        background-color: #F3F3F5;
+        color: #ff00bf;
+    }
+
+    .btn-pink {
+        background-color: #ff00bf;
+        color: #ffffff;
+    }
+
+    .btn-pink a {
+        color: #ffffff;
+    }
+
+    /* Yahoo and apple mail reset on desktop */
+    @media screen and (min-width: 600px) {
+        .wrapto600px {
+            width: 600px !important;
+        }
+
+        .block {
+            width: 300px !important;
+        }
+    }
+
+    /* responsive rules */
+    @media screen and (max-device-width: 600px),
+    screen and (max-width: 600px) {
+        .wrapto600px {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .block {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+
+    @media only screen and (max-width: 385px) {
+        .block-it {
+            display: block !important;
+            width: 100%;
+            padding-top: 5px !important;
+        }
+
+        .break-on-desktop {
+            display: inline !important;
+        }
+
+        .mobileHeaderSmall {
+            font-size: 18px !important;
+            line-height: 18px !important;
+            padding-right: none;
+        }
+
+        .mobileBodySmall {
+            font-size: 14px !important;
+            padding-right: none;
+        }
+
+        .mobileminwidth100 {
+            min-width: 100% !important;
+        }
+
+        .footer-text-small {
+            font-size: 12px !important;
+            line-height: 12px !important;
+        }
+
+        .mobile-padding-reset {
+            padding: 0px !important;
+        }
+
+        .mobile-image {
+            width: 80% !important;
+        }
+    }
+
+    @media only screen and (max-width: 520px) {
+        .block-it {
+            display: block !important;
+            width: 100%;
+            padding-top: 5px !important;
+        }
+
+        .break-on-desktop {
+            display: inline !important;
+        }
+
+        .mobileHeader {
+            font-size: 44px !important;
+            line-height: 44px !important;
+        }
+
+        .mobileBody {
+            font-size: 14px !important;
+        }
+
+        .mobilepadRL {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+        }
+
+        .mobileHeaderSmall {
+            font-size: 22px !important;
+            line-height: 22px !important;
+            padding-right: none;
+        }
+
+        .mobilepaddingleft {
+            padding-left: 22px !important;
+        }
+
+        .mobilepaddingright {
+            padding-right: 22px !important;
+        }
+
+        .mobileminwidth100 {
+            min-width: 100% !important;
+        }
+
+        .footer-text-small {
+            font-size: 12px !important;
+            line-height: 12px !important;
+        }
+    }
+    </style>
+    <!--[if gte mso 9]>=20
+      <xml>
+         <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+         </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <!--[if mso]>=20
+      <style type=3D"text/css"> span {font-family: Helvetica, Arial, sans-s=
+erif !important;} </style>
+    <![endif]-->
+    <!-- Fall-back font for Outlook (Arial) -->
+    <!--[if (gte mso 9)|(IE)]>=20
+      <style type=3D"text/css"> a, body, div, li, p, strong, td, span {font=
+-family: Arial, Helvetica, sans-serif !important;} </style>
+    <![endif]-->
+</head>
+
+
+<body leftmargin=3D"0" topmargin=3D"0" rightmargin=3D"0" width=3D"100%">
+    <!-- Begin Preheader -->
+    <div style=3D"display:none; font-size:1px; color:#ededf0; line-height:1=
+px; max-height:0px; max-width:0px; opacity:0; overflow:hidden;"> Thanks for=
+ riding with <span class=3D"break-on-desktop">Akmal!</span> &nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw=
+nj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw=
+nj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw=
+nj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw=
+nj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;=
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;=
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;=
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;=
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;=
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;
+    </div>
+    <!-- End Preheader -->
+    <!-- Content -->
+    <!--[if (gte mso 9)|(IE)]>
+      <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"600"=
+ align=3D"center">
+         <tr>
+            <td align=3D"center">
+            <![endif]-->
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+align=3D"center" bgcolor=3D"#FDFDFB" style=3D"background-color: #FDFDFB;">
+        <tr>
+            <td width=3D"100%" align=3D"center">
+                <table class=3D"wrapto600px" width=3D"600" align=3D"center"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff" style=
+=3D"background-color: #ffffff; border: 1px solid #EDEDF1;">
+                    <tr>
+                        <td>
+                            <table class=3D"wrapto600px" width=3D"600" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff" style=3D"b=
+ackground-color: #ffffff; min-width: 100%;">
+                                <tr>
+                                    <td align=3D"left" valign=3D"top">
+                                        <!-- Banner Image -->
+                                        <table class=3D"wrapto600px" width=
+=3D"600" align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bg=
+color=3D"#ffffff" style=3D"background-color: #ffffff;">
+                                            <tr>
+                                                <td> <table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"30" style=3D"height: 30px;"></td>
+        </tr>
+    </table> </td>
+                                            </tr>
+                                           =20
+                                           =20
+                                            <tr>
+                                                <td style=3D"padding-left: =
+4%; padding-right: 4%; text-align: left;" align=3D"left">
+                                                    <!-- Automatically gene=
+rated by make_email v1.4.1. Do not edit this file. -->
+<img height=3D"68" src=3D"https://s3.amazonaws.com/growth.lyft.com/rider/pi=
+nk-garage/Lyft_Pink_Logo.png" alt=3D"Lyft Pink" border=3D"0" width=3D"181" =
+style=3D"display:block">
+                                                </td>
+                                            </tr>
+                                           =20
+                                           =20
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> <table width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"15" style=3D"height: 15px;"></td>
+        </tr>
+    </table> </td>
+                                </tr>
+                            </table>
+                            <table class=3D"wrapto600px" width=3D"600" alig=
+n=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#f=
+fffff" style=3D"background-color: #ffffff;">
+                                <tr>
+                                    <td style=3D"padding-left: 4%; padding-=
+right: 4%;">
+                                       =20
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                           =20
+                           =20
+                           =20
+                           =20
+                            <table class=3D"wrapto600px" width=3D"600" alig=
+n=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#f=
+fffff" style=3D"background-color: #ffffff;"><tr>
+                                    <td> <table width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"30" style=3D"height: 30px;"></td>
+        </tr>
+    </table> </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class=3D"wrapto600px" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" bgcolor=3D"#ffffff=
+" style=3D"background-color: #ffffff;">
+                                            <tr>
+                                                <td>
+                                                    <table width=3D"100%" c=
+ellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+                                                        <tr>
+                                                            <td width=3D"10=
+0%" align=3D"left" style=3D"padding-left: 4%;" colspan=3D"2">
+                                                                <table bord=
+er=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">
+                                                                    <tr>
+                                                                        <td=
+ align=3D"left" valign=3D"bottom" style=3D"font-size: 12px; font-family: 'L=
+yftProUI-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #111=
+11f; line-height: 15px; font-weight: bold;"> <a style=3D"text-decoration: n=
+one; color: #000001;"><span style=3D"color: #000001; text-decoration: none;=
+">   JULY 3, 2025 AT 9:00 AM  </span></a>
+                                                                        </t=
+d>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td=
+> <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"8" style=3D"height: 8px;"></td>
+        </tr>
+    </table> </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                <td width=3D"100%" align=3D=
+"left" valign=3D"top" style=3D"padding-left: 4%; padding-right: 4%; width: =
+100%;"> <span style=3D"color: #11111f; font-size: 30px; line-height: 30px; =
+font-family: 'LyftProUI-Bold', 'Helvetica Neue', Helvetica, Arial, sans-ser=
+if; font-weight: bold;"> Thanks for riding with Akmal!</span>
+                                                </td>
+                                            </tr>
+
+                                           =20
+                                           =20
+                                           =20
+                                           =20
+                                        </table>
+                                    </td>
+                                </tr><tr>
+                                    <td> <table width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"5" style=3D"height: 5px;"></td>
+        </tr>
+    </table> </td>
+                                </tr>
+                                <tr class=3D"do-not-print">
+                                    <td align=3D"left" style=3D"padding-lef=
+t: 4%; padding-right: 4%; color: #000001; font-family: 'LyftProUI-Regular',=
+ 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-heig=
+ht: 20px;">
+                                        100% of tips go to drivers. <a href=
+=3D"https://email.lyftmail.com/c/eJw8kE2PmzAQhn-NuSWyx98HH1Ihoq0EVVZpULggGz=
+sEL7QI2JD8-4p21ctoRs9Ij97XG6s9CUkwRHLClVRcJHdjpVbBNdpRyqh1HDwlWKibY64JioqkM=
+4CBY4kZxgRzsXeNZNiB0w4LK5VHDPev2zLYrt83v4ekN_dlGWdEDwgyBNm6rvvtYYMIMuv90o0I=
+MiCYgKJKEcUJA0aYQDSrw3NENP1yyvNfKa8QiHruWkTT6njpi_I9Fsef-Ed6Ga7xAHm8xDx-8Gu=
+Zv67x7VmlJ1bEFvLj9VmVOS3Sb7GI3_u8PL2K83tfxQOuyjcozqc1P7drfkDAafo1RP05T4imAh=
+hQiTUVGlOttBIbe4SNQbJFqocwz7YNdeeNl7yhXPkdOKt3LDRup5qb3TF5Ay5s8BogmUx42F_j5=
+_Rx7-YwIYbb_70tZup8qKfQhG5c5u3-tyYPA38CAAD__xSXhOU" target=3D"_blank" style=
+=3D"color: #ff00bf; text-decoration: underline;">Add a tip</a>
+                                    </td>
+                                </tr><tr>
+                                    <td> <table width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"30" style=3D"height: 30px;"></td>
+        </tr>
+    </table> </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                   =20
+                    <tr>
+                        <td>
+                            <table width=3D"100%" cellspacing=3D"0" cellpad=
+ding=3D"0" align=3D"center">
+                                <tr>
+                                    <td>
+                                       =20
+                                       =20
+                                        <table width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" class=3D"line-items-heading mobileminwidth100" ali=
+gn=3D"center" style=3D"font-size: 17px; color: #11111f; font-family: 'LyftP=
+roUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:=
+ 22px; min-width: 100%;">
+                                            <tr>
+                                                <td>
+                                                    <table width=3D"100%" c=
+ellspacing=3D"0" cellpadding=3D"0" class=3D"line-items mobileminwidth100" a=
+lign=3D"center" style=3D"min-width: 100%;">
+                                                        <tr>
+                                                            <td class=3D"mo=
+bileBodySmall" align=3D"left" style=3D"font-size: 17px; color: #11111f; fon=
+t-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-ser=
+if; line-height: 22px; padding-left: 4%;">
+                                                                Lyft fare (=
+7.76mi, 45m 10s)
+                                                               =20
+                                                            </td>
+                                                            <td class=3D"va=
+lue mobileBodySmall" align=3D"right" style=3D"font-size: 17px; color: #1111=
+1f; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, s=
+ans-serif; line-height: 22px; padding-right: 4%;" width=3D"30%">
+                                                               =20
+                                                                $62.70
+                                                               =20
+                                                            </td>
+                                                        </tr><tr>
+                                                            <td class=3D"mo=
+bileBodySmall" align=3D"left" style=3D"font-size: 17px; color: #11111f; fon=
+t-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-ser=
+if; line-height: 22px; padding-left: 4%;">
+                                                                Priority Pi=
+ckup Upgrade=20
+                                                               =20
+                                                            </td>
+                                                            <td class=3D"va=
+lue mobileBodySmall" align=3D"right" style=3D"font-size: 17px; color: #1111=
+1f; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, s=
+ans-serif; line-height: 22px; padding-right: 4%;" width=3D"30%">
+                                                               =20
+                                                                $2.51
+                                                               =20
+                                                            </td>
+                                                        </tr><tr>
+                                                            <td class=3D"mo=
+bileBodySmall" align=3D"left" style=3D"font-size: 17px; color: #11111f; fon=
+t-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-ser=
+if; line-height: 22px; padding-left: 4%;">
+                                                                Black Car F=
+und Surcharge=20
+                                                               =20
+                                                            </td>
+                                                            <td class=3D"va=
+lue mobileBodySmall" align=3D"right" style=3D"font-size: 17px; color: #1111=
+1f; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, s=
+ans-serif; line-height: 22px; padding-right: 4%;" width=3D"30%">
+                                                               =20
+                                                                $1.56
+                                                               =20
+                                                            </td>
+                                                        </tr><tr>
+                                                            <td class=3D"mo=
+bileBodySmall" align=3D"left" style=3D"font-size: 17px; color: #11111f; fon=
+t-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-ser=
+if; line-height: 22px; padding-left: 4%;">
+                                                                NYC Central=
+ Business District Congestion Surcharge=20
+                                                               =20
+                                                            </td>
+                                                            <td class=3D"va=
+lue mobileBodySmall" align=3D"right" style=3D"font-size: 17px; color: #1111=
+1f; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, s=
+ans-serif; line-height: 22px; padding-right: 4%;" width=3D"30%">
+                                                               =20
+                                                                $1.50
+                                                               =20
+                                                            </td>
+                                                        </tr><tr>
+                                                            <td class=3D"mo=
+bileBodySmall" align=3D"left" style=3D"font-size: 17px; color: #11111f; fon=
+t-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-ser=
+if; line-height: 22px; padding-left: 4%;">
+                                                               =20
+                                                               =20
+                                                            </td>
+                                                            <td class=3D"va=
+lue mobileBodySmall" align=3D"right" style=3D"font-size: 17px; color: #1111=
+1f; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, s=
+ans-serif; line-height: 22px; padding-right: 4%;" width=3D"30%">
+                                                               =20
+                                                            </td>
+                                                        </tr><tr>
+                                                            <td align=3D"le=
+ft" class=3D"mobileBodySmall" style=3D"font-size: 17px; color: #11111f; fon=
+t-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-ser=
+if; line-height: 22px; padding-left: 4%;"><img alt=3D"Chase" class=3D"cc-ic=
+on" width=3D"32" height=3D"20" style=3D"border: 0; display: inline-block; v=
+ertical-align: middle;" src=3D"https://s3.amazonaws.com/lyft.zimride.com/im=
+ages/emails/credit_icons/cc_chase.png" />Credits
+                                                            </td>
+                                                            <td class=3D"va=
+lue mobileBodySmall" align=3D"right" style=3D"font-size: 17px; color: #1111=
+1f; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, s=
+ans-serif; line-height: 22px; padding-right: 4%;" width=3D"30%">
+                                                               =20
+                                                               =20
+                                                                -$10.00</td=
+>
+                                                        </tr><tr>
+                                                            <td align=3D"le=
+ft" class=3D"mobileBodySmall" style=3D"font-size: 17px; color: #11111f; fon=
+t-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-ser=
+if; line-height: 22px; padding-left: 4%;"><img alt=3D"Doordash - Lyft" clas=
+s=3D"cc-icon" width=3D"64" height=3D"20" style=3D"border: 0; display: inlin=
+e-block; vertical-align: middle;" src=3D"https://s3.amazonaws.com/lyft.zimr=
+ide.com/images/emails/credit_icons/Lyft_Warwick_Receipt.png" />
+                                                                Credits
+                                                            </td>
+                                                            <td class=3D"va=
+lue mobileBodySmall" align=3D"right" style=3D"font-size: 17px; color: #1111=
+1f; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, s=
+ans-serif; line-height: 22px; padding-right: 4%;" width=3D"30%">
+                                                               =20
+                                                               =20
+                                                                -$9.08</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align=3D"le=
+ft" class=3D"mobileBodySmall" style=3D"font-size: 17px; color: #11111f; fon=
+t-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-ser=
+if; line-height: 22px; padding-left: 4%;">
+                                                               =20
+                                                            </td>
+                                                           =20
+                                                        </tr>
+                                                        </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width=3D"100%" cellpadding=3D"0" cellspa=
+cing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"20" style=3D"height: 20px;"></td>
+        </tr>
+    </table>
+                        </td>
+                    </tr>
+                   =20
+                   =20
+                    <tr>
+                        <td></td>
+                    </tr>
+                   =20
+                   =20
+                    <tr>
+                        <td> <table width=3D"100%" cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"8" style=3D"height: 8px;"></td>
+        </tr>
+    </table> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width=3D"92%" cellspacing=3D"0" cellpadd=
+ing=3D"0" class=3D"big-border-divide" align=3D"center">
+                                <tr>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width=3D"100%" cellspacing=3D"0" cellpad=
+ding=3D"0" class=3D"line-items-heading" align=3D"center" style=3D"font-size=
+: 17px; color: #11111f; font-family: 'LyftProUI-Regular', 'Helvetica Neue',=
+ Helvetica, Arial, sans-serif; line-height: 22px; min-width: 100%;"><tr>
+                                    <td colspan=3D"2"> <table width=3D"100%=
+" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"10" style=3D"height: 10px;"></td>
+        </tr>
+    </table> </td>
+                                </tr>
+                                <tr>
+                                    <td align=3D"left" class=3D"mobileBodyS=
+mall" valign=3D"middle" style=3D"font-size: 17px; color: #11111f; font-fami=
+ly: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif; li=
+ne-height: 22px; padding-left: 4%;" width=3D"70%"><img alt=3D"Card" class=
+=3D"cc-icon" width=3D"35" height=3D"23" style=3D"border: 0; display: inline=
+-block; vertical-align: middle;" src=3D"https://s3.amazonaws.com/lyft.zimri=
+de.com/images/emails/credit_icons/cc_visa.png" /> <span style=3D"padding-le=
+ft: 2%">Visa *8360</span></td>
+                                    <td class=3D"value charge-total mobileH=
+eaderSmall" align=3D"right" style=3D"font-size: 30px; color: #11111f; font-=
+family: 'LyftProUI-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; f=
+ont-weight: bold; line-height: 30px; padding-right: 4%;" valign=3D"middle" =
+width=3D"30%"> <strong> $49.19 </strong>
+                                    </td>
+                                </tr></table>
+                        </td>
+                    </tr>
+                   =20
+                   =20
+                   =20
+                    <tr>
+                        <td> <table width=3D"100%" cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"15" style=3D"height: 15px;"></td>
+        </tr>
+    </table> </td>
+                    </tr>
+                   =20
+                   =20
+                   =20
+                   =20
+                   =20
+                   =20
+                   =20
+                   =20
+                   =20
+                   =20
+                    <tr>
+                        <td> <table width=3D"100%" cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"30" style=3D"height: 30px;"></td>
+        </tr>
+    </table> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table align=3D"center" valign=3D"middle" class=
+=3D"receipt-wrapper" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%">
+                                <tr>
+                                    <td class=3D"center" align=3D"center" s=
+tyle=3D"padding: 0 4%;"><img class=3D"center ride-map" src=3D"https://api.l=
+yft.com/v1/staticmap/2101283881851424146?hash=3D768eed68f214f62b97799ca8528=
+fa56a68055b534af9365be78474d231d13ae9&amp;template=3Dreceipt&amp;version=3D=
+v2" alt=3D"Ride Map" width=3D"556" style=3D"width: 100%; max-width: 556px; =
+display: block;" />
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width=3D"100%" cellpadding=3D"0" cellspa=
+cing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"30" style=3D"height: 30px;"></td>
+        </tr>
+    </table>
+                        </td>
+                    </tr>
+                   =20
+                   =20
+                    <tr>
+                        <td>
+                            <table class=3D"mobileminwidth100 receipt-wrapp=
+er" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D"padding-lef=
+t: 4%; padding-right: 4%;">
+                                <tr>
+                                    <td width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0">
+                                        <!-- recipient.ride.pickup and reci=
+pient.ride.dropoff --><table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+                                            <tr>
+                                                <td class=3D"mso-remove-pad=
+ding"><table align=3D"left" width=3D"100%" class=3D"mobile-table-full ride-=
+location collapse-border" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                        <tr>
+                                                            <td> <table wid=
+th=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"16" style=3D"height: 16px;"></td>
+        </tr>
+    </table> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class=3D"lo=
+cation-marker"> <img alt=3D"Pickup" src=3D"https://s3.amazonaws.com/lyft.zi=
+mride.com/images/emails/markers/v2/pickup.png" style=3D"display: block;" wi=
+dth=3D"10" height=3D"10" />
+                                                            </td>
+                                                            <td>
+                                                                <table clas=
+s=3D"ride-location-heading" width=3D"100%" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0">
+                                                                    <tr>
+                                                                        <td=
+ align=3D"left" width=3D"150" valign=3D"bottom" style=3D"font-family: 'Lyft=
+ProUI-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20p=
+x; font-weight: bold; line-height: 24px;"> Pickup &nbsp;&nbsp;<a style=3D"c=
+olor: #ACACC0 !important; text-decoration: none;"><span style=3D"color: #AC=
+ACC0 !important; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvet=
+ica, Arial, sans-serif; font-size: 17px; text-decoration: none;">9:00 AM</s=
+pan></a>
+                                                                        </t=
+d>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr><tr>
+                                                            <td>&nbsp;</td>
+                                                            <td class=3D"mo=
+bileBodySmall" style=3D"color: #303349; font-family: 'LyftProUI-Regular', '=
+Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17px; line-height=
+: 24px;"> <a style=3D"color: #303349 !important; text-decoration: none;">32=
+6 E 4th St, New York, NY</a>
+                                                            </td>
+                                                        </tr></table>
+                                                </td>
+                                            </tr><tr>
+                                                <td class=3D"mso-remove-pad=
+ding">
+                                                    <table align=3D"left" w=
+idth=3D"100%" class=3D"mobile-table-full ride-location collapse-border" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                        <tr>
+                                                            <td> <table wid=
+th=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"16" style=3D"height: 16px;"></td>
+        </tr>
+    </table> </td>
+                                                        </tr><tr>
+                                                            <td alt=3D"Stop=
+ Marker" class=3D"location-marker"> <img src=3D"https://s3.amazonaws.com/ly=
+ft.zimride.com/images/emails/markers/v2/stop.png" style=3D"display: block;"=
+ width=3D"10" height=3D"10" />
+                                                            </td>
+                                                            <td>
+                                                                <table clas=
+s=3D"ride-location-heading" width=3D"100%" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0">
+                                                                    <tr>
+                                                                        <td=
+ align=3D"left" width=3D"150" valign=3D"bottom" style=3D"font-family: 'Lyft=
+ProUI-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20p=
+x; font-weight: bold; line-height: 24px;"> Stop&nbsp;&nbsp;<a style=3D"colo=
+r: #ACACC0 !important; text-decoration: none;"><span class=3D"state-time" s=
+tyle=3D"color: #ACACC0; font-family: 'LyftProUI-Regular', 'Helvetica Neue',=
+ Helvetica, Arial, sans-serif; font-size: 17px;">9:10 AM</span></a>
+                                                                        </t=
+d>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr><tr>
+                                                            <td>&nbsp;</td>
+                                                            <td class=3D"mo=
+bileBodySmall" style=3D"color: #303349; font-family: 'LyftProUI-Regular', '=
+Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17px; line-height=
+: 24px;"> 27 Essex St, New York, NY
+                                                            </td>
+                                                        </tr></table>
+                                                </td>
+                                            </tr><tr>
+                                                <td class=3D"mso-remove-pad=
+ding">
+                                                    <table align=3D"left" w=
+idth=3D"100%" class=3D"mobile-table-full ride-location collapse-border" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                        <tr>
+                                                            <td> <table wid=
+th=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"16" style=3D"height: 16px;"></td>
+        </tr>
+    </table> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class=3D"lo=
+cation-marker">
+                                                                <img alt=3D=
+"Drop-off Marker" src=3D"https://s3.amazonaws.com/lyft.zimride.com/images/e=
+mails/markers/v2/dropoff.png" style=3D"display: block;" width=3D"10" height=
+=3D"10" />
+                                                            </td>
+                                                            <td>
+                                                                <table clas=
+s=3D"ride-location-heading" width=3D"100%" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0">
+                                                                    <tr>
+                                                                        <td=
+ align=3D"left" width=3D"150" valign=3D"bottom" style=3D"font-family: 'Lyft=
+ProUI-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20p=
+x; font-weight: bold; line-height: 24px;"> Drop-off&nbsp;&nbsp;<a style=3D"=
+color: #ACACC0 !important; text-decoration: none;"><span style=3D"color: #A=
+CACC0 !important; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helve=
+tica, Arial, sans-serif; font-size: 17px; text-decoration: none;">9:45 AM</=
+span></a>
+                                                                        </t=
+d>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr><tr>
+                                                            <td>&nbsp;</td>
+                                                            <td class=3D"mo=
+bileBodySmall" style=3D"color: #303349; font-family: 'LyftProUI-Regular', '=
+Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17px; line-height=
+: 24px;"> <a style=3D"color: #303349 !important; text-decoration: none;">23=
+12 Summit Ave, Union City, NJ</a>
+                                                            </td>
+                                                        </tr></table>
+                                                </td>
+                                            </tr>
+                                        </table></td>
+                                </tr>
+                            </table>
+                            <table width=3D"100%" cellpadding=3D"0" cellspa=
+cing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"30" style=3D"height: 30px;"></td>
+        </tr>
+    </table>
+                        </td>
+                    </tr>
+                   =20
+                   =20
+                   =20
+                   =20
+
+
+
+<tr>
+    <td>
+   =20
+
+   =20
+    </td>
+</tr>
+
+
+
+                   =20
+                    <tr>
+                        <td>
+                            <table class=3D"wrapto600px" width=3D"600" alig=
+n=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+                                <tr>
+                                    <td style=3D"padding-left: 4%; padding-=
+right: 4%;">
+                                       =20
+                                       =20
+                                        <div style=3D"width:100%; max-width=
+:600px; margin: auto; background-color:rgba(255, 255, 255, 1); text-align:c=
+enter; color:rgba(12, 11, 49, 1); border:1px solid rgba(12, 11, 49, .16);">
+
+<div style=3D"
+background-repeat: no-repeat;
+height: 100%;
+max-height: 148px;
+height: 148px;
+object-fit: contain;
+background-position: 50% 50%;
+background-size: 100%;
+background-image: url(https://s3.amazonaws.com/growth.lyft.com/img/ride-rec=
+eipt/marketing-module/partner-logos/chase_module_lockup_600w_100h.png);
+"></div>
+
+<div style=3D"padding-top: 24px"></div>
+
+<div style=3D"margin-left:20px; margin-right:20px; font-size:26px;font-fami=
+ly:'Proxima Nova','Lyft Pro','Helvetica Neue',Helvetica,Arial,sans-serif;">
+<strong>Rides =3D rewards</strong>
+</div>
+
+<div style=3D"padding-top: 8px"></div>
+
+<div style=3D"margin-left:20px; margin-right:20px; font-size:16px; line-hei=
+ght:20px; font-family:'Proxima Nova','Lyft Pro','Helvetica Neue',Helvetica,=
+Arial,sans-serif;">
+You earn 5x total points on rides and get up to $120/year in ride credit by=
+ paying with your Chase Sapphire Reserve=C2=AE card. Terms apply
+</div>
+
+<div style=3D"padding-top: 16px"></div>
+
+<div style=3D"margin-left:20px; margin-right:20px; font-size:16px; text-dec=
+oration-line:underline;font-family:'Proxima Nova','Lyft Pro','Helvetica Neu=
+e',Helvetica,Arial,sans-serif;">
+<strong>
+<a
+href=3D"https://email.lyftmail.com/c/eJw8jc9urSAQh58GdpphAMEFi7vxNQzMjEdytT=
+Vij-nbN6ZJd78_X_JxyiMb0ZJM8MbHEP2g1wSuGIieiMuw5GgjW2vKaMj6IrCQrgkBPQRwAAb80=
+BcKDgqWscCQQ2TlYPterj3XrafPXW9pva6jKftP4aRwuu-7f4DnVDjRmpvoZ5h3aS2_ZK6cOHiy=
+PnKHJY-dEypdpCV3Lizohyw8IuozyTt_HF_n_7U2OZWD15_1SmdlmU8hqcfVnv4b9TvhTwAAAP_=
+_bylOxQ"
+target=3D"_blank"
+rel=3D"noopener noreferrer"
+style=3D"color:rgba(12, 11, 49, 1);">
+Learn more
+</a>
+</strong>
+</div>
+<div style=3D"padding-top: 32px"></div>
+</div>
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                   =20
+                    <tr>
+                        <td> <table width=3D"100%" cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"8" style=3D"height: 8px;"></td>
+        </tr>
+    </table> </td>
+                    </tr>
+                    <tr class=3D"do-not-print">
+                        <td height=3D"30" style=3D"font-size: 30px; line-he=
+ight: 30px; -mso-line-height: 30px;">&nbsp;</td>
+                    </tr>
+                   =20
+                   =20
+                   =20
+                   =20
+                   =20
+                   =20
+                   =20
+                   =20
+                   =20
+                    <tr>
+                        <td style=3D"padding-left: 25px; padding-right: 25p=
+x; vertical-align: top;">
+                            <img src=3D"https://s3.amazonaws.com/growth.lyf=
+t.com/img/rider/cmd/Ride-receipt_header.png" width=3D"550" border=3D"0" sty=
+le=3D"display: block; max-width: 550px; width: 100%;" alt=3D"Lyft" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height=3D"20" style=3D"font-size: 20px; line-he=
+ight: 20px; -mso-line-height: 20px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style=3D"-webkit-font-smoothing: antialiased; f=
+ont-family: 'LyftProUI-Bold', 'Helvetica Neue', Helvetica, Arial, sans-seri=
+f; font-size: 30px; color: #000001; font-weight: bold; line-height: 30px; p=
+adding-left: 4%; padding-right: 4%; text-align: center;">
+                            Your free ride upgrade =E2=9C=85
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height=3D"15" style=3D"font-size: 15px; line-he=
+ight: 15px; -mso-line-height: 15px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style=3D"-webkit-font-smoothing: antialiased; f=
+ont-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-s=
+erif; font-size: 16px; color: #000001; line-height: 22px; padding-left: 15%=
+; padding-right: 15%; text-align: center;">
+                            We hope you enjoyed riding in style with your u=
+pgrade on this ride. Thanks for choosing Lyft.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height=3D"25" style=3D"font-size: 25px; line-he=
+ight: 25px; -mso-line-height: 25px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style=3D"-webkit-font-smoothing: antialiased; f=
+ont-family: 'LyftProUI-Bold', 'Helvetica Neue', Helvetica, Arial, sans-seri=
+f; font-size: 16px; color: #000001; font-weight: bold; line-height: 16px; p=
+adding-left: 4%; padding-right: 4%; text-align: center;">
+                            <a href=3D"https://email.lyftmail.com/c/eJxEj8F=
+uhCAQhp8Gb25wBNEDhyYbX4MAM6ukogRwN337xm3T3uabfyb5ftR2wo4a0p2SnRzVKIdm1d0ouk=
+mMUmDXK29RAiAXzg-I6MhhEzRwkFxxwXnH5XBzXgnuwE2OD1aNyATfvh412rDd_BGbTa-1psL6D=
+wYzg_n1et2ugytkMOeAlBnMKVMMZ2T9fNZoIuEb7jYlBsO1KseZPbH-_v5ow97-Z97GZMOys_7u=
+81GKiQeSwVCSrX41SFtY1moilWKXsC_NJfCLZAJqVNL3csQWnJ1aQd61o3_YVqgHyMESTgBN1vS=
+0ezrz5xoKZSb48tey6kvLZPIUUi0X_4zNU8N3AAAA__85Mnh5" target=3D"_blank" style=
+=3D"color: #000001; text-decoration: underline;">Learn about upgrades</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height=3D"30" style=3D"font-size: 30px; line-he=
+ight: 30px; -mso-line-height: 30px;">&nbsp;</td>
+                    </tr>
+                   =20
+                   =20
+                   =20
+                    <tr>
+                        <td align=3D"center">
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" class=3D"wrapto600px do-not-print">
+                                <tr>
+                                    <td align=3D"center" style=3D"padding: =
+0 4%">
+                                        <table width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" class=3D"receipt-wrapper mobile-padding-sides-lg" =
+align=3D"center" bgcolor=3D"#C8CBFC" style=3D"background-color: #C8CBFC;">
+                                            <tr>
+                                                <td> <table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"20" style=3D"height: 20px;"></td>
+        </tr>
+    </table> </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=3D"center">
+                                                    <table>
+                                                        <tr>
+                                                            <td align=3D"ce=
+nter" class=3D"business-profile-header" style=3D"color: #5245C2; font-famil=
+y: 'LyftProUI-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-s=
+ize: 24px; font-weight: bold; line-height: 24px;"> Make expensing business =
+rides easy
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"8" style=3D"height: 8px;"></td>
+        </tr>
+    </table> </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=3D"center">
+                                                    <table align=3D"center"=
+ valign=3D"middle" cellspacing=3D"0" cellpadding=3D"0">
+                                                        <tr>
+                                                            <td align=3D"ce=
+nter" class=3D"business-profile-body" style=3D"color: #5245C2; font-family:=
+ 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-=
+size: 17px; line-height: 20px; padding-left: 15%; padding-right: 15%;"> Ena=
+ble business profile on Lyft to make expensing rides quick and easy.
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"15" style=3D"height: 15px;"></td>
+        </tr>
+    </table> </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=3D"center" class=
+=3D"business-profile-body" style=3D"color: #5245C2; font-family: 'LyftProUI=
+-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17px; fo=
+nt-weight: bold; line-height: 20px; padding-left: 4%; padding-right: 4%;"> =
+<a href=3D"https://email.lyftmail.com/c/eJxMkEFvozAQhX-NuSUyYxvjA4dKLlUOAe2=
+KtoILAntInECDMCTb_vqVd6vVHmY0o280eu_ZrFM2xgizWIpYpDIVSXTOhBqoFSkqI7kxRiozSD=
+MMseLGxqwzkcuAgqCSckpjKpJ9bySnPfSqp0knU0s4HT-HdercuDe3KRqz87rOnrAnAjmB_PF47=
+MNBgATyfvPuA73fzcttcCN6wvJtnVp_2xaDhOnFWWwXNOjmtcXwlkDS4q-ZMP0tRVZ_tIgmEO9O=
+hOnyvf4sX36OZXUQx4sd68sPUehX2mjD6uptqt8PvKjexqYyj0I_s3p6FuXLKzQ6vzb6APXlPBW=
+hvhp3_DryUl9Z8URAMP3dknbzC2E6AQ5MUsUSRZlKVZoEdsfAIApO2wm9707YOptZKQwTqd1B36=
+kdR9PvUjN0Oy4HEEmHVgFES4b37mPeluvZeVwIp6d_ca7Z_4H4sP8do3sGvwMAAP__-WKR7Q" t=
+arget=3D"_blank" style=3D"color: #5245C2; text-decoration: underline;">
+                                                        GET BUSINESS PROFIL=
+E
+                                                        </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"30" style=3D"height: 30px;"></td>
+        </tr>
+    </table> </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" border=3D"0" width=3D"100%">
+                                <tr>
+                                    <td height=3D"25" style=3D"font-size: 2=
+5px; line-height: 25px; -mso-line-height: 25px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor=3D"#F4F4FA" style=3D"background-color: =
+#F4F4Fa; min-width: 100%;">
+                           =20
+                            <table class=3D"wrapto600px" width=3D"600" alig=
+n=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#f=
+fffff" style=3D"background-color: #ffffff; min-width: 100%;">
+                                <tr>
+                                    <td>
+                                        <table align=3D"center" width=3D"10=
+0%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"background-co=
+lor: #F4F4FA; min-width: 100%; padding-left: 4%; padding-right: 4%;">
+                                            <tr>
+                                                <td> <table width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td height=3D"27" style=3D"height: 27px;"></td>
+        </tr>
+    </table> </td>
+                                            </tr><tr>
+                                                <td align=3D"center" valign=
+=3D"bottom" style=3D"-webkit-font-smoothing: antialiased;font-family: 'Lyft=
+ProUI-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17p=
+x; line-height: 150%; text-align:center; color:#000001;">
+                                                    <!--=3D=3D=3D=3D=3D=3D=
+=3D=3DCTA=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D-->
+                                                    <center>
+                                                        <div>
+                                                            <!--[if mso]>=
+=20
+                                                         <v:roundrect xmlns=
+:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:o=
+ffice:word" href=3D"https://email.lyftmail.com/c/eJw8kE2PmzAQhn-NuSWyx98HH1=
+Ihoq0EVVZpULggGzsEL7QI2JD8-4p21ctoRs9Ij97XG6s9CUkwRHLClVRcJHdjpVbBNdpRyqh1H=
+DwlWKibY64JioqkM4CBY4kZxgRzsXeNZNiB0w4LK5VHDPev2zLYrt83v4ekN_dlGWdEDwgyBNm6=
+rvvtYYMIMuv90o0IMiCYgKJKEcUJA0aYQDSrw3NENP1yyvNfKa8QiHruWkTT6njpi_I9Fsef-Ed=
+6Ga7xAHm8xDx-8GuZv67x7VmlJ1bEFvLj9VmVOS3Sb7GI3_u8PL2K83tfxQOuyjcozqc1P7drfk=
+DAafo1RP05T4imAhhQiTUVGlOttBIbe4SNQbJFqocwz7YNdeeNl7yhXPkdOKt3LDRup5qb3TF5A=
+y5s8BogmUx42F_j5_Rx7-YwIYbb_70tZup8qKfQhG5c5u3-tyYPA38CAAD__xSXhOU" arget=
+=3D"_blank" style=3D"height:50px;v-text-anchor:middle;width:210px;" arcsize=
+=3D"150%" stroke=3D"f" fillcolor=3D"#FFFFFF">
+                                                            <w:anchorlock/>
+                                                            <center>
+                                                            <![endif]-->
+                                                            <a href=3D"http=
+s://email.lyftmail.com/c/eJw8kE2PmzAQhn-NuSWyx98HH1Ihoq0EVVZpULggGzsEL7QI2J=
+D8-4p21ctoRs9Ij97XG6s9CUkwRHLClVRcJHdjpVbBNdpRyqh1HDwlWKibY64JioqkM4CBY4kZx=
+gRzsXeNZNiB0w4LK5VHDPev2zLYrt83v4ekN_dlGWdEDwgyBNm6rvvtYYMIMuv90o0IMiCYgKJK=
+EcUJA0aYQDSrw3NENP1yyvNfKa8QiHruWkTT6njpi_I9Fsef-Ed6Ga7xAHm8xDx-8GuZv67x7Vm=
+lJ1bEFvLj9VmVOS3Sb7GI3_u8PL2K83tfxQOuyjcozqc1P7drfkDAafo1RP05T4imAhhQiTUVGl=
+OttBIbe4SNQbJFqocwz7YNdeeNl7yhXPkdOKt3LDRup5qb3TF5Ay5s8BogmUx42F_j5_Rx7-YwI=
+Ybb_70tZup8qKfQhG5c5u3-tyYPA38CAAD__xSXhOU" target=3D"_blank" style=3D"-web=
+kit-font-smoothing: antialiased; font-family: 'LyftProUI-Bold', 'Helvetica =
+Neue', Helvetica, Arial, sans-serif; background-color: #FFFFFF; border-radi=
+us: 30px; color: #000001; display: inline-block; font-size: 17px; font-weig=
+ht: bold; line-height: 50px; text-align: center; text-decoration: none; wid=
+th: 210px; -webkit-text-size-adjust:none;">Tip driver
+                                                            </a>
+                                                            <!--[if mso]>=
+=20
+                                                            </center>
+                                                         </v:roundrect>
+                                                       <![endif]-->
+                                                        </div>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height=3D"24" style=3D"=
+font-size: 24px; line-height: 24px; -mso-line-height: 24px;">&nbsp;</td>
+                                            </tr><tr>
+                                                <td align=3D"center" valign=
+=3D"bottom" style=3D"-webkit-font-smoothing: antialiased;font-family: 'Lyft=
+ProUI-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17p=
+x; line-height: 150%; text-align:center; color:#000001;">
+                                                    <!--=3D=3D=3D=3D=3D=3D=
+=3D=3DCTA=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D-->
+                                                    <center>
+                                                        <div>
+                                                            <!--[if mso]>=
+=20
+                                                         <v:roundrect xmlns=
+:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:o=
+ffice:word" href=3D"https://email.lyftmail.com/c/eJxMTsuK7CAQ_RrdpdGy1MrCxY=
+VLfqPxUenIJNMh2h3m74fAMMzuHM6zhDgWzZKD9lZb8mSdXAI7YrQpp5hHzOjIIhk9p1ySzyWhr=
+AEUWOUVKqWVdbeUPaoEaUzKRU9FoFq_5r7Fut7yc5NrWHrfmzD_BEwCpvM8b5fhEgVM67P12vmC=
+oJUGMkSarEZAjU6Y6dU3Yf4ftfD94Mx17_KK3zduLT74Xkso3mZjqQyQ4jgg5zRQnuOAfgbrIpc=
+RQB6B3_Fzfx0fS218CFSP3489_O1vF_-Zegf4DgAA__8khlyZ" arget=3D"_blank" style=
+=3D"height:50px;v-text-anchor:middle;width:210px;" arcsize=3D"150%" stroke=
+=3D"f" fillcolor=3D"#FFFFFF">
+                                                            <w:anchorlock/>
+                                                            <center>
+                                                            <![endif]-->
+                                                            <a href=3D"http=
+s://email.lyftmail.com/c/eJxMTsuK7CAQ_RrdpdGy1MrCxYVLfqPxUenIJNMh2h3m74fAMM=
+zuHM6zhDgWzZKD9lZb8mSdXAI7YrQpp5hHzOjIIhk9p1ySzyWhrAEUWOUVKqWVdbeUPaoEaUzKR=
+U9FoFq_5r7Fut7yc5NrWHrfmzD_BEwCpvM8b5fhEgVM67P12vmCoJUGMkSarEZAjU6Y6dU3Yf4f=
+tfD94Mx17_KK3zduLT74Xkso3mZjqQyQ4jgg5zRQnuOAfgbrIpcRQB6B3_Fzfx0fS218CFSP348=
+9_O1vF_-Zegf4DgAA__8khlyZ" target=3D"_blank" style=3D"-webkit-font-smoothin=
+g: antialiased; font-family: 'LyftProUI-Bold', 'Helvetica Neue', Helvetica,=
+ Arial, sans-serif; background-color: #FFFFFF; border-radius: 30px; color: =
+#000001; display: inline-block; font-size: 17px; font-weight: bold; line-he=
+ight: 50px; text-align: center; text-decoration: none; width: 210px; -webki=
+t-text-size-adjust:none;">Find lost item
+                                                            </a>
+                                                            <!--[if mso]>=
+=20
+                                                            </center>
+                                                         </v:roundrect>
+                                                       <![endif]-->
+                                                        </div>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height=3D"24" style=3D"=
+font-size: 24px; line-height: 24px; -mso-line-height: 24px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td align=3D"center" valign=
+=3D"bottom" style=3D"-webkit-font-smoothing: antialiased;font-family: 'Lyft=
+ProUI-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17p=
+x; line-height: 150%; text-align:center; color:#000001;">
+                                                    <!--=3D=3D=3D=3D=3D=3D=
+=3D=3DCTA=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D-->
+                                                    <center>
+                                                        <div>
+                                                            <!--[if mso]>=
+=20
+                                                         <v:roundrect xmlns=
+:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:o=
+ffice:word" href=3D"https://email.lyftmail.com/c/eJxMkM2OozoQhZ_G7BKVy_8LFi=
+05SFngSC3uRWGDwDaE7jATAQmdPP2ImdZoNqUqfWdx6gtpYwKNSUypElRopYVMLqkwkrfKoBeyg=
+04Z3wblAzUdeOi8VMmQIqAABRyAgpD71isOLbamBdkoHQiH67Nbxma47v3PMbmml2W5zYS9EcwI=
+Zuu67rfABglm0xDiTDBDChQ105pqQTlyyiVh2X0ZCbNbpp6ij8NtISjr-HUjzH73UMXvIqLayDz=
+0hFlX9Dx_vb2cDWNu3y-n4ihccV4d5sKV_63uw13PxfunK4-0-vh_yF8HerJHcOOBVuXheSrzr3=
+w8grMHXo3n16nMn1VPUDD7PWR9nyfCrESOTIFh0gAz2mi5sUfcGCbbm_UY57npYz2ENCjhmdBhh=
+21jdjz6dqd91-y46lDIJgaDmExpfDQ_bvfp8zLMcSIc-r8ul_RfFfN2_1mTR4q_AgAA__-J8YvE=
+" arget=3D"_blank" style=3D"height:50px;v-text-anchor:middle;width:210px;" =
+arcsize=3D"150%" stroke=3D"f" fillcolor=3D"#FFFFFF">
+                                                            <w:anchorlock/>
+                                                            <center>
+                                                            <![endif]-->
+                                                            <a href=3D"http=
+s://email.lyftmail.com/c/eJxMkM2OozoQhZ_G7BKVy_8LFi05SFngSC3uRWGDwDaE7jATAQ=
+mdPP2ImdZoNqUqfWdx6gtpYwKNSUypElRopYVMLqkwkrfKoBeyg04Z3wblAzUdeOi8VMmQIqAAB=
+RyAgpD71isOLbamBdkoHQiH67Nbxma47v3PMbmml2W5zYS9EcwIZuu67rfABglm0xDiTDBDChQ1=
+05pqQTlyyiVh2X0ZCbNbpp6ij8NtISjr-HUjzH73UMXvIqLayDz0hFlX9Dx_vb2cDWNu3y-n4ih=
+ccV4d5sKV_63uw13PxfunK4-0-vh_yF8HerJHcOOBVuXheSrzr3w8grMHXo3n16nMn1VPUDD7PW=
+R9nyfCrESOTIFh0gAz2mi5sUfcGCbbm_UY57npYz2ENCjhmdBhh21jdjz6dqd91-y46lDIJgaDm=
+ExpfDQ_bvfp8zLMcSIc-r8ul_RfFfN2_1mTR4q_AgAA__-J8YvE" target=3D"_blank" styl=
+e=3D"-webkit-font-smoothing: antialiased; font-family: 'LyftProUI-Bold', 'H=
+elvetica Neue', Helvetica, Arial, sans-serif; background-color: #FFFFFF; bo=
+rder-radius: 30px; color: #000001; display: inline-block; font-size: 17px; =
+font-weight: bold; line-height: 50px; text-align: center; text-decoration: =
+none; width: 210px; -webkit-text-size-adjust:none;">Request review
+                                                            </a>
+                                                            <!--[if mso]>=
+=20
+                                                            </center>
+                                                         </v:roundrect>
+                                                       <![endif]-->
+                                                        </div>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height=3D"24" style=3D"=
+font-size: 24px; line-height: 24px; -mso-line-height: 24px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                        </td>
+                                </tr>
+                            </table>
+                           =20
+                           =20
+                            <table class=3D"wrapto600px" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" bgcolor=3D"#F4F4FA" style=3D"background-colo=
+r: #F4F4FA; min-width: 100%; max-width: 600px;">
+                                <tr>
+                                    <td>
+                                        <table cellspacing=3D"0" cellpaddin=
+g=3D"0" align=3D"center" border=3D"0" width=3D"100%" bgcolor=3D"#F4F4FA">
+                                            <tr>
+                                                <td height=3D"30" style=3D"=
+font-size: 30px; line-height: 30px; -mso-line-height: 30px;">&nbsp;</td>
+                                            </tr>
+                                        </table><table cellspacing=3D"0" ce=
+llpadding=3D"0" align=3D"center" class=3D"wrapper wrapto600px" bgcolor=3D"#=
+F4F4FA" style=3D"background-color: #F4F4FA; min-width: 100%; max-width: 600=
+px;">
+                                            <tr>
+                                                <td class=3D"center" style=
+=3D"color: #63637B; text-align: center; padding: 0 25px; -webkit-font-smoot=
+hing: antialiased; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helv=
+etica, Arial, sans-serif; font-size: 13px; line-height: 13px;"> To protect =
+against unauthorized behavior, you may see <a href=3D"https://email.lyftmai=
+l.com/c/eJw8js1qhTAQRp8m2XlJxvwusujGZaFPIJPMeA3VXomp0LcvUuju--DAOZQwkmbJSXu=
+rbfDBOrmm0Qayjgmd95GUhhAMxjHoEYm1s7ImUGCVV0Yprax75OKNypBjVg59IGHU9rP0Hev2KK=
+9dbmnt_RDjm4BJwLQt_dFfAib93j4uAHnD887niU-eKyXyttwVA2SMg-GSh1AWHIxfwDpkigCyJ=
+b7w6_hun2s9uQmjnv_CnlolnhsXrkc_7_835ZXgNwAA___EO0sw" style=3D"color: #ff00b=
+f; text-decoration: underline;" target=3D"_blank">an authorization hold</a>=
+ on your bank statement. This is to verify your payment method and will not=
+ be charged.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table cellspacing=3D"0" cellpaddin=
+g=3D"0" align=3D"center" border=3D"0" width=3D"100%" bgcolor=3D"#F4F4FA">
+                                            <tr>
+                                                <td height=3D"30" style=3D"=
+font-size: 30px; line-height: 30px; -mso-line-height: 30px;">&nbsp;
+                                                </td>
+                                            </tr>
+                                        </table><table width=3D"100%" cells=
+pacing=3D"0" cellpadding=3D"0" align=3D"center" class=3D"wrapper wrapto600p=
+x" bgcolor=3D"#F4F4FA" style=3D"background-color: #F4F4FA; min-width: 100%;=
+ max-width: 600px;">
+                                            <tr>
+                                                <td class=3D"center" style=
+=3D"color: #63637B; text-align: center; padding: 0 25px; -webkit-font-smoot=
+hing: antialiased; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helv=
+etica, Arial, sans-serif; font-size: 13px; line-height: 13px;">Dispatching =
+Base: Tri-City (B03406). Affiliated Base: (B03404)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class=3D"center" style=
+=3D"color: #63637B; text-align: center; padding: 0 25px; -webkit-font-smoot=
+hing: antialiased; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helv=
+etica, Arial, sans-serif; font-size: 13px; line-height: 13px;">
+                                                    Vehicle License Number:=
+ T705556C.
+                                                    Driver TLC License: 559=
+2496.
+                                                    </td>
+                                            </tr><tr>
+                                                <td class=3D"center" style=
+=3D"color: #63637B; text-align: center; padding: 0 25px; -webkit-font-smoot=
+hing: antialiased; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helv=
+etica, Arial, sans-serif; font-size: 13px; line-height: 13px;">
+                                                    To submit a complaint t=
+o the NYC TLC, please call 311.
+                                                </td>
+                                            </tr></table>
+                                        <table cellspacing=3D"0" cellpaddin=
+g=3D"0" align=3D"center" border=3D"0" style=3D"background-color: #F4F4FA; m=
+in-width: 100%; max-width: 600px;">
+                                            <tr>
+                                                <td height=3D"30" style=3D"=
+font-size: 30px; line-height: 30px; -mso-line-height: 30px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                           =20
+
+   =20
+<table cellspacing=3D"0" cellpadding=3D"0" align=3D"center" class=3D"wrappe=
+r wrapto600px" bgcolor=3D"#F4F4FA" style=3D"background-color: #F4F4FA; min-=
+width: 100%; max-width: 600px;">
+                                            <tr>
+                                                <td align=3D"center" class=
+=3D"footer center" style=3D"text-align: center;"> <a href=3D"https://email.=
+lyftmail.com/c/eJw8kE-Lo0wQxj9Ne0vorv5_6MMLJi85tLBDlqAXUbs0JvauqJOd6U-_uDvs=
+pajiV_x4eIJrbGCYoWNaMmm0kSq7O616xKARLTeCoQiGSWCs60PbAnCbjQ4oSKqpoJRRqY5tpwV=
+tobUtVY02gQg6ffZbbMbp2P2M2eTu2zavhP9H4EzgfMdpPu4fOyX8XOPHTHj-ZdXXP1pZEVD1Og=
+6E50U8_fL_X5hP1VhcT5_lY0g-VU8PJSsfp1TF86O8FZMHD1X89uFvb7FMF1FeL8nDd-Zv1bNIA=
+ytiEX3-Fn06pWIgIHn-NVT9vi6E5woEcE0tV5Zya6xRO3vhziDbM9cR17UZsB6DC1p2XJpwgLax=
+B4FdezBd3xyE7kGqBoMFyBaHr-bH_L487-OKCxF0-NfM5pYxYL1gh-O8rfv9d81eDn4HAAD___g=
+vfqo" style=3D"color: #ff00bf; text-align: center; padding: 0 25px; -webkit=
+-font-smoothing: antialiased; font-family: 'LyftProUI-SemiBold', 'Helvetica=
+ Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 17px; t=
+ext-decoration: none;" target=3D"_blank">Help Center</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table align=3D"center" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" bgcolor=3D"#F4F4FA" style=3D"backgrou=
+nd-color: #F4F4FA; min-width: 100%; max-width: 600px;">
+                                            <tr>
+                                                <td height=3D"15" style=3D"=
+height: 15px;"></td>
+                                            </tr>
+                                        </table>
+                                        <table cellspacing=3D"0" cellpaddin=
+g=3D"0" align=3D"center" class=3D"wrapto600px wrapper" bgcolor=3D"#F4F4FA" =
+style=3D"background-color: #F4F4FA; min-width: 100%; max-width: 600px;"><tr=
+>
+                                                <td align=3D"center" class=
+=3D"center" style=3D"text-align: center; padding: 0 25px; -webkit-font-smoo=
+thing: antialiased; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Hel=
+vetica, Arial, sans-serif; font-size: 15px; line-height: 15px; text-decorat=
+ion: none; color: #63637B;"> Receipt #2101283881851424146
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table cellspacing=3D"0=
+" cellpadding=3D"0" align=3D"center" border=3D"0" bgcolor=3D"#F4F4FA" style=
+=3D"background-color: #F4F4FA; min-width: 100%; max-width: 600px;">
+                                                        <tr>
+                                                            <td height=3D"1=
+2" style=3D"font-size: 12px; line-height: 12px; -mso-line-height: 12px;">&n=
+bsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=3D"center" class=
+=3D"center" style=3D"text-align: center; padding: 0 25px; -webkit-font-smoo=
+thing: antialiased; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Hel=
+vetica, Arial, sans-serif; font-size: 13px; line-height: 13px; text-decorat=
+ion: none; color: #63637B;"> We never share your address with your driver a=
+fter a ride. <br> <a href=3D"https://email.lyftmail.com/c/eJw8jc9uhCAQh58Gb=
+m6GERw8cOjF1zADjCuptkbomn37xjTp7ffnS74ceMxGtARDzjhP3g16DWRtFvG49MLJpOzBjrY3=
+FAci7lPUJSCgAwILYMANj5jIQsQ4RhiYfFYWtvfSdi7bI33vegtra0dV_YfCSeF0XdfjBu5T4VR=
+5kfbW9zLvUis_ZS45ZHKpdz53GHnsrKTY-bRwZ2lBN7DkEVGfQV78dfycn2upcioLz39tC2fJMp=
+-SpByt3v0v6lfA3wAAAP__wG5PLw" style=3D"color: #ff00bf; text-decoration: und=
+erline;" target=3D"_blank">Learn more</a> about our commitment to safety.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table cellspacing=3D"0=
+" cellpadding=3D"0" align=3D"center" border=3D"0" bgcolor=3D"#F4F4FA" style=
+=3D"background-color: #F4F4FA; min-width: 100%; max-width: 600px;">
+                                                        <tr>
+                                                            <td height=3D"1=
+2" style=3D"font-size: 12px; line-height: 12px; -mso-line-height: 12px;">&n=
+bsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=3D"center" class=
+=3D"center" style=3D"color: #63637B; text-align: center; padding: 0 25px; -=
+webkit-font-smoothing: antialiased; font-family: 'LyftProUI-Regular', 'Helv=
+etica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 13=
+px;">
+                                                   =20
+                                                    <a href=3D"https://emai=
+l.lyftmail.com/c/eJw8jjtuhDAUAE9jd6Dnh38ULtLsNZA_D7ACi2U7i_b20SpSuplipEnOz0=
+kQJyeMEsoaqzTfnY9-JWNnqSeaJmOlkEaiDhrEagIQzw4BFRiQAAKUHkM0EgKGOYD2xiYm4Xiv_=
+fT5GON18sPtvZfGpi-GD4aP-77Hq9Cz9UrUT1_Gq24MH_Eq75q3vfNPvpzUmt9oycklo-KkbBow=
+-HmQFMNg4-oHaVZU2lOaEXl19PLP8lO_99yoMgnb_0J3NSdaKkXKpbeP_yF_OfwNAAD__5e7U8E=
+" target=3D"_blank" style=3D"color: #ff00bf; text-decoration: underline; ">=
+&copy; OpenStreetMap</a>
+                                                   =20
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- protect -->
+                                        <div class=3D"h-expense-transaction=
+" style=3D"display: none; font-size: 1px; color: #FFFF;">
+                                            <span class=3D"p-person-email">=
+evanpurkhiser@gmail.com</span>
+                                            <span class=3D"parent-organizat=
+ion-id"></span>
+                                            <span class=3D"p-merchant">Lyft=
+</span>
+                                            <span class=3D"dt-transaction">=
+2025-07-03</span>
+                                            <span class=3D"p-currency">USD<=
+/span>
+                                            <span class=3D"p-amount">49.19<=
+/span>
+                                            <span class=3D"p-expense-code">=
+Taxi</span>
+                                            <span class=3D"p-unique-referen=
+ce">2101283881851424146</span>
+                                            <span class=3D"p-description"><=
+/span>
+                                            <span class=3D"p-allocation-cod=
+e"></span>
+                                            <span class=3D"p-tip-amount">0.=
+00</span>
+                                        </div>
+                                        <!-- endprotect -->
+                                       =20
+                                       =20
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" bgcolor=3D"#F4F4FA" style=3D"background-color: #F4F4FA=
+; min-width: 100%; max-width: 600px;">
+                                            <tr>
+                                                <td height=3D"20" style=3D"=
+height: 20px;"></td>
+                                            </tr>
+                                        </table>
+                                        <table class=3D"wrapto600px" align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#F4=
+F4FA" style=3D"background-color: #F4F4FA; min-width: 100%;">
+                                            <tr>
+                                                <td width=3D"5%" style=3D"b=
+ackground-color: #F4F4FA;">
+                                                    &nbsp;
+                                                </td>
+                                                <td width=3D"90%" align=3D"=
+center" valign=3D"bottom">
+                                                    <table width=3D"100%" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" style=3D"m=
+argin:0 auto; mso-table-lspace:0; mso-table-rspace:0; table-layout:fixed;">
+                                                        <tr>
+                                                            <td align=3D"ce=
+nter" height=3D"25" style=3D"mso-line-height-rule:exactly; color:#63637B; f=
+ont-family:'LyftProUI-SemiBold', 'Helvetica Neue', Helvetica, Arial, sans-s=
+erif; font-size: 17px; font-weight:400; line-height:25px; text-align: cente=
+r;">&#169; 2025 Lyft, Inc.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align=3D"ce=
+nter" style=3D"mso-line-height-rule:exactly; color:#63637B; font-family:'Ly=
+ftProUI-SemiBold', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-siz=
+e: 15px; line-height: 17px;" class=3D"footer-text-small"> <a style=3D"text-=
+decoration: none; color: #63637B;">548 Market St., P.O. Box 68514</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align=3D"ce=
+nter" style=3D"mso-line-height-rule:exactly; color: #63637B; font-family:'L=
+yftProUI-SemiBold', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-si=
+ze: 15px; line-height: 17px;" class=3D"footer-text-small"> <a style=3D"text=
+-decoration: none; color: #63637B;">San Francisco, CA 94104<br>CPUC ID No. =
+TCP0032513 - P</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align=3D"ce=
+nter" valign=3D"top" style=3D"mso-line-height-rule:exactly; color: #63637B;=
+ font-family:'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-=
+serif; font-size:14px;">
+                                                                <!-- IS had=
+ empty something here -->
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align=3D"ce=
+nter" height=3D"25" style=3D"mso-line-height-rule:exactly; color:#63637B; f=
+ont-family:'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-se=
+rif; font-size:14px">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align=3D"ce=
+nter" style=3D"mso-line-height-rule:exactly; color:#63637B; font-family:'Ly=
+ftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size=
+: 14px; line-height: 17px;" class=3D"footer-text-small"> <a class=3D"footer=
+-text-small" href=3D"https://email.lyftmail.com/c/eJw8jkGOhCAURE8DOw1-QGDBY=
+pKJ1zAf-LZkdNoAtpnbT0w6vazUS9VLHl0aiJMfjB60NVaPfPUoFGqp7WilxaQXRQnAAKJzARwq=
+nj0I0MIIJcQg9NiHaJQIEFwQIxqbmBLb39J2zFsfnzvf_NraUZn8YjAxmK7r6m_gLhlMEQtRqUx=
+OZ9vn-jxLJCa_C0XKR-M3Oe9UKz5ozskno6PUNnUQ0HWKYuhsXLBTZgE9IiUHwIunF_4eZ_lZc6=
+XClHh8dJovOdH83q93fl-9PPwHAAD__3XzV5Q" style=3D"mso-line-height-rule:exactl=
+y; color:#63637B; font-family:'LyftProUI-Regular', 'Helvetica Neue', Helvet=
+ica, Arial, sans-serif; text-decoration:none; font-size: 14px" target=3D"_b=
+lank"> Work at Lyft </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align=3D"ce=
+nter" style=3D"mso-line-height-rule:exactly; color:#63637B; font-family:'Ly=
+ftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size=
+:14px; line-height: 17px;" class=3D"footer-text-small"> <a class=3D"footer-=
+text-small" href=3D"https://email.lyftmail.com/c/eJw8jsuK8zAUg5_G3rmcnPi68O=
+KHn7xG8OW4MdNMi-0mzNsPgTJL6ROSsg8uT8TJT0ZNyhqrNN88aFVydq5oqSEZDBECKFmMtdGQj=
+bx6BFRgQAJMoPQtJiMhYnQRdDA2MwmPnzL2UB-39Nz5w29jvDqb_zFcGC7ned6uwAUZLrnVg8RZ=
+xyYul83Le-xrf75bIjb_b5Sovga_2LpT7-FOa80-G5VmZbPAGJyQlKKwqQQhTUGlA2WHyJunI3y=
+_3u1rq50ak3D_uzV8q5nWT3-_9Gfq8PgbAAD__5zkWtk" style=3D"mso-line-height-rule=
+:exactly; color:#63637B; font-family:'LyftProUI-Regular', 'Helvetica Neue',=
+ Helvetica, Arial, sans-serif; text-decoration:none; font-size:14px" target=
+=3D"_blank"> Become a Driver </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width=3D"5%" style=3D"b=
+ackground-color: #F4F4FA;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" bgcolor=3D"#F4F4FA" style=3D"background-color: #F4F4FA=
+; min-width: 100%; max-width: 600px;">
+                                            <tr>
+                                                <td height=3D"20" style=3D"=
+height: 20px;"></td>
+                                            </tr>
+                                        </table>
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+         </tr>
+      </table>
+        <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+    <img width=3D"1" height=3D"1" alt=3D"" src=3D"https://email.lyftmail.co=
+m/o/eJw8zEFu4zAMQNHTRDsHNIcUpYXOYlAilQgTt4HsBujti6BAd_9tvhXNtnrwsgqvnCRxDPc=
+ScyLhzAmRKCm0XqtIl85oWTuGURCQQYAAVuB4rU0IKtZcIaokuxA8vvu563hc2-ce3th2Pw69-T=
+asmHD7x8kWrJoX8laX1LouJB05qltGDLP4Sz-eX_P_fRw-LwS3v-FZ5jDfpjcfz_N4-zfDq-BPA=
+AAA__-19kH7"></body>
+</html>
