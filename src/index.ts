@@ -3,11 +3,16 @@ import PostalMime, {Email} from 'postal-mime';
 
 import {amazonProcessor} from 'src/amazon';
 import {lyftBikeProcessor} from 'src/lyft-bike';
-import {EmailProcessor, LunchMoneyAction} from 'src/types';
+import {lyftRideProcessor} from 'src/lyft-ride';
 
 import {processActions} from './lunchmoney';
+import {EmailProcessor, LunchMoneyAction} from './types';
 
-let EMAIL_PROCESSORS: EmailProcessor[] = [amazonProcessor, lyftBikeProcessor];
+let EMAIL_PROCESSORS: EmailProcessor[] = [
+  amazonProcessor,
+  lyftBikeProcessor,
+  lyftRideProcessor,
+];
 
 /**
  * Used in tests. replaces all email processors
