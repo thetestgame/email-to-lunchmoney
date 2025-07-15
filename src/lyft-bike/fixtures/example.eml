@@ -1,69 +1,8 @@
-Delivered-To: evanpurkhiser@gmail.com
-Received: by 2002:a17:505:2c8d:b0:1cd2:b196:9bab with SMTP id xx13csp8778797njc;
-        Tue, 8 Jul 2025 09:54:06 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IFQoRVy+gN7/ghXTJ1YJDaxbl80Ney0px5J40O+oLyVcM0Muxp4oPIFoxy3TAvQ3+6fVsYz
-X-Received: by 2002:a17:902:db07:b0:235:1706:2002 with SMTP id d9443c01a7336-23c873ad9dcmr262127875ad.0.1751993645700;
-        Tue, 08 Jul 2025 09:54:05 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1751993645; cv=none;
-        d=google.com; s=arc-20240605;
-        b=T3oqW8VNuz9mzZq2tI2ORlM7HWK+ZXhBJr7LtVo53vRBGtN9mFoEs0jb4fEtJthfwj
-         EMj/DNWzsVBlfE+wNCAWr4Y9c3XjEvv1LdC7S71PeJ8XESA21+1Fim4MQdKY4EoQ3rm3
-         cmZwYObk/5vU7pWX4PNYGO/YF474wwtfwqO4m3trWMhL3r+WCWhpGYIf31qhLcgNy9My
-         fmb+5TfO1hBTsGBfrCOBePlZerxk5p6JQD/ODWyTSMO6m7JZYwW6WQdZvrNomzIGYZjW
-         m/pz+yT75r3fa55nxeZ8nXFKZYU1mbbBX+9wkHbugpbVHjSknjcjmSKf89tv2a8/jsd/
-         UBEQ==
-ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
-        h=content-transfer-encoding:message-id:to:from:subject:mime-version
-         :date:sender:dkim-signature:dkim-signature;
-        bh=qFtYUlwXngOugIXEQOsODl3yWBDScmBQU5lQENL1+y4=;
-        fh=169V9/7R5Hr0c84w09Eb6qts8GXB7/FdpMEMd03Gbs8=;
-        b=K1+l73VRFc6xENRnCDtZVv3++2Pn4JzRUr1uTqPGYNmzwjTxzwf2y3fVXufYiXgoWF
-         hUKvYo2MLcQt2/gwI19s39b0t49JNtFy5oaE7qvgFt2W75/JH0XUu3qxIB8hyAZxSvL6
-         2ly5cX+1U50+wobT1dfHqu2+uAjI51+eR1N2KfF9g2TdWfyi+WqL/5x9T4IDzqgQ9dWj
-         n9MaNvqOKPGNoSQ8OZDDrEIwgveAcahn0cKn8paOrLWImoIIbUC3Qqcvmsp9XfHsjUkd
-         e67Tn5Mz8MFfETN5ECMfec/3TTutKxSjubffmUtUdOodreokTXo5KnmbC2YpSnVHWtXQ
-         aMUg==;
-        dara=google.com
-ARC-Authentication-Results: i=1; mx.google.com;
-       dkim=pass header.i=@lyftmail.com header.s=mg header.b=pYND4iig;
-       dkim=pass header.i=@mailgun.org header.s=mg header.b=OtWaz9TA;
-       spf=pass (google.com: domain of bounce+6ebad7.a9d1e-evanpurkhiser=gmail.com@lyftmail.com designates 161.38.201.151 as permitted sender) smtp.mailfrom="bounce+6ebad7.a9d1e-evanpurkhiser=gmail.com@lyftmail.com";
-       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=lyftmail.com
-Return-Path: <bounce+6ebad7.a9d1e-evanpurkhiser=gmail.com@lyftmail.com>
-Received: from m201-151.mailgun.net (m201-151.mailgun.net. [161.38.201.151])
-        by mx.google.com with UTF8SMTPS id d9443c01a7336-23c8454f723si135311095ad.450.2025.07.08.09.54.04
-        for <evanpurkhiser@gmail.com>
-        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
-        Tue, 08 Jul 2025 09:54:05 -0700 (PDT)
-Received-SPF: pass (google.com: domain of bounce+6ebad7.a9d1e-evanpurkhiser=gmail.com@lyftmail.com designates 161.38.201.151 as permitted sender) client-ip=161.38.201.151;
-Authentication-Results: mx.google.com;
-       dkim=pass header.i=@lyftmail.com header.s=mg header.b=pYND4iig;
-       dkim=pass header.i=@mailgun.org header.s=mg header.b=OtWaz9TA;
-       spf=pass (google.com: domain of bounce+6ebad7.a9d1e-evanpurkhiser=gmail.com@lyftmail.com designates 161.38.201.151 as permitted sender) smtp.mailfrom="bounce+6ebad7.a9d1e-evanpurkhiser=gmail.com@lyftmail.com";
-       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=lyftmail.com
-DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=lyftmail.com; q=dns/txt; s=mg; t=1751993644; x=1752000844;
- h=Content-Transfer-Encoding: Content-Type: Message-Id: To: To: From: From: Subject: Subject: Mime-Version: Date: Sender: Sender: X-Feedback-Id;
- bh=qFtYUlwXngOugIXEQOsODl3yWBDScmBQU5lQENL1+y4=;
- b=pYND4iigGH1X5oSEoGwTqO7jzWvMfRR8RlhPOKu1tKRA5TG0dwQg6qk6yB4rZV6fA/Fx0pawbXAKmxfWsvgKIJK/4A73PfnHgUmI0UzfwPqab1CKNcvPY+WIwIRyrXc7OS0owIhWUfvhF4NzylYLP/uq9h389QHcMJ/jSVRfXLI=
-DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg; t=1751993644; x=1752000844;
- h=Content-Transfer-Encoding: Content-Type: Message-Id: To: To: From: From: Subject: Subject: Mime-Version: Date: Sender: Sender: X-Feedback-Id;
- bh=qFtYUlwXngOugIXEQOsODl3yWBDScmBQU5lQENL1+y4=;
- b=OtWaz9TAMlJWaY5jaY7IYZ2C3U3W66jM/vzqGP1E+tnhbzvToCoZZvRuYLshei0A9jata1nbrJ9+F0Pr+m+72pfSzFTg9CwlKKpNkA5Nb5+YJG5dR/nh5Qrz1uFudhsxsA6HCBZL+3CBJP5tThVC38U3RD68TVuJ3J+H0/dDBJE=
-X-Mailgun-Sid: WyI3ZjNjMSIsImV2YW5wdXJraGlzZXJAZ21haWwuY29tIiwiYTlkMWUiXQ==
-X-Feedback-Id: no-reply@lyftmail.com:rideable_ride_receipts-receipt:5266f7d75a7618418e1e4cef:mailgun
-Received: by 04eff1a42c38 with HTTP id 686d4d2c19f125aa4ceb775b; Tue, 08 Jul 2025
- 16:54:04 GMT
-X-Mailgun-Sending-Ip: 161.38.201.151
-Sender: no-reply@lyftmail.com
 Date: Tue, 08 Jul 2025 16:54:04 +0000
-Mime-Version: 1.0
-Subject: Your Lyft Bike ride
 From: Lyft Receipts <no-reply@lyftmail.com>
 To: evanpurkhiser@gmail.com
-X-Mailgun-Tag: rideable_ride_receipts
-X-Mailgun-Tag: receipt
-X-Mailgun-Variables: {"lyft_message_id": "f0f601f9-48b3-446e-9db1-b7352771b3e5"}
-Message-Id: <20250708165404.cd900fdd4f7ae6d8@lyftmail.com>
+Subject: Your Lyft Bike ride
+Mime-Version: 1.0
 Content-Type: text/html; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 

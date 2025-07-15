@@ -1,64 +1,6 @@
-Delivered-To: evanpurkhiser@gmail.com
-Received: by 2002:a17:504:54d5:b0:1cd2:b196:9bab with SMTP id s21csp1704261njk;
-        Sun, 15 Jun 2025 15:18:00 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IGhSrcfPRaQC3z+vg3XdyXbiLDlF7doG4mhGWv3Er5IuhTTc6nkyEVZ2mVD7MrWzAdyYxLr
-X-Received: by 2002:a05:620a:d94:b0:7c5:65ab:5001 with SMTP id af79cd13be357-7d3c6cf0804mr1031688685a.39.1750025880490;
-        Sun, 15 Jun 2025 15:18:00 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1750025880; cv=none;
-        d=google.com; s=arc-20240605;
-        b=G6bEeAqFqPZQRhbnUBrfZfqHgK1jztNj4qBpkukob7sS1FyBjUtIoQUdb/of4BqQJC
-         UnJapZvUjZVuy+m3rN5/0vA8syfwBem71lLZPDsNMdgpfe+vO73KEG4uwymTGS1hrUoK
-         Q6KgTa3UYW+s1H6xkzYNVGOoy3xpBiEmqw2nDKV42cnYFPznuwY9RdWmqr/Kct8t5qhO
-         ZLYB6gMP5exU3goJlfqWdapo6rOYcirncFO02+1dN1tdkc0SS4m7zPDzDYWmCy9/1Iax
-         QFyDv0cDiur+OT4akSJe5aGmdx+Ua7hSj4pt2C4Em5utFL7csaQwf9wKSjYYBaF6ht5B
-         8IMg==
-ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
-        h=feedback-id:bounces-to:mime-version:subject:message-id:to:from:date
-         :dkim-signature:dkim-signature;
-        bh=SyVIpUPnAbfxCCNWNObPUgsf4nWt5PArmv8bLFjeL5g=;
-        fh=169V9/7R5Hr0c84w09Eb6qts8GXB7/FdpMEMd03Gbs8=;
-        b=kYtz+hyduPFRrIuwWsmDuzDUinX/HB271fcnxHHUcngHfB/ol7e9agaUMan6i1zSUX
-         GxKmmBwctNXTFO1JT9Cqtp8ocku8se+JqPSfZf7mLB5CwEml1GEbhQWtQTJo7XOVT6yu
-         jKeOSMBxlkVgS/YgsUv1hiCbKKuzSy+BqEI+32P6Unk87USjsiJVWMpurG9S47dqoQZT
-         CNCgO82ka4dK9MqKw8YJkwe72tQvA0/taMlSxlmHeR2opNCAvXfnClIjtXNoeFjx2LuU
-         Z1Hy44k+p1HBkp53onNCQpJJ17Ru0UFk//YQUhrClbuTZyEGHz4ZJBzTFxF8YaPXyjGm
-         vDQA==;
-        dara=google.com
-ARC-Authentication-Results: i=1; mx.google.com;
-       dkim=pass header.i=@amazon.com header.s=eaxkvsyelrnxjh4cicqyjjmtjpetuwjx header.b=xi7UgA1d;
-       dkim=pass header.i=@amazonses.com header.s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw header.b=tX694XS0;
-       spf=pass (google.com: domain of 202506152217594f90d525eb234f0e88c8af80b260p0na-c39zak9dxfbm50@bounces.amazon.com designates 54.240.13.41 as permitted sender) smtp.mailfrom=202506152217594f90d525eb234f0e88c8af80b260p0na-C39ZAK9DXFBM50@bounces.amazon.com;
-       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=amazon.com
-Return-Path: <202506152217594f90d525eb234f0e88c8af80b260p0na-C39ZAK9DXFBM50@bounces.amazon.com>
-Received: from a13-41.smtp-out.amazonses.com (a13-41.smtp-out.amazonses.com. [54.240.13.41])
-        by mx.google.com with ESMTPS id af79cd13be357-7d3b8ece028si853566085a.313.2025.06.15.15.18.00
-        for <evanpurkhiser@gmail.com>
-        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
-        Sun, 15 Jun 2025 15:18:00 -0700 (PDT)
-Received-SPF: pass (google.com: domain of 202506152217594f90d525eb234f0e88c8af80b260p0na-c39zak9dxfbm50@bounces.amazon.com designates 54.240.13.41 as permitted sender) client-ip=54.240.13.41;
-Authentication-Results: mx.google.com;
-       dkim=pass header.i=@amazon.com header.s=eaxkvsyelrnxjh4cicqyjjmtjpetuwjx header.b=xi7UgA1d;
-       dkim=pass header.i=@amazonses.com header.s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw header.b=tX694XS0;
-       spf=pass (google.com: domain of 202506152217594f90d525eb234f0e88c8af80b260p0na-c39zak9dxfbm50@bounces.amazon.com designates 54.240.13.41 as permitted sender) smtp.mailfrom=202506152217594f90d525eb234f0e88c8af80b260p0na-C39ZAK9DXFBM50@bounces.amazon.com;
-       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=amazon.com
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
-	s=eaxkvsyelrnxjh4cicqyjjmtjpetuwjx; d=amazon.com; t=1750025880;
-	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type;
-	bh=F/DW5rY4GryoP2X7DGj8YnsoPhul9jDnkTU/mAsBI4U=;
-	b=xi7UgA1d9Nh67FHnIFP/FIT28nGWDj7cVJB9b8HxEGsOe3e6PlQYzzEBPqofmOIm
-	HsRzPgdCS4UdU3CerK8ZPVEq9K7BwozmM/hzmW99y/EQMJdgjoTm9+DqreVdfgSixP0
-	L5XMdJ6gLBFi3UaB/RAlndDX2ADDFh6OhQjz9EpI=
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
-	s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw; d=amazonses.com; t=1750025880;
-	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:Feedback-ID;
-	bh=F/DW5rY4GryoP2X7DGj8YnsoPhul9jDnkTU/mAsBI4U=;
-	b=tX694XS0NnPsI5svFDRftPUpWHcUh1JO3gxNKzvJ/qRE4FGYdug9wbjNV2qkaxFp
-	w2AbF4Lws6Wv/G9k2YXCeBoNlel4ntKh+5KSnFoJnfE5EfpggS+sEspqN9f0zCECFub
-	ysd6h9OW20H53TKFQCLCHZ+Y3xouGt05aNvXKxgM=
 Date: Sun, 15 Jun 2025 22:18:00 +0000
 From: "Amazon.com" <auto-confirm@amazon.com>
 To: evanpurkhiser@gmail.com
-Message-ID: <0100019775abc224-2b23f962-71eb-4b89-9eb0-b553a8169753-000000@email.amazonses.com>
 Subject: Ordered: "Bathroom Faucet Brushed..." and 1 more item
 MIME-Version: 1.0
 Content-Type: multipart/alternative; 

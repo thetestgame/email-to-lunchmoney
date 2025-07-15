@@ -1,69 +1,10 @@
-Delivered-To: evanpurkhiser@gmail.com
-Received: by 2002:a17:505:2011:b0:1cd2:b196:9bab with SMTP id g17csp2756399nja;
-        Tue, 15 Jul 2025 13:14:36 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IHxuxrgOgQhfT4bSvJQnrT0Pev/pTLbPh+f5jREjiMM2NrIGWYTF41mic6nRZaaPcB60jEr
-X-Received: by 2002:a05:6000:460a:b0:3a4:d02e:84af with SMTP id ffacd0b85a97d-3b60dd8efbemr360870f8f.58.1752610475950;
-        Tue, 15 Jul 2025 13:14:35 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1752610475; cv=none;
-        d=google.com; s=arc-20240605;
-        b=lixSiAJ4TD+cau6McPdf+77/psBFyapXHlmYohUWnmFxB/tjM6XBrFLEuTx411y23r
-         6QQDliOq450K2HwHjVBJVOW+33GI9GWZA+vqY8enJ9QjCDsImRS9wDPHeM02JsXRk0C3
-         RIhk2hndjYv5zwh9TRDgBR9+HsxrnZVNfcXq399eCMdMbCxGVCSYUbIsbRBarrxPdV1D
-         8eIgnTVQqaIVEqLzOxdwHfDq4bigNsMP6Q0FS4SKQIQfaQTaGlXZlxxDLx4jZAF0UOq/
-         +Xdu7Ae1BfaNTcH74nkK/DXUycHaNXJi+07z7P/dFO4/5ahfVAn16gOEZm7ul+u7dI0E
-         e0Dw==
-ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
-        h=mime-version:content-transfer-encoding:list-unsubscribe:feedback-id
-         :list-unsubscribe-post:origin-messageid:message-id:to:from:subject
-         :date:dkim-signature;
-        bh=Xh4Ehv5Kh1Tf6ep6KeVMMq97dKTqQOuZ29Xv3sdFDzg=;
-        fh=A8yyCr7RajiwgrvhL7BpUL0nsR4GDZXz/mMtY7fYa9g=;
-        b=R1qyj1ePMLh9tfHOh0H5KhX1QYsh1doSSHtgP4arSyPulQsGonHDhi0TnLTtHc2duy
-         zmG6nr+CT10O2QMNincc8C//Mtf1bnc+SNC426jymIuf+BvbfIb8S1PF/U1gwlUeybp3
-         m27BRDWOOzL8gkliOJcx5OOBoZFWhujqyR5NCC2oC1Si0zna4nE8lYMsfNdZuUB4xqA0
-         OeeDQiZzniCo3QKfPiNcED+3CqRuf8B+sWCzlOC/pVIglFC8ZAfPqyxMng2+f5ofgVOD
-         KFL4qUO3FjDK+/AM15fJzATQcaNw7szz5Z1YQebMMQ/j55iG0JAoEXWJI7Orm/37Gthl
-         lGOg==;
-        dara=google.com
-ARC-Authentication-Results: i=1; mx.google.com;
-       dkim=pass header.i=@lyftmail.com header.s=brevo1 header.b="mhVNIA/z";
-       spf=pass (google.com: domain of bounces-325995142-496308566@bv-txn3.lyftmail.com designates 77.32.149.7 as permitted sender) smtp.mailfrom=bounces-325995142-496308566@bv-txn3.lyftmail.com;
-       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=lyftmail.com
-Return-Path: <bounces-325995142-496308566@bv-txn3.lyftmail.com>
-Received: from shared-p100-i7.d.sp1-brevo.net (shared-p100-i7.d.sp1-brevo.net. [77.32.149.7])
-        by mx.google.com with ESMTPS id ffacd0b85a97d-3b5e8e20a14si8620088f8f.275.2025.07.15.13.14.35
-        for <evanpurkhiser@gmail.com>
-        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
-        Tue, 15 Jul 2025 13:14:35 -0700 (PDT)
-Received-SPF: pass (google.com: domain of bounces-325995142-496308566@bv-txn3.lyftmail.com designates 77.32.149.7 as permitted sender) client-ip=77.32.149.7;
-Authentication-Results: mx.google.com;
-       dkim=pass header.i=@lyftmail.com header.s=brevo1 header.b="mhVNIA/z";
-       spf=pass (google.com: domain of bounces-325995142-496308566@bv-txn3.lyftmail.com designates 77.32.149.7 as permitted sender) smtp.mailfrom=bounces-325995142-496308566@bv-txn3.lyftmail.com;
-       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=lyftmail.com
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=lyftmail.com;
- q=dns/txt; s=brevo1; bh=Xh4Ehv5Kh1Tf6ep6KeVMMq97dKTqQOuZ29Xv3sdFDzg=;
- h=from:subject:date:to:mime-version:content-type:content-transfer-encoding:list-unsubscribe:x-csa-complaints:list-unsubscribe-post:message-id:x-sib-id:feedback-id;
-        b=mhVNIA/z56hAx6SwlkKobAPq26avcZbZkew2HtMbdTm25Xy4IPBooK9KWBMNNHLp2p7cPvMKB6j2
-        8Ul/70ysV43FZ4F9dzefzpf79ry40X2Rf6EJ8Ub0KDEYn1zZwa55X3IcyrmQLvVqGBwRcP3gQvBv
-        NPVkJIsJQBXBcGmTAamhDf7baErwjTTM/63caymmeW3FgF4KjHPFMYyApnZu+aY8PFVfJ0kwYJQe
-        3g35Npm47aj4p/Ae6ZU6hM4DFJE2GkuMmBpRLN/6Gk6TuAgIvA8Sz3cKxoV7H9KovA0lusKg6lnV
-        uG2pV+OVbwH5Rw7qIDohJ8QclC9fKYqFjmbZ0A==
-X-CSA-Complaints: csa-complaints@eco.de
-X-Mailin-EID: MzI1OTk1MTQyfmV2YW5wdXJraGlzZXJAZ21haWwuY29tfjwyMDI1MDcxNTIwMTQuOTcyNTk3MzkyMDdAc210cC1yZWxheS5tYWlsaW4uZnI%2BfmJ2LXR4bjMubHlmdG1haWwuY29t
 Date: Tue, 15 Jul 2025 20:14:35 +0000
-Subject: Your ride with Ron on July 15
 From: "Lyft Receipts" <no-reply@lyftmail.com>
 To: <evanpurkhiser@gmail.com>
-X-sib-id: ksoJ3lS4pvP1a8e2PEA7iO4voHlZ7jAGyqhGgNNdjSB4WxW2gyPgOQSpmHY179mLJE53WMEAZZLMf5g71L03iNb3GoJx720chLe-gnTIp0aDMYA3K23XR2YihRZcIbtX7jkogaxAsXENzhzOhqo0ZfEGQYNgff4E-YTG909iHav-oXmeew
-Message-Id: <202507152014.97259739207@smtp-relay.mailin.fr>
-Origin-messageId: <202507152014.97259739207@smtp-relay.mailin.fr>
-List-Unsubscribe-Post: List-Unsubscribe=One-Click
-Feedback-ID: 153.92.233.106:9121271_-1:9121271:Sendinblue
-List-Unsubscribe: <https://r.bv-txn3.lyftmail.com/tr/un/li/1FnR9AuqqikM8X9gBa8IWsKvHF_WH8xuHiXglFIz9WIzMvk8BpXnp44ggx5Zv4cWvpd5K5y0yI-WUY_Z5VoBKbx4l0Dst8r1H3J6iWiOh6sWeTpIg8aK8ZY9Iy_9zoHpZ44ieM4xFWwC9V3PmKDjR_zv8YrAhBoyMiZN0gG4hRA5SPAbP3-A-B9vqLjAU3DVENrYHDa0UwTovmjFOjRjO5OwAsBKfarhfc7C2pyISbfDLw>
-Content-Transfer-Encoding:quoted-printable
-X-Api-Version:v3
-Content-Type:text/html; charset=UTF-8
+Subject: Your ride with Ron on July 15
 Mime-Version:1.0
+Content-Transfer-Encoding:quoted-printable
+Content-Type:text/html; charset=UTF-8
 
 <!-- Automatically generated by make_email v1.4.1. Do not edit this file. -=
 -><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://ww=
