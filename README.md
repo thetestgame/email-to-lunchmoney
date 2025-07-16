@@ -25,10 +25,10 @@ This may be useful for those who want to answer questions like:
 
 | Payee         | Amount | Notes |
 |---------------|--------|-------|
-| Amazon (split)| $28.22 | Amazon Mise En Scene Hair Serum (113-7795219-8445010) |
-| Amazon (split)| $14.99 | Amazon CERRXIAN power adapter (113-5327144-6942647) |
-| Lyft          | $8.50  | Lyft 186 States St, San Francisco, CA → 882 Sutter St, San Francisco, CA [16:40, 27m] |
-| Apple         | $9.99  | Apple iCloud+ with 2TB storage |
+| Amazon (split)| $28.22 | Mise En Scene Hair Serum (113-7795219-8445010) |
+| Amazon (split)| $14.99 | CERRXIAN power adapter (113-5327144-6942647) |
+| Lyft          | $8.50  | 186 States St, San Francisco, CA → 882 Sutter St, San Francisco, CA [16:40, 27m] |
+| Apple         | $9.99  | iCloud+ with 2TB storage |
 
 ## How it works
 
