@@ -1,4 +1,4 @@
-# Email to Lunch Money
+[!logo](.github/logo.svg)
 
 A small Cloudflare worker application that accepts various receipt emails via
 an email trigger and associates metadata from the receipt to transactions in
@@ -18,18 +18,18 @@ Support for the following emails is currently implemented
   Money transactions split into a single transaction for each item. A note is
   added to transactions with a shortened item name and order number.
 
-- Lyft Bike rides. A note is added to each transaction with the start and end
-  location, time of ride, and duration.
+- Lyft rideshare and Bike rides. A note is added to each transaction with the
+  start and end location, time of ride, and duration.
+
+- Apple receipts. Adds the name of the app, subscription, or in-app purchase as
+  a note to the Apple transaction.
 
 Some emails I would like to add
 
-- Lyft and Uber rides. Basically the same as the Lyft Bike rides
+- Uber rides. Basically the same as the Lyft rides
 
 - All square receipt emails. Since many places use Square's point of sales
   terminals, we can record receipt details on transactions.
-
-- Apple receipts. These transactions are always a bit frustrating since it
-  might be for an App Store purchase or a recurring subscription.
 
 ### Workflow
 
