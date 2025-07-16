@@ -4,7 +4,7 @@
   <img alt="Email to Lunch Money" src=".github/logo.svg">
 </picture>
 
-[![Test Status](https://github.com/evanpurkhiser/email-to-lunchmoney/actions/workflows/test.yml/badge.svg)](https://github.com/evanpurkhiser/email-to-lunchmoney/actions/workflows/test.yml)
+[![Build Status](https://github.com/evanpurkhiser/email-to-lunchmoney/actions/workflows/main.yml/badge.svg)](https://github.com/evanpurkhiser/email-to-lunchmoney/actions/workflows/main.yml)
 
 A small Cloudflare worker application that accepts various receipt emails via
 an email trigger and associates metadata from the receipt to transactions in
