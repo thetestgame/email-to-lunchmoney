@@ -54,7 +54,7 @@ async function processEmail(email: Email, env: Env) {
  * This script receives emails forwarded from my gmail and recordes details
  * about expected transactions that will appear in my lunchmoney.
  */
-const emailHandler: EmailExportedHandler<Env> = async function (message, env, ctx) {
+async function handleMessage(message: ForwardableEmailMessage, env: Env) {
   const forwardedMessage = await PostalMime.parse(message.raw);
   const from = forwardedMessage.from.address;
 
@@ -67,8 +67,8 @@ const emailHandler: EmailExportedHandler<Env> = async function (message, env, ct
   // message as plain text, so we parse the plain text portion
   const originalMessage = await PostalMime.parse(forwardedMessage.text!);
 
-  ctx.waitUntil(processEmail(originalMessage, env));
-};
+  await processEmail(originalMessage, env);
+}
 
 const app: ExportedHandler<Env> = withSentry(
   env => ({
@@ -78,7 +78,7 @@ const app: ExportedHandler<Env> = withSentry(
     sendDefaultPii: true,
   }),
   {
-    email: emailHandler,
+    email: (message, env, ctx) => void ctx.waitUntil(handleMessage(message, env)),
     scheduled: (_controller, env, ctx) => void ctx.waitUntil(processActions(env)),
   }
 );

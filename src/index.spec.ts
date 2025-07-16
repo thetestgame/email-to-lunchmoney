@@ -1,5 +1,5 @@
 import {createExecutionContext, env, waitOnExecutionContext} from 'cloudflare:test';
-import {beforeEach, describe, it, vi} from 'vitest';
+import {beforeEach, describe, expect, it, vi} from 'vitest';
 
 import fixtureEmail from './fixtures/example.eml?raw';
 import worker, {overrideProcessors} from './index';
@@ -28,18 +28,16 @@ function messageMock(content: string): ForwardableEmailMessage {
 }
 
 describe('Email Handler', () => {
+  const exampleAction: LunchMoneyAction = {
+    type: 'update',
+    match: {expectedPayee: 'Example Payee', expectedTotal: 100},
+    note: 'Updated note',
+  };
+
   const exampleProcessor: EmailProcessor = {
     identifier: 'example',
     matchEmail: vi.fn(() => true),
-    process: vi.fn(() => {
-      const action: LunchMoneyAction = {
-        type: 'update',
-        match: {expectedPayee: 'Example Payee', expectedTotal: 100},
-        note: 'Updated note',
-      };
-
-      return Promise.resolve(action);
-    }),
+    process: vi.fn(() => Promise.resolve(exampleAction)),
   };
 
   beforeEach(() => {
@@ -49,12 +47,15 @@ describe('Email Handler', () => {
   it('processes fixture email and stores action in database', async () => {
     const ctx = createExecutionContext();
 
-    // Create a mock email message
     const mockMessage = messageMock(fixtureEmail);
-
-    // Process the email
-    worker.email?.(mockMessage, env, ctx);
+    worker.email!(mockMessage, env, ctx);
 
     await waitOnExecutionContext(ctx);
+
+    const {results} = await env.DB.prepare('SELECT * FROM lunchmoney_actions').all();
+
+    expect(results).toHaveLength(1);
+
+    expect(results[0].action).toEqual(JSON.stringify(exampleAction));
   });
 });
