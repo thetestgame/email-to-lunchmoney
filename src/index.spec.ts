@@ -55,7 +55,6 @@ describe('Email Handler', () => {
     const {results} = await env.DB.prepare('SELECT * FROM lunchmoney_actions').all();
 
     expect(results).toHaveLength(1);
-
     expect(results[0].action).toEqual(JSON.stringify(exampleAction));
   });
 });
