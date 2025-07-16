@@ -1,4 +1,4 @@
-[!logo](.github/logo.svg)
+![Email to Lunch Money](.github/logo.svg)
 
 A small Cloudflare worker application that accepts various receipt emails via
 an email trigger and associates metadata from the receipt to transactions in
