@@ -2,6 +2,7 @@ import {captureException, withSentry} from '@sentry/cloudflare';
 import PostalMime, {Email} from 'postal-mime';
 
 import {amazonProcessor} from 'src/amazon';
+import {appleEmailProcessor} from 'src/apple';
 import {lyftBikeProcessor} from 'src/lyft-bike';
 import {lyftRideProcessor} from 'src/lyft-ride';
 
@@ -12,6 +13,7 @@ let EMAIL_PROCESSORS: EmailProcessor[] = [
   amazonProcessor,
   lyftBikeProcessor,
   lyftRideProcessor,
+  appleEmailProcessor,
 ];
 
 /**
