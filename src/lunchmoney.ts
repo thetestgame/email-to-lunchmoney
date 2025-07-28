@@ -66,7 +66,7 @@ export async function processActions(env: Env) {
       .reverse()
       .find(
         (txn: any) =>
-          txn.notes === '' &&
+          txn.notes === null &&
           txn.payee === action.match.expectedPayee &&
           txn.amount === (action.match.expectedTotal / 100).toFixed(4)
       );
