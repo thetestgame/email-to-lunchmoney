@@ -23,6 +23,10 @@ async function lunchMoneyApi(env: Env, endpoint: string, options: RequestInit = 
   return response.json() as Record<string, any>;
 }
 
+function hasNote(note: string | null) {
+  return note !== null && note !== '';
+}
+
 export async function processActions(env: Env) {
   const stmt = env.DB.prepare(
     'SELECT * FROM lunchmoney_actions ORDER BY date_created DESC'
@@ -57,6 +61,9 @@ export async function processActions(env: Env) {
   // action as well as matching amount
   const processedActionIds: number[] = [];
 
+  // track which transactions we've already assigned
+  const assignedTransactions: number[] = [];
+
   for (const actionRow of actions) {
     const action: LunchMoneyAction = JSON.parse(actionRow.action);
 
@@ -66,7 +73,8 @@ export async function processActions(env: Env) {
       .reverse()
       .find(
         (txn: any) =>
-          txn.notes === null &&
+          !assignedTransactions.includes(txn.id) &&
+          !hasNote(txn.notes) &&
           txn.payee === action.match.expectedPayee &&
           txn.amount === (action.match.expectedTotal / 100).toFixed(4)
       );
@@ -111,6 +119,8 @@ export async function processActions(env: Env) {
           body: JSON.stringify({split}),
         });
       }
+
+      assignedTransactions.push(matchingTransaction.id);
 
       // Record which lm action IDs have been processed so we can bulk remove them
       // from the database at the end
