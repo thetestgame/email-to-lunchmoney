@@ -37,6 +37,10 @@ async function processEmail(email: Email, env: Env) {
 
   const processors = EMAIL_PROCESSORS.filter(processor => processor.matchEmail(email));
 
+  if (processors.length === 0) {
+    console.error(`No processor matching email from: ${email.from.address}`);
+  }
+
   const results = processors.map(async processor => {
     try {
       const action = await processor.process(email, env);
