@@ -1,5 +1,4 @@
 import {env} from 'cloudflare:test';
-import {htmlToText} from 'html-to-text';
 import PostalMime from 'postal-mime';
 import {expect, test} from 'vitest';
 
