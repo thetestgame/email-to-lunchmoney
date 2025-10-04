@@ -76,6 +76,7 @@ async function handleMessage(message: ForwardableEmailMessage, env: Env) {
   }
 
   console.log('raw email length', forwardedMessage.text?.length);
+  console.log('raw email text', forwardedMessage.text);
 
   // The Google App Script forwards the entire "raw" contents of the original
   // message as base64-encoded text to avoid line wrapping issues
