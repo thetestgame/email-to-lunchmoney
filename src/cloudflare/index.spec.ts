@@ -1,0 +1,99 @@
+import {env} from 'cloudflare:test';
+import PostalMime from 'postal-mime';
+import {beforeEach, describe, expect, it, vi} from 'vitest';
+
+import fixtureEmail from './fixtures/example-invoice.eml?raw';
+import {cloudflareProcessor} from './index';
+import * as prompt from './prompt';
+import {CloudflareInvoice} from './types';
+
+const extractInvoiceSpy = vi.spyOn(prompt, 'extractInvoice');
+
+describe('cloudflareProcessor', () => {
+  const fixtureInvoice: CloudflareInvoice = {
+    invoiceId: 'IN-48951432',
+    totalCents: 2520,
+    lineItems: [
+      {
+        description: 'Registrar Renewal Fee - prolink.tools Oct 30, 2025 – Oct 29, 2026',
+        shortDescription: 'prolink.tools renewal',
+        quantity: 1,
+        totalCents: 2520,
+      },
+    ],
+  };
+
+  beforeEach(() => {
+    extractInvoiceSpy.mockReturnValue(Promise.resolve(fixtureInvoice));
+  });
+
+  it('should match Cloudflare invoice emails', async () => {
+    const email = await PostalMime.parse(fixtureEmail);
+    expect(cloudflareProcessor.matchEmail(email)).toBe(true);
+  });
+
+  it('should process Cloudflare invoice with single line item', async () => {
+    const email = await PostalMime.parse(fixtureEmail);
+
+    const result = await cloudflareProcessor.process(email, env);
+
+    expect(extractInvoiceSpy).toHaveBeenCalled();
+
+    const [actualPdfText] = extractInvoiceSpy.mock.calls[0];
+    expect(actualPdfText).toContain('48951432');
+    expect(actualPdfText).toContain('Registrar Renewal Fee - prolink.tools');
+
+    expect(result).toEqual({
+      type: 'update',
+      match: {
+        expectedPayee: 'Cloudflare',
+        expectedTotal: 2520,
+      },
+      note: 'prolink.tools renewal (IN-48951432)',
+    });
+  });
+
+  it('should process Cloudflare invoice with multiple line items as split', async () => {
+    const multiItemInvoice: CloudflareInvoice = {
+      invoiceId: 'IN-12345678',
+      totalCents: 5040,
+      lineItems: [
+        {
+          description: 'Registrar Renewal Fee - example.com Jan 1, 2025 – Dec 31, 2025',
+          shortDescription: 'example.com renewal',
+          quantity: 1,
+          totalCents: 2520,
+        },
+        {
+          description: 'DNS Service - Premium Plan',
+          shortDescription: 'DNS Premium',
+          quantity: 1,
+          totalCents: 2520,
+        },
+      ],
+    };
+
+    extractInvoiceSpy.mockReturnValueOnce(Promise.resolve(multiItemInvoice));
+
+    const email = await PostalMime.parse(fixtureEmail);
+    const result = await cloudflareProcessor.process(email, env);
+
+    expect(result).toEqual({
+      type: 'split',
+      match: {
+        expectedPayee: 'Cloudflare',
+        expectedTotal: 5040,
+      },
+      split: [
+        {
+          note: 'example.com renewal (IN-12345678)',
+          amount: 2520,
+        },
+        {
+          note: 'DNS Premium (IN-12345678)',
+          amount: 2520,
+        },
+      ],
+    });
+  });
+});
