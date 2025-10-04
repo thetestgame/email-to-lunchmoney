@@ -90,6 +90,7 @@ const app: ExportedHandler<Env> = withSentry(
     tracesSampleRate: 1.0,
     sendDefaultPii: true,
     integrations: [consoleLoggingIntegration({levels: ['log', 'warn', 'error']})],
+    enableLogs: true,
   }),
   {
     email: (message, env, ctx) => void ctx.waitUntil(handleMessage(message, env)),
