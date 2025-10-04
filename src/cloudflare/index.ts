@@ -9,6 +9,7 @@ import {
 } from 'src/types';
 
 import {extractInvoice} from './prompt';
+import {CloudflareLineItem} from './types';
 
 /**
  * Extracts text content from a PDF buffer using pdfjs-serverless
@@ -24,6 +25,14 @@ async function extractPdfText(pdfBuffer: ArrayBuffer): Promise<string> {
   );
 
   return pageTexts.join('\n').trim();
+}
+
+/**
+ * Creates a note for a Cloudflare line item, including quantity notation when > 1
+ */
+function makeItemNote(item: CloudflareLineItem, invoiceId: string): string {
+  const quantityText = item.quantity > 1 ? ` [×${item.quantity}]` : '';
+  return `${item.shortDescription}${quantityText} (${invoiceId})`;
 }
 
 async function process(email: Email, env: Env): Promise<LunchMoneyAction> {
@@ -55,7 +64,7 @@ async function process(email: Email, env: Env): Promise<LunchMoneyAction> {
 
   if (invoice.lineItems.length === 1) {
     const item = invoice.lineItems[0];
-    const note = `${item.shortDescription} (${invoice.invoiceId})`;
+    const note = makeItemNote(item, invoice.invoiceId);
 
     const action: LunchMoneyUpdate = {
       type: 'update',
@@ -70,7 +79,7 @@ async function process(email: Email, env: Env): Promise<LunchMoneyAction> {
     type: 'split',
     match,
     split: invoice.lineItems.map(item => ({
-      note: `${item.shortDescription} (${invoice.invoiceId})`,
+      note: makeItemNote(item, invoice.invoiceId),
       amount: item.totalCents,
     })),
   };

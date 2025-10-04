@@ -96,4 +96,34 @@ describe('cloudflareProcessor', () => {
       ],
     });
   });
+
+  it('should include quantity notation for single item with quantity > 1', async () => {
+    const singleItemWithQuantityInvoice: CloudflareInvoice = {
+      invoiceId: 'IN-99887766',
+      totalCents: 7560, // 3 × 2520
+      lineItems: [
+        {
+          description: 'Workers Paid Plan - 3 instances',
+          shortDescription: 'Workers Plan',
+          quantity: 3,
+          totalCents: 7560,
+        },
+      ],
+    };
+
+    extractInvoiceSpy.mockReturnValueOnce(Promise.resolve(singleItemWithQuantityInvoice));
+
+    const email = await PostalMime.parse(fixtureEmail);
+    const result = await cloudflareProcessor.process(email, env);
+
+    expect(result).toEqual({
+      type: 'update',
+      match: {
+        expectedPayee: 'Cloudflare',
+        expectedTotal: 7560,
+      },
+      note: 'Workers Plan [×3] (IN-99887766)',
+    });
+  });
+
 });
