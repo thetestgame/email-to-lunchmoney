@@ -73,14 +73,12 @@ async function handleMessage(message: ForwardableEmailMessage, env: Env) {
     return;
   }
 
-  console.log('raw email', forwardedMessage.text);
+  console.log('raw email length', forwardedMessage.text?.length);
 
-  // The Google App Script forwards the entire "raw" contents of the oirignal
-  // message as plain text, so we parse the plain text portion
-  const originalMessage = await PostalMime.parse(forwardedMessage.text!);
-
-  console.log('orig subj', originalMessage.subject);
-  console.log('orig attachments', originalMessage.attachments);
+  // The Google App Script forwards the entire "raw" contents of the original
+  // message as base64-encoded text to avoid line wrapping issues
+  const decodedRaw = atob(forwardedMessage.text!);
+  const originalMessage = await PostalMime.parse(decodedRaw);
 
   await processEmail(originalMessage, env);
 }

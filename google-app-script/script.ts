@@ -5,9 +5,12 @@ const INGEST_EMAIL = 'lunchmoney-details@evanpurkhiser.com';
  * Extracts the raw message body from emails labeled with the LABEL and forward
  * them to the INGEST_EMAIL.
  *
- * This Gooogle App Script exists purely due to a limitation with gmails filter
+ * This Google App Script exists purely due to a limitation with gmails filter
  * forwarding action, where it is impossible to access the plain text body of a
  * multipart email.
+ *
+ * The raw content is base64-encoded to prevent line wrapping issues that could
+ * corrupt email structure and attachments during forwarding.
  */
 function findAndForwardEmails() {
   const label = GmailApp.getUserLabelByName(LABEL);
@@ -24,7 +27,11 @@ function findAndForwardEmails() {
     const subject = lastMessage.getSubject();
     const rawBody = lastMessage.getRawContent();
 
-    GmailApp.sendEmail(INGEST_EMAIL, subject, rawBody);
+    // Base64 encode the raw email content to prevent line wrapping issues that
+    // could corrupt MIME structure and attachments during forwarding
+    const encodedBody = Utilities.base64Encode(rawBody);
+
+    GmailApp.sendEmail(INGEST_EMAIL, subject, encodedBody);
 
     thread.removeLabel(label);
   }
