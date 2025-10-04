@@ -75,9 +75,17 @@ Pay special attention to:
 - Service periods (e.g., "Oct 30, 2025 – Oct 29, 2026")
 - Exact pricing as shown in the invoice table
 
+IMPORTANT: For domain registrations, consolidate all related fees (registrar
+fees, ICANN fees, etc.) into a single line item per domain. Do NOT create
+separate line items for individual fee components like "ICANN fee" or
+"Registrar fee" - combine them into one total cost per domain.
+
 For shortDescription, focus on the key service being provided:
 - For domain registrations: use the domain name (e.g., "prolink.tools renewal")
 - For other services: use a brief descriptive name
+
+Keep line items concise - group related charges together rather than splitting
+every small fee into its own line item.
 `;
 
 /**
