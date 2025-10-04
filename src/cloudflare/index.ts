@@ -80,6 +80,9 @@ async function process(email: Email, env: Env): Promise<LunchMoneyAction> {
 
 function matchEmail(email: Email): boolean {
   const {from, subject} = email;
+
+  console.log(from.address, subject?.toLowerCase(), email.attachments);
+
   return (
     !!from?.address?.includes('cloudflare.com') &&
     !!subject?.toLowerCase().includes('invoice') &&
