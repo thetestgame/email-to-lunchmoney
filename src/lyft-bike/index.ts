@@ -55,6 +55,11 @@ function process(email: Email) {
 
   const costInCents = Number(costDetails.totalCostUsd.replace('.', ''));
 
+  if (costInCents === 0) {
+    console.info('Ignoring Lyft bike ride with zero cost', {startLocation, endLocation});
+    return Promise.resolve(null);
+  }
+
   const note = `${startLocation} → ${endLocation} [${formattedStart}, ${duration}m]`;
 
   const match: LunchMoneyMatch = {
