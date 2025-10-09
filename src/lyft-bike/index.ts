@@ -67,7 +67,12 @@ function process(email: Email) {
     expectedTotal: costInCents,
   };
 
-  const updateAction: LunchMoneyUpdate = {type: 'update', match, note};
+  const updateAction: LunchMoneyUpdate = {
+    type: 'update',
+    match,
+    note,
+    markReviewed: true,
+  };
 
   return Promise.resolve(updateAction);
 }

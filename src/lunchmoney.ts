@@ -98,6 +98,7 @@ export async function processActions(env: Env) {
         const transaction = {
           id: matchingTransaction.id,
           notes: action.note,
+          status: action.markReviewed ? 'cleared' : 'uncleared',
         };
 
         await lunchMoneyApi(env, `/transactions/${matchingTransaction.id}`, {
@@ -112,6 +113,7 @@ export async function processActions(env: Env) {
           amount: (item.amount / 100).toFixed(2),
           notes: item.note,
           category_id: matchingTransaction.category_id,
+          status: item.markReviewed ? 'cleared' : 'uncleared',
         }));
 
         await lunchMoneyApi(env, `/transactions/${matchingTransaction.id}`, {

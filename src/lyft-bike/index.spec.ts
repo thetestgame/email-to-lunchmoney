@@ -11,6 +11,7 @@ const testCases = [
       type: 'update',
       match: {expectedPayee: 'Lyft Bike', expectedTotal: 245},
       note: 'E 2 St & Ave C → E 5 St & Ave C [12:37, 9m]',
+      markReviewed: true,
     },
   },
 ];

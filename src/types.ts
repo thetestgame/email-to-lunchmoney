@@ -47,6 +47,10 @@ interface Split {
    * Note for the split
    */
   note: string;
+  /**
+   * Should the split item be marked as reviewed?
+   */
+  markReviewed?: boolean;
 }
 
 export interface LunchMoneyUpdate {
@@ -59,6 +63,10 @@ export interface LunchMoneyUpdate {
    * The updated note for the transaction
    */
   note: string;
+  /**
+   * Should we mark the item as reviewed?
+   */
+  markReviewed?: boolean;
 }
 
 export type LunchMoneyAction = LunchMoneyUpdate | LunchMoneySplit;
