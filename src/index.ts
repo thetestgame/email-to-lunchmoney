@@ -12,6 +12,7 @@ import {lyftBikeProcessor} from 'src/lyft-bike';
 import {lyftRideProcessor} from 'src/lyft-ride';
 
 import {processActions} from './lunchmoney';
+import {checkOldActionEntries} from './old-actions-checker';
 import {EmailProcessor, LunchMoneyAction} from './types';
 
 let EMAIL_PROCESSORS: EmailProcessor[] = [
@@ -97,7 +98,10 @@ const app: ExportedHandler<Env> = withSentry(
   }),
   {
     email: (message, env, ctx) => void ctx.waitUntil(handleMessage(message, env)),
-    scheduled: (_controller, env, ctx) => void ctx.waitUntil(processActions(env)),
+    scheduled: (_controller, env, ctx) => {
+      ctx.waitUntil(processActions(env));
+      ctx.waitUntil(checkOldActionEntries(env));
+    },
   }
 );
 

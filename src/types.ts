@@ -76,4 +76,5 @@ export interface LunchMoneyActionRow {
   date_created: string;
   source: string;
   action: string;
+  old_entry_notified?: boolean | null;
 }
