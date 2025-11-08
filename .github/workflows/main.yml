@@ -23,6 +23,12 @@ jobs:
       - uses: actions/setup-node@v4
       - uses: pnpm/action-setup@v4
       - run: pnpm install
+      - name: Apply D1 migrations
+        uses: cloudflare/wrangler-action@v3
+        with:
+          accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: d1 migrations apply email-to-lunchmoney --remote
       - uses: cloudflare/wrangler-action@v3
         with:
           accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
