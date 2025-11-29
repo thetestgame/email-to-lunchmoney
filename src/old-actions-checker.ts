@@ -1,7 +1,6 @@
 import {subDays} from 'date-fns';
-import {escapeMarkdown as e} from 'telegram-escape';
 
-import {sendTelegramMessage} from './telegram';
+import {sendDiscordMessage} from './discord';
 import {LunchMoneyAction, LunchMoneyActionRow} from './types';
 
 const OLD_ACTION_THRESHOLD_DAYS = 15;
@@ -10,7 +9,7 @@ const OLD_ACTION_THRESHOLD_DAYS = 15;
  * Generate notification message for old action entries
  */
 export function formatOldActionsMessage(oldActions: LunchMoneyActionRow[]): string {
-  const lines = [`💸 *${e('Unprocessed email-to-lunchmoney actions')}*`, ''];
+  const lines = [`💸 **Unprocessed email-to-lunchmoney actions**`, ''];
 
   lines.push(
     `Found ${oldActions.length} action entries older than ${OLD_ACTION_THRESHOLD_DAYS} days:`
@@ -26,22 +25,22 @@ export function formatOldActionsMessage(oldActions: LunchMoneyActionRow[]): stri
     const actionLabel = action.type === 'split' ? 'Split' : 'Update';
 
     lines.push(
-      `*${e(actionRow.source)}* ${e(`(${date})`)}`,
-      `${actionLabel}: ${e(payee)} \\- ${e(`$${amount}`)}`,
+      `**${actionRow.source}** (${date})`,
+      `${actionLabel}: ${payee} - $${amount}`,
       action.type === 'update'
-        ? `Note: ${e(action.note)}`
+        ? `Note: ${action.note}`
         : `Splits: ${action.split.length} items`,
       ''
     );
   }
 
-  lines.push(e("These entries need manual attention as they haven't been processed."));
+  lines.push("These entries need manual attention as they haven't been processed.");
 
   return lines.join('\n');
 }
 
 /**
- * Check for action entries older than 2 weeks and notify via Telegram
+ * Check for action entries older than 2 weeks and notify via Discord
  */
 export async function checkOldActionEntries(env: Env): Promise<void> {
   const thresholdAgo = subDays(new Date(), OLD_ACTION_THRESHOLD_DAYS);
@@ -64,7 +63,7 @@ export async function checkOldActionEntries(env: Env): Promise<void> {
   console.log(`Found ${oldActions.length} old action entries`);
 
   const message = formatOldActionsMessage(oldActions);
-  await sendTelegramMessage(env, message);
+  await sendDiscordMessage(env, message);
 
   // Mark all these actions as notified
   const actionIds = oldActions.map(action => action.id);

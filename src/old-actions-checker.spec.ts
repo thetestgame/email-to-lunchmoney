@@ -3,21 +3,20 @@ import {subDays} from 'date-fns';
 import {beforeEach, describe, expect, it, vi} from 'vitest';
 
 import {checkOldActionEntries} from './old-actions-checker';
-import * as telegram from './telegram';
+import * as discord from './discord';
 
 describe('checkOldActionEntries', () => {
   beforeEach(async () => {
     await env.DB.prepare('DELETE FROM lunchmoney_actions').run();
 
-    env.TELEGRAM_TOKEN = 'test_token';
-    env.TELEGRAM_CHAT_ID = 'test_chat_id';
+    env.DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/test/token';
 
-    vi.spyOn(telegram, 'sendTelegramMessage').mockResolvedValue(undefined);
+    vi.spyOn(discord, 'sendDiscordMessage').mockResolvedValue(undefined);
   });
 
   it('should do nothing when no old actions exist', async () => {
     await checkOldActionEntries(env);
-    expect(telegram.sendTelegramMessage).not.toHaveBeenCalled();
+    expect(discord.sendDiscordMessage).not.toHaveBeenCalled();
   });
 
   it('should notify about old action entries', async () => {
@@ -35,19 +34,19 @@ describe('checkOldActionEntries', () => {
     await checkOldActionEntries(env);
 
     const expectedMessage = [
-      '💸 *Unprocessed email\\-to\\-lunchmoney actions*',
+      '💸 **Unprocessed email-to-lunchmoney actions**',
       '',
-      'Found 1 action entries older than 14 days:',
+      'Found 1 action entries older than 15 days:',
       '',
-      `*test\\-source* \\(${threeWeeksAgo.toLocaleDateString()}\\)`,
-      'Update: Test \\- $10\\.00',
+      `**test-source** (${threeWeeksAgo.toLocaleDateString()})`,
+      'Update: Test - $10.00',
       'Note: Test',
       '',
-      "These entries need manual attention as they haven't been processed\\.",
+      "These entries need manual attention as they haven't been processed.",
     ].join('\n');
 
-    expect(telegram.sendTelegramMessage).toHaveBeenCalledOnce();
-    expect(telegram.sendTelegramMessage).toHaveBeenCalledWith(env, expectedMessage);
+    expect(discord.sendDiscordMessage).toHaveBeenCalledOnce();
+    expect(discord.sendDiscordMessage).toHaveBeenCalledWith(env, expectedMessage);
 
     const {results} = await env.DB.prepare(
       'SELECT old_entry_notified FROM lunchmoney_actions WHERE source = ?'
@@ -94,27 +93,27 @@ describe('checkOldActionEntries', () => {
     await checkOldActionEntries(env);
 
     const expectedMessage = [
-      '💸 *Unprocessed email\\-to\\-lunchmoney actions*',
+      '💸 **Unprocessed email-to-lunchmoney actions**',
       '',
-      'Found 3 action entries older than 14 days:',
+      'Found 3 action entries older than 15 days:',
       '',
-      `*amazon* \\(${fourWeeksAgo.toLocaleDateString()}\\)`,
-      'Update: Amazon \\- $20\\.00',
+      `**amazon** (${fourWeeksAgo.toLocaleDateString()})`,
+      'Update: Amazon - $20.00',
       'Note: Test 2',
       '',
-      `*amazon* \\(${threeWeeksAgo.toLocaleDateString()}\\)`,
-      'Update: Amazon \\- $10\\.00',
+      `**amazon** (${threeWeeksAgo.toLocaleDateString()})`,
+      'Update: Amazon - $10.00',
       'Note: Test',
       '',
-      `*lyft\\-ride* \\(${threeWeeksAgo.toLocaleDateString()}\\)`,
-      'Update: Lyft \\- $15\\.00',
+      `**lyft-ride** (${threeWeeksAgo.toLocaleDateString()})`,
+      'Update: Lyft - $15.00',
       'Note: Ride',
       '',
-      "These entries need manual attention as they haven't been processed\\.",
+      "These entries need manual attention as they haven't been processed.",
     ].join('\n');
 
-    expect(telegram.sendTelegramMessage).toHaveBeenCalledOnce();
-    expect(telegram.sendTelegramMessage).toHaveBeenCalledWith(env, expectedMessage);
+    expect(discord.sendDiscordMessage).toHaveBeenCalledOnce();
+    expect(discord.sendDiscordMessage).toHaveBeenCalledWith(env, expectedMessage);
   });
 
   it('should not notify about recent actions', async () => {
@@ -130,7 +129,7 @@ describe('checkOldActionEntries', () => {
       .run();
 
     await checkOldActionEntries(env);
-    expect(telegram.sendTelegramMessage).not.toHaveBeenCalled();
+    expect(discord.sendDiscordMessage).not.toHaveBeenCalled();
   });
 
   it('should not notify about old actions that have already been notified', async () => {
@@ -146,36 +145,6 @@ describe('checkOldActionEntries', () => {
       .run();
 
     await checkOldActionEntries(env);
-    expect(telegram.sendTelegramMessage).not.toHaveBeenCalled();
-  });
-
-  it('should escape special markdown characters in source, payee, and note', async () => {
-    const threeWeeksAgo = subDays(new Date(), 21);
-    await env.DB.prepare(
-      'INSERT INTO lunchmoney_actions (source, action, date_created) VALUES (?, ?, ?)'
-    )
-      .bind(
-        'test_source-with*special',
-        '{"type": "update", "match": {"expectedPayee": "Payee (with) [brackets]", "expectedTotal": 1000}, "note": "Note with *markdown* and _underscores_"}',
-        threeWeeksAgo.toISOString()
-      )
-      .run();
-
-    await checkOldActionEntries(env);
-
-    const expectedMessage = [
-      '💸 *Unprocessed email\\-to\\-lunchmoney actions*',
-      '',
-      'Found 1 action entries older than 14 days:',
-      '',
-      `*test\\_source\\-with\\*special* \\(${threeWeeksAgo.toLocaleDateString()}\\)`,
-      'Update: Payee \\(with\\) \\[brackets\\] \\- $10\\.00',
-      'Note: Note with \\*markdown\\* and \\_underscores\\_',
-      '',
-      "These entries need manual attention as they haven't been processed\\.",
-    ].join('\n');
-
-    expect(telegram.sendTelegramMessage).toHaveBeenCalledOnce();
-    expect(telegram.sendTelegramMessage).toHaveBeenCalledWith(env, expectedMessage);
+    expect(discord.sendDiscordMessage).not.toHaveBeenCalled();
   });
 });
