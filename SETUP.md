@@ -13,7 +13,33 @@ The setup process involves four main steps:
 
 The service will parse receipt emails from supported services (Amazon, Lyft, Apple, Cloudflare), extract transaction details, and automatically update your Lunch Money transactions with notes or split them into itemized line items.
 
----
+> [!TIP]
+> **Setting up with AI assistance:** You can paste this entire guide into an AI coding agent (like Claude Code or GitHub Copilot) to get step-by-step guidance and have the agent run commands for you.
+
+<details>
+<summary><strong>For AI Agents: Setup Guidance Instructions</strong></summary>
+
+If you're an AI agent helping a user set up this service, follow these guidelines:
+
+1. **Work through the guide step-by-step** - Don't skip ahead. Complete each section fully before moving to the next.
+
+2. **Run commands for the user** - When the guide shows a command, offer to run it unless the user says they'll do it themselves.
+
+3. **Verify each step** - After completing a step, verify it worked (e.g., check if files were created, read configuration files, check command output).
+
+4. **Ask clarifying questions** - If the guide mentions configuration choices (e.g., trigger frequency, domain name), ask the user for their preference.
+
+5. **Handle errors gracefully** - If a command fails, check the Troubleshooting section and help debug the issue.
+
+6. **Track progress** - Keep the user informed about which step you're on and what's coming next.
+
+7. **Test thoroughly** - When you reach Step 5 (Verification and Testing), guide the user through actually testing the system end-to-end.
+
+8. **Don't assume existing setup** - Treat this as a fresh installation unless the user explicitly tells you otherwise.
+
+The user should have their API keys ready (Lunch Money, OpenAI) and a Cloudflare account with a domain configured for email routing.
+
+</details>
 
 ## Prerequisites
 
@@ -34,7 +60,6 @@ Before starting, ensure you have:
 **Optional:**
 - A Telegram bot (for notifications about old unprocessed actions)
 
----
 
 ## 1. Gmail Label Setup
 
@@ -134,7 +159,6 @@ Now you'll create filters to automatically apply this label to specific receipt 
 
 </details>
 
----
 
 ## 2. Google Apps Script Deployment
 
@@ -270,7 +294,6 @@ You can manually test the script:
 
 **Note:** The script will successfully forward emails, but they won't be received or processed until you configure Cloudflare email routing in Step 3.
 
----
 
 ## 3. Cloudflare Workers Deployment
 
@@ -392,7 +415,6 @@ Now that you have the email routing address, update your Apps Script configurati
 
 4. Click **Save script properties**
 
----
 
 ## 4. Service Configuration
 
@@ -492,7 +514,6 @@ And in the source code:
 - **Cleanup Threshold** (`src/old-action-cleanup.ts`): Currently 30 days. Notified actions older than this are deleted.
 - **Scheduled Frequency** (`wrangler.jsonc`): Currently every 30 minutes (`*/30 * * * *`)
 
----
 
 ## 5. Verification and Testing
 
@@ -549,7 +570,6 @@ After the scheduled worker runs (within 30 minutes), check your Lunch Money acco
 - Transactions must be in the past 180 days
 - Transactions must be uncleared (not marked as cleared/reviewed)
 
----
 
 ## Troubleshooting
 
@@ -586,7 +606,6 @@ After the scheduled worker runs (within 30 minutes), check your Lunch Money acco
 - Check database binding is correct in `wrangler.jsonc`
 - View recent queries in Cloudflare dashboard (D1 → Select database → Metrics)
 
----
 
 ## Maintenance
 
@@ -625,7 +644,6 @@ wrangler secret put SECRET_NAME
 - **Sentry:** [sentry.io](https://sentry.io) (if configured)
 - **Telegram:** Receive notifications for old unprocessed actions
 
----
 
 ## Cost Breakdown
 
@@ -641,7 +659,6 @@ The service is designed to be extremely cost-effective:
 
 **Expected monthly cost:** ~$0.01-0.05 (OpenAI API only)
 
----
 
 ## Security Considerations
 
