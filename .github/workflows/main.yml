@@ -23,6 +23,10 @@ jobs:
       - uses: actions/setup-node@v4
       - uses: pnpm/action-setup@v4
       - run: pnpm install
+      - name: Configure wrangler
+        run: |
+          sed -i 's/YOUR_DATABASE_ID_HERE/${{ vars.DATABASE_ID }}/' wrangler.jsonc
+          sed -i 's/youremail@gmail.com/${{ vars.ACCEPTED_EMAIL }}/' wrangler.jsonc
       - name: Apply D1 migrations
         uses: cloudflare/wrangler-action@v3
         with:
