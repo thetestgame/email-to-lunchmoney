@@ -11,8 +11,8 @@ import {cloudflareProcessor} from 'src/cloudflare';
 import {lyftBikeProcessor} from 'src/lyft-bike';
 import {lyftRideProcessor} from 'src/lyft-ride';
 
-import {cleanupNotifiedActions} from './old-action-cleanup';
 import {processActions} from './lunchmoney';
+import {cleanupNotifiedActions} from './old-action-cleanup';
 import {checkOldActionEntries} from './old-actions-checker';
 import {EmailProcessor, LunchMoneyAction} from './types';
 
@@ -41,12 +41,12 @@ function recordAction(action: LunchMoneyAction, source: string, env: Env) {
 }
 
 async function processEmail(email: Email, env: Env) {
-  console.log(`Processing email from: ${email.from.address}`);
+  console.log(`Processing email from: ${email.from?.address}`);
 
   const processors = EMAIL_PROCESSORS.filter(processor => processor.matchEmail(email));
 
   if (processors.length === 0) {
-    console.error(`No processor matching email from: ${email.from.address}`);
+    console.error(`No processor matching email from: ${email.from?.address}`);
   }
 
   const results = processors.map(async processor => {
@@ -70,7 +70,7 @@ async function processEmail(email: Email, env: Env) {
  */
 async function handleMessage(message: ForwardableEmailMessage, env: Env) {
   const forwardedMessage = await PostalMime.parse(message.raw);
-  const from = forwardedMessage.from.address;
+  const from = forwardedMessage.from?.address;
 
   if (from !== env.ACCEPTED_EMAIL) {
     console.warn('Recieved email from disallowed address', {from});
@@ -88,7 +88,7 @@ async function handleMessage(message: ForwardableEmailMessage, env: Env) {
   await processEmail(originalMessage, env);
 }
 
-const handlers = {
+const handlers: ExportedHandler<Env> = {
   email: (message, env, ctx) => void ctx.waitUntil(handleMessage(message, env)),
   scheduled: (_controller, env, ctx) => {
     ctx.waitUntil(processActions(env));
