@@ -14,7 +14,7 @@ function messageMock(content: string): ForwardableEmailMessage {
   });
 
   const message: ForwardableEmailMessage = {
-    from: 'evanpurkhiser@gmail.com',
+    from: 'youremail@gmail.com',
     to: 'lunchmoney-details@evanpurkhiser.com',
     raw,
     headers: new Headers(),
