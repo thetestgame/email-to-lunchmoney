@@ -4,12 +4,14 @@ This guide will walk you through setting up the email-to-lunchmoney service to a
 
 ## Overview
 
-The setup process involves four main steps:
+The setup process involves six main steps:
 
 1. **Gmail Label Setup** - Configure Gmail to automatically label receipt emails that should be processed
-2. **Google Apps Script Deployment** - Deploy a script that monitors labeled emails and POSTs them to the Worker endpoint
+2. **Google Apps Script Deployment** - Deploy the script code to Google Apps Script
 3. **Cloudflare Workers Deployment** - Deploy the main processing service on Cloudflare
 4. **Service Configuration** - Configure API tokens, authentication, optional Telegram notifications, and other settings
+5. **Configure Apps Script** - Connect the Apps Script to your Worker with the URL and authentication token
+6. **Testing and Verification** - Test the complete flow and verify everything works
 
 The service will parse receipt emails from supported services (Amazon, Lyft, Apple, Cloudflare), extract transaction details, and automatically update your Lunch Money transactions with notes or split them into itemized line items.
 
@@ -33,7 +35,7 @@ If you're an AI agent helping a user set up this service, follow these guideline
 
 6. **Track progress** - Keep the user informed about which step you're on and what's coming next.
 
-7. **Test thoroughly** - When you reach Step 5 (Verification and Testing), guide the user through actually testing the system end-to-end.
+7. **Test thoroughly** - When you reach Step 6 (Testing and Verification), guide the user through actually testing the system end-to-end.
 
 8. **Don't assume existing setup** - Treat this as a fresh installation unless the user explicitly tells you otherwise.
 
@@ -459,11 +461,16 @@ The script needs to run periodically to check for new labeled emails.
 
    This is normal for personal Apps Script projects. The script needs permission to read your Gmail messages and make HTTP requests.
 
-### 5.3 Test the Script
 
-You can manually test the script before waiting for the trigger:
+## 6. Testing and Verification
 
-1. First, manually apply the `Fwd / Lunch Money` label to a test email in your Gmail:
+### 6.1 Test the Apps Script
+
+You can test the script manually before waiting for the automatic trigger.
+
+**Manual Test:**
+
+1. Manually apply the `Fwd / Lunch Money` label to a test email in your Gmail:
    - Find any receipt email in your Gmail inbox
    - Click the label icon and select `Fwd / Lunch Money`
 
@@ -481,15 +488,13 @@ You can manually test the script before waiting for the trigger:
 
 5. Check that the email you labeled had the `Fwd / Lunch Money` label removed (indicating it was successfully POSTed to the worker)
 
+**Automatic Trigger Test:**
 
-## 6. Verification and Testing
+Once the manual test works, verify the automatic trigger:
 
-### 6.1 Test Email Forwarding
-
-1. Find an existing receipt email in your Gmail (or wait for a new one)
-2. Ensure it has the `Fwd / Lunch Money` label applied
-3. Wait for the Apps Script trigger to run (or manually run it from the Apps Script editor)
-4. Check that the label was removed from the email (indicating it was forwarded)
+1. Find another receipt email and manually apply the `Fwd / Lunch Money` label
+2. Wait for the trigger to run (every 30-60 minutes depending on your configuration)
+3. Check that the label was removed from the email
 
 ### 6.2 Check Worker Logs
 
