@@ -212,86 +212,7 @@ This will open a browser window to authenticate with your Google account. Grant 
 
    This uploads the script to Google Apps Script.
 
-### 2.4 Configure Script Properties
-
-The script needs configuration properties to be set:
-
-1. Open your Apps Script project:
-   ```bash
-   clasp open-script
-   ```
-
-2. In the Apps Script editor, click **Project Settings** (gear icon in the left sidebar)
-
-3. Scroll down to **Script Properties** and click **Add script property**
-
-4. Add the following properties:
-
-   | Property Name | Value | Description |
-   |--------------|-------|-------------|
-   | `GMAIL_LABEL` | `Fwd / Lunch Money` | The Gmail label to monitor |
-   | `INGEST_URL` | `https://email-to-lunchmoney.your-subdomain.workers.dev/ingest` | Your Worker endpoint URL |
-   | `INGEST_TOKEN` | _(generate in Step 4)_ | Authentication token for the Worker |
-
-   **Note:** For `INGEST_URL`, replace `your-subdomain` with your actual Cloudflare Workers subdomain (you'll get this after deploying in Step 3). For `INGEST_TOKEN`, you'll generate and set this token in Step 4 after deploying the worker. You can update these properties later.
-
-5. Click **Save script properties**
-
-### 2.5 Configure the Trigger
-
-The script needs to run periodically to check for new labeled emails.
-
-1. Open your Apps Script project:
-   ```bash
-   clasp open-script
-   ```
-
-   Or go directly to [script.google.com](https://script.google.com) and open your project.
-
-2. In the left sidebar, click the **clock icon** (Triggers)
-
-3. Click **"+ Add Trigger"** (bottom right)
-
-4. Configure the trigger:
-   - **Choose which function to run:** `forwardLabeledEmails`
-   - **Choose which deployment should run:** `Head`
-   - **Select event source:** `Time-driven`
-   - **Select type of time based trigger:** `Minutes timer` or `Hour timer`
-   - **Select minute/hour interval:** Every 30 minutes or Every 1 hour (your preference)
-     - Note: Gmail quotas limit email forwarding to ~100/day, so hourly is usually sufficient
-
-5. Click **Save**
-
-6. **Authorize the app** - You'll see a Google security warning screen saying "Google hasn't verified this app":
-   - Click **"Advanced"** at the bottom
-   - Click **"Go to Email to Lunch Money Forwarder (unsafe)"**
-   - Review the permissions and click **"Allow"**
-
-   This is normal for personal Apps Script projects. The script needs permission to read your Gmail messages and make HTTP requests.
-
-### 2.6 Test the Script
-
-You can manually test the script:
-
-1. First, manually apply the `Fwd / Lunch Money` label to a test email in your Gmail:
-   - Find any email in your Gmail inbox
-   - Click the label icon and select `Fwd / Lunch Money`
-
-2. In the Apps Script editor, select the `forwardLabeledEmails` function from the dropdown
-
-3. Click **Run** (play button)
-
-4. Check the **Execution log** at the bottom to verify it ran without errors. You should see output similar to:
-   ```
-   Notice    Execution started
-   Info      Found 1 emails to process...
-   Info      Successfully sent email: [Email Subject]
-   Notice    Execution completed
-   ```
-
-5. Check that the email you labeled had the `Fwd / Lunch Money` label removed (indicating it was processed)
-
-**Note:** The script will successfully POST emails to the worker endpoint once it's deployed in Step 3.
+   **Note:** We'll configure the script properties and trigger in Step 5, after deploying the Cloudflare Worker.
 
 
 ## 3. Cloudflare Workers Deployment
@@ -400,18 +321,7 @@ wrangler secret put INGEST_TOKEN
 ```
 Paste your token when prompted.
 
-**Important:** Now update your Apps Script configuration with this token:
-
-1. Open your Apps Script project:
-   ```bash
-   cd google-app-script
-   clasp open-script
-   ```
-
-2. Go to **Project Settings** (gear icon)
-3. Under **Script Properties**, find the `INGEST_TOKEN` property and update it with the token you just generated
-4. While you're here, also update the `INGEST_URL` property with your Worker URL from Step 3.6 (e.g., `https://email-to-lunchmoney.your-subdomain.workers.dev/ingest`)
-5. Click **Save script properties**
+**Important:** Save this token - you'll need it to configure your Apps Script in Step 5.
 
 #### Lunch Money API Key
 
@@ -494,16 +404,94 @@ Additional configuration is available in the source code:
 - **Scheduled Frequency** (`wrangler.jsonc`): Currently every 30 minutes (`*/30 * * * *`)
 
 
-## 5. Verification and Testing
+## 5. Configure Apps Script
 
-### 5.1 Test Email Forwarding
+Now that the worker is deployed and configured, let's configure the Apps Script to connect to it.
+
+### 5.1 Configure Script Properties
+
+1. Open your Apps Script project:
+   ```bash
+   cd google-app-script
+   clasp open-script
+   ```
+
+   Or go directly to [script.google.com](https://script.google.com) and open your project.
+
+2. In the Apps Script editor, click **Project Settings** (gear icon in the left sidebar)
+
+3. Scroll down to **Script Properties** and click **Add script property**
+
+4. Add the following properties:
+
+   | Property Name | Value | Description |
+   |--------------|-------|-------------|
+   | `GMAIL_LABEL` | `Fwd / Lunch Money` | The Gmail label to monitor |
+   | `INGEST_URL` | `https://email-to-lunchmoney.your-subdomain.workers.dev/ingest` | Your Worker endpoint URL from Step 3 |
+   | `INGEST_TOKEN` | _(your token from Step 4.1)_ | Authentication token for the Worker |
+
+   **Note:** For `INGEST_URL`, use the Worker URL from Step 3.6. For `INGEST_TOKEN`, use the token you generated and saved in Step 4.1.
+
+5. Click **Save script properties**
+
+### 5.2 Configure the Trigger
+
+The script needs to run periodically to check for new labeled emails.
+
+1. In the Apps Script editor, click the **clock icon** (Triggers) in the left sidebar
+
+2. Click **"+ Add Trigger"** (bottom right)
+
+3. Configure the trigger:
+   - **Choose which function to run:** `findAndForwardEmails`
+   - **Choose which deployment should run:** `Head`
+   - **Select event source:** `Time-driven`
+   - **Select type of time based trigger:** `Minutes timer` or `Hour timer`
+   - **Select minute/hour interval:** Every 30 minutes or Every 1 hour (your preference)
+     - Note: Gmail quotas limit email processing to ~100/day, so hourly is usually sufficient
+
+4. Click **Save**
+
+5. **Authorize the app** - You'll see a Google security warning screen saying "Google hasn't verified this app":
+   - Click **"Advanced"** at the bottom
+   - Click **"Go to Email to Lunch Money Forwarder (unsafe)"**
+   - Review the permissions and click **"Allow"**
+
+   This is normal for personal Apps Script projects. The script needs permission to read your Gmail messages and make HTTP requests.
+
+### 5.3 Test the Script
+
+You can manually test the script before waiting for the trigger:
+
+1. First, manually apply the `Fwd / Lunch Money` label to a test email in your Gmail:
+   - Find any receipt email in your Gmail inbox
+   - Click the label icon and select `Fwd / Lunch Money`
+
+2. In the Apps Script editor, select the `findAndForwardEmails` function from the dropdown at the top
+
+3. Click **Run** (play button)
+
+4. Check the **Execution log** at the bottom to verify it ran without errors. You should see output similar to:
+   ```
+   Notice    Execution started
+   Info      Found 1 emails to process...
+   Info      Successfully sent email: [Email Subject]
+   Notice    Execution completed
+   ```
+
+5. Check that the email you labeled had the `Fwd / Lunch Money` label removed (indicating it was successfully POSTed to the worker)
+
+
+## 6. Verification and Testing
+
+### 6.1 Test Email Forwarding
 
 1. Find an existing receipt email in your Gmail (or wait for a new one)
 2. Ensure it has the `Fwd / Lunch Money` label applied
 3. Wait for the Apps Script trigger to run (or manually run it from the Apps Script editor)
 4. Check that the label was removed from the email (indicating it was forwarded)
 
-### 5.2 Check Worker Logs
+### 6.2 Check Worker Logs
 
 View logs in Cloudflare to confirm the email was received and processed:
 
@@ -522,7 +510,7 @@ You should see log entries indicating:
 - Processor matched (e.g., "Amazon", "Lyft")
 - Action stored in database
 
-### 5.3 Check Database
+### 6.3 Check Database
 
 View pending actions in the D1 database:
 
@@ -536,7 +524,7 @@ You should see entries with:
 - `source`: Email source (e.g., "Amazon")
 - `action`: JSON-serialized action data
 
-### 5.4 Verify Lunch Money Updates
+### 6.4 Verify Lunch Money Updates
 
 After the scheduled worker runs (within 30 minutes), check your Lunch Money account:
 
