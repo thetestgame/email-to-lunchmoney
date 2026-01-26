@@ -4,6 +4,7 @@ import {
   withSentry,
 } from '@sentry/cloudflare';
 import {Hono} from 'hono';
+import {bearerAuth} from 'hono/bearer-auth';
 import PostalMime, {Email} from 'postal-mime';
 
 import {amazonProcessor} from 'src/processors/amazon';
@@ -80,21 +81,12 @@ async function processRawEmail(base64Content: string, env: Env) {
 const app = new Hono<{Bindings: Env}>();
 
 // Apply authentication middleware to /ingest routes
-app.use('/ingest', async (c, next) => {
-  const authHeader = c.req.header('Authorization');
-  if (!authHeader || !authHeader.startsWith('Bearer ')) {
-    return c.json({error: 'Missing or invalid Authorization header'}, 401);
-  }
-
-  const token = authHeader.replace('Bearer ', '');
-  if (token !== c.env.INGEST_TOKEN) {
-    return c.json({error: 'Invalid token'}, 401);
-  }
-
-  await next();
-
-  return null;
-});
+app.use(
+  '/ingest',
+  bearerAuth({
+    verifyToken: async (token, c) => token === c.env.INGEST_TOKEN,
+  })
+);
 
 /**
  * POST /ingest - Receives base64-encoded raw email content from Google Apps Script

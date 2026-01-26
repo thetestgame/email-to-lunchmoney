@@ -31,8 +31,8 @@ describe('/ingest Endpoint', () => {
     const response = await SELF.fetch(request);
 
     expect(response.status).toBe(401);
-    const body = await response.json();
-    expect(body).toEqual({error: 'Missing or invalid Authorization header'});
+    const body = await response.text();
+    expect(body).toBe('Unauthorized');
   });
 
   it('returns 401 when Authorization header has invalid format', async () => {
@@ -44,9 +44,9 @@ describe('/ingest Endpoint', () => {
 
     const response = await SELF.fetch(request);
 
-    expect(response.status).toBe(401);
-    const body = await response.json();
-    expect(body).toEqual({error: 'Missing or invalid Authorization header'});
+    expect(response.status).toBe(400);
+    const body = await response.text();
+    expect(body).toBe('Bad Request');
   });
 
   it('returns 401 when token is invalid', async () => {
@@ -59,8 +59,8 @@ describe('/ingest Endpoint', () => {
     const response = await SELF.fetch(request);
 
     expect(response.status).toBe(401);
-    const body = await response.json();
-    expect(body).toEqual({error: 'Invalid token'});
+    const body = await response.text();
+    expect(body).toBe('Unauthorized');
   });
 
   it('returns 400 when request body is empty', async () => {
