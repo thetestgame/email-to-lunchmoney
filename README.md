@@ -28,6 +28,7 @@ This may be useful for those who want to answer questions like:
 | Cloudflare | $25.20 |       |
 | Lyft       | $8.50  |       |
 | Apple      | $9.99  |       |
+| Steam      | $5.43  |       |
 
 ### After Processing
 
@@ -38,6 +39,7 @@ This may be useful for those who want to answer questions like:
 | Cloudflare | $25.20 | prolink.tools renewal (IN-48951432)                                              |
 | Lyft       | $8.50  | 186 States St, San Francisco, CA → 882 Sutter St, San Francisco, CA [16:40, 27m] |
 | Apple      | $9.99  | iCloud+ with 2TB storage                                                         |
+| Steam      | $5.43  | Geometry Dash                                                                    |
 
 ## How it works
 
@@ -57,6 +59,9 @@ Support for the following emails is currently implemented
 
 - **Apple receipts**. Adds the name of the app, subscription, or in-app purchase as
   a note to the Apple transaction.
+
+- **Steam purchase emails**. Extracts the game name from purchase confirmation
+  emails and adds it as a note to the Steam transaction.
 
 Some emails I would like to add
 
@@ -98,6 +103,9 @@ Some emails I would like to add
 
    - `lyft-bike` converts the HTML email to text (as they do not send plain
      text variants) and simply uses regex to extract the ride metadata.
+
+   - `steam` converts the HTML email to text and uses regex to extract the game
+     name and purchase total.
 
 6. A "Lunch Money Action" is stored in a database to be processed once the
    transaction posts and is synchronized to Lunch Money.
