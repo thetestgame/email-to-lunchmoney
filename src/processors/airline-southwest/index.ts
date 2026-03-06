@@ -61,13 +61,11 @@ function process(email: Email) {
 }
 
 function matchEmail(email: Email) {
-  const {from, subject} = email;
-  const isSouthwest =
-    !!from?.address?.endsWith('@iluv.southwest.com') ||
-    !!from?.address?.endsWith('@ifly.southwest.com');
-  const isItinerary = !!subject?.includes('trip') || !!subject?.includes('itinerary');
+  const {from} = email;
+  // Match any email from southwest.com or subdomain (e.g., @southwest.com, @iluv.southwest.com, @ifly.southwest.com)
+  const isSouthwest = !!from?.address?.match(/(@|\.+)southwest\.com$/);
 
-  return isSouthwest && isItinerary;
+  return isSouthwest;
 }
 
 export const southwestProcessor: EmailProcessor = {
