@@ -1,0 +1,2778 @@
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+Date: Fri, 19 May 2023 23:21:00 +0000 (UTC)
+From: American Airlines <no-reply@info.email.aa.com>
+Mime-Version: 1.0
+Message-ID: <REDACTED@example.com>
+Subject: Your trip confirmation (BUR - ORD)
+To: testuser@example.com
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>American Airlines</title>
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3D11">
+    <meta charset=3D"UTF-8" />
+    <style type=3D"text/css">
+        u+#body a {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        #body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        a[x-apple-data-detectors] {
+            color: inherit ! important;
+            font-family: inherit ! important;
+            font-size: inherit ! important;
+            font-weight: inherit ! important;
+            line-height: inherit ! important;
+            text-decoration: none ! important;
+        }
+
+        .overlap {
+            width: 52px;
+        }
+
+        .basic {
+            color: #36495a;
+            font-family: Roboto, Arial;
+            font-size: 14px;
+        }
+
+        .app-banner {
+            font-family: Roboto, Arial;
+            font-size: 14px;
+        }
+
+        #app-banner-text {
+            padding-right: 125px;
+        }
+
+        .padding-generic {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .checkedbag-table {
+            width: 240px;
+        }
+
+        .checkedbag-header {
+            color: #36495a;
+            background-color: #F5F7F7;
+            font-family: Roboto, Arial;
+            font-size: 18px;
+            font-weight: normal;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .checkedbag-standard {
+            color: #131313;
+            font-family: Roboto, Arial;
+            font-size: 14px;
+            font-weight: normal;
+            padding: 10px;
+        }
+
+        .divider {
+            border-bottom: #D0DAE0 1px solid;
+            line-height: 12px;
+        }
+
+        .footer-styles {
+            color: #36495A;
+            font-family: Roboto, Arial;
+            font-size: 12px;
+            padding-bottom: 20px;
+        }
+
+        .bookingLinksMain {
+            width: 50%;
+        }
+
+        .main {
+            width: 260px;
+        }
+
+        .main1 {
+            width: 270px;
+        }
+
+        .img {
+            width: 270px;
+            padding-bottom: 10px;
+        }
+
+        #citiads1 {
+            color: #0078D2;
+            font-family: Roboto, Arial;
+            font-size: 30px;
+            line-height: 36px;
+            padding-bottom: 10px;
+        }
+
+        #citiads2 {
+            color: #36495A;
+            font-family: Roboto, Arial;
+            font-size: 18px;
+            line-height: 20px;
+            padding-bottom: 10px;
+        }
+
+        #citiads3 {
+            color: #0078D2;
+            font-family: Roboto, Arial;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .citiads_image {
+            height: 95px;
+            text-align: right;
+            vertical-align: text-top;
+            width: 140px;
+        }
+
+        .blueBannerPadding {
+            padding-left: 52px;
+            padding-right: 52px;
+        }
+
+        .blueBannerPaddingInner {
+            padding-right: 52px;
+            padding-left: 52px;
+        }
+
+        .itinerary-text {
+            font-size: 14px;
+        }
+
+        .itinerary-header {
+            font-size: 18px;
+        }
+
+        .itinerary-iata {
+            font-size: 24px;
+        }
+
+        .removeBagSpace {
+            display: table-row !important;
+        }
+
+        .removeLineDesktop {
+            display: none !important;
+        }
+
+        .itinerary-small-text {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .itinerary-spacing {
+            height: 18px;
+        }
+
+        .itinerary-data-spacing {
+            padding-bottom: 4px
+        }
+
+        .itinerary-image-padding {
+            padding-top: 7px;
+        }
+
+        .itinerary-seat-info-padding {
+            padding-right: 80px;
+        }
+
+        .total-heading-text {
+            color: #36495a;
+            font-family: Roboto, Arial;
+            font-size: 17px;
+            font-weight: bold;
+            padding-bottom: 12px;
+        }
+
+        @media screen and (max-width:595px) {
+            .seatsTable {
+                padding-top: 10px;
+            }
+
+            .checkedbag-table {
+                width: 100%;
+            }
+
+            #app-banner-text {
+                padding-right: 20px;
+            }
+
+            .bookingLinksMain {
+                width: 100%;
+            }
+
+            .main {
+                width: 100%;
+                padding-bottom: 25px;
+            }
+
+            .main1 {
+                width: 100%;
+            }
+
+            .imgwidth {
+                width: 100%;
+            }
+
+            .img {
+                width: 100%;
+                padding-bottom: 10px;
+            }
+
+            .itinerary-text {
+                font-size: 10px;
+            }
+
+            .itinerary-header {
+                font-size: 14px;
+            }
+
+            .itinerary-iata {
+                font-size: 20px;
+            }
+
+            .itinerary-small-text {
+                font-size: 8px;
+                line-height: 12px;
+            }
+
+            .itinerary-spacing {
+                height: 30px;
+            }
+
+            .itinerary-data-spacing {
+                padding-bottom: 2px;
+            }
+
+            .itinerary-image-padding {
+                padding-top: 7px;
+            }
+
+            .itinerary-seat-info-padding {
+                padding-right: 65px;
+            }
+
+            .removeBagSpace {
+                display: none !important;
+            }
+
+            .removeLineDesktop {
+                display: table-row !important;
+            }
+        }
+       =20
+        @media screen and (max-width:425px) {
+            #citiads1 {
+                color: #0078D2;
+                font-family: Roboto, Arial;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 20px;
+                padding-bottom: 10px;
+            }
+
+            #citiads2 {
+                color: #36495A;
+                font-family: Roboto, Arial;
+                font-size: 12px;
+                line-height: 18px;
+                padding-bottom: 10px;
+            }
+
+            #citiads3 {
+                color: #0078D2;
+                font-family: Roboto, Arial;
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 18px;
+            }
+
+            .citiads_image {
+                height: 62px;
+                text-align: right;
+                vertical-align: text-top;
+                width: 91px;
+            }
+
+            .itinerary-text {
+                font-size: 10px;
+            }
+
+            .itinerary-header {
+                font-size: 14px;
+            }
+
+            .itinerary-iata {
+                font-size: 20px;
+            }
+
+            .itinerary-small-text {
+                font-size: 8px;
+                line-height: 12px;
+            }
+
+            .itinerary-spacing {
+                height: 30px;
+            }
+
+            .itinerary-data-spacing {
+                padding-bottom: 2px;
+            }
+
+            .itinerary-image-padding {
+                padding-top: 7px;
+            }
+
+            .itinerary-seat-info-padding {
+                padding-right: 65px;
+            }
+
+            .overlap {
+                width: 24px;
+            }
+
+            .removeBagSpace {
+                display: none !important;
+            }
+
+            .removeLineDesktop {
+                display: table-row !important;
+            }
+
+            .blueBannerPaddingInner {
+                padding-right: 24px;
+                padding-left: 24px;
+            }
+        }
+
+        @media screen and (min-width:320px) and (max-width:480px) {
+            .app-banner {
+                font-family: Roboto, Arial;
+                font-size: 11.6px;
+            }
+
+            #app-banner-text {
+                padding-right: 15px;
+            }
+
+            .ShowMobile {
+                line-height: 16px;
+            }
+
+            .padding-generic {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .itinerary-text {
+                font-size: 10px;
+            }
+
+            .itinerary-header {
+                font-size: 14px;
+            }
+
+            .total-heading-text {
+                color: #36495a;
+                font-family: Roboto, Arial;
+                font-size: 15px;
+                font-weight: bold;
+                padding-bottom: 12px;
+            }
+
+            .itinerary-iata {
+                font-size: 20px;
+            }
+
+            .itinerary-small-text {
+                font-size: 8px;
+                line-height: 12px;
+            }
+
+            .itinerary-spacing {
+                height: 30px;
+            }
+
+            .itinerary-data-spacing {
+                padding-bottom: 2px;
+            }
+
+            .itinerary-image-padding {
+                padding-top: 7px;
+            }
+
+            .itinerary-seat-info-padding {
+                padding-right: 65px;
+            }
+
+            .removeBagSpace {
+                display: none !important;
+            }
+
+            .removeLineDesktop {
+                display: table-row !important;
+            }
+
+        }
+    </style>
+    <!--[if (gte mso 9)|(IE)]>
+        <style>
+            .outlookBorders {
+                border: 1px solid #EBEDEF;
+            }
+        </style>
+    <![endif]-->
+</head>
+
+<body id=3D"body">
+    <table bgcolor=3D"#F5F7F7" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%">
+        <tbody>
+            <tr>
+                <td>
+                    <!--[if (gte mso 9)|(IE)]>
+                <table width=3D"600" align=3D"center" cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0">
+                    <tr>
+                        <td> <![endif]-->
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ style=3D"color:#FFF; display:none; " width=3D"100%">
+    <tbody>
+        <tr>
+            <td style=3D"color:#FFF; display:none;">
+                <span>Here's your itinerary</span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+                    <table style=3D"max-width:600px; " align=3D"center" bgc=
+olor=3D"#ffffff" border=3D"0" cellpadding=3D"0"
+                        cellspacing=3D"0" width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table width=3D"100%" c=
+ellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-family: Robot=
+o, Arial; max-width:600px; ">
+	<tbody>
+		<tr>
+			<td align=3D"left" style=3D"padding-left:18px; padding-top:10px; padding=
+-bottom:10px; vertical-align:text-bottom; ">
+				<a href=3D"http://link.info.email.aa.com/ls/click?upn=3D6Bg-2BgqSVznbUL=
+FxyD8xRE1RXLT0zVq7WhpKEPeUApso-3DltK__2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMh=
+dx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCT=
+yyIBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQ=
+X7MHZwFKRo9rjkfPNEEjmWJpfAcAgGIWjkD-2F9-2Bnxfq7fIpatub3iV7ucDuSbsznj5CT29BE=
+4nZQRtd9H-2B9EdGDluH4IuASvg1m-2FDcnlWkSSSwGqDrewpDFddnM1-2BQnivR8u-2FE-2Fc6=
+7TNVqaqBnqQDhfkqIr4zjUiZS-2FxY2MhUdDKPRRPdR9dx292iN1WRvRAChoHx-2FQxHd" tabi=
+ndex=3D"32768">
+					<img alt=3D"" src=3D"https://www.aa.com/content/images/email/cne/Logo-=
+AA.png" width=3D"192" vspace=3D"0" hspace=3D"-1" height=3D"40" border=3D"0"=
+ style=3D"height:40px; width:192px; "/>
+				</a>
+			</td>
+			<td><img src=3D"https://www.aa.com/content/images/common/wa.gif?Log=3D1&=
+amp;camp=3Dtc_na&amp;guid=3De5df27a8-63ff-4933-be31-d3497c6070f0&amp;ts=3D2=
+023-05-19T23:21Z&amp;id=3D-207379756"
+				alt=3D""></td>
+			<td style=3D"width:50px; ">=C2=A0</td>
+		</tr>
+	</tbody>
+</table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+    <td style=3D"background-color:#004AA3; padding-top:18px; ">
+        <table class=3D"blueBannerPaddingInner" width=3D"100%" align=3D"cen=
+ter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+            <tbody>
+                <tr>
+                    <td style=3D"color:#ffffff; font-family:Roboto,Arial; f=
+ont-size:14px; padding-bottom:28px; padding-top:12px; " align=3D"right">
+                        <span>Issued: </span>
+                        <span>May 19, 2023</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style=3D"color:#ffffff; font-family:Roboto,Arial; f=
+ont-size:28px; font-weight:bold; padding-bottom:24px; ">
+                       =20
+                       =20
+                        <span>Your trip confirmation and receipt</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style=3D"color:#ffffff; font-family:Roboto,Arial; f=
+ont-size:14px; ">
+                        <span>We charged $230.20</span
+                        ><span> to your card ending in 1234</span
+                    ><span> for your ticket purchase.</span>
+                    </td>
+                   =20
+                </tr>
+				<tr>
+				<td style=3D"height:23px; ">&nbsp;</td>
+                </tr>
+				               =20
+			=09
+               =20
+                <tr>
+                    <td style=3D"color:#ffffff; font-family:Roboto,Arial; f=
+ont-size:14px; word-break:normal; ">
+                        <span>You can check in via the American app 24 hour=
+s before your flight and get your mobile boarding pass.</span>
+                    </td>
+                   =20
+                </tr>
+                <tr>
+                    <td style=3D"height:23px; ">&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+       =20
+    </td>
+</tr>
+                                            <tr>
+                                                <td>
+                                                    <table width=3D"100%" c=
+ellspacing=3D"0" cellpadding=3D"0" border=3D"0"
+                                                        bgcolor=3D"#ffffff"=
+ style=3D"border-collapse: collapse;">
+                                                        <tr>
+
+                                                            <!-- white sect=
+ion left of card, below header background -->
+                                                            <td class=3D"ov=
+erlap" valign=3D"top" bgcolor=3D"#ffffff"
+                                                                align=3D"ce=
+nter">
+                                                                <table cell=
+spacing=3D"0" cellpadding=3D"0" border=3D"0"
+                                                                    width=
+=3D"100%">
+                                                                    <tbody>
+                                                                        <tr=
+>
+                                                                           =
+ <!-- header background section left of card -->
+                                                                           =
+ <td height=3D"150px" bgcolor=3D"#004AA3"
+                                                                           =
+     align=3D"center"
+                                                                           =
+     style=3D"height: 150px; background-color: #004AA3;">
+                                                                           =
+ </td>
+                                                                        </t=
+r>
+                                                                    </tbody=
+>
+                                                                </table>
+                                                            </td>
+                                                            <!-- end of sec=
+tion left of card, below header background -->
+                                                            <td valign=3D"t=
+op" align=3D"center" style=3D"display: flex;"
+                                                                max-width=
+=3D"486px">
+                                                                <table widt=
+h=3D"100%" cellspacing=3D"0" cellpadding=3D"0"
+                                                                    border=
+=3D"0">
+                                                                    <tr>
+                                                                        <td=
+ valign=3D"top" class=3D"outlookBorders" align=3D"center">
+    <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"
+        style=3D"border: 1px solid #EBEDEF;box-shadow: 0 8px 16px 0 rgba(0,=
+ 0, 0, 0.16); max-width: 496px;">
+        <!-- record locator -->
+        <thead>
+            <tr>
+        <td style=3D"padding:5px 20px 5px 20px" align=3D"left" bgcolor=3D"#=
+ECF4FA">
+            <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0">
+                <tbody>
+                   =20
+                       =20
+                        <tr>
+                            <td style=3D"text-align:left;font-family:Roboto=
+,Arial;color:#131313;padding:0px 0px 0px;line-height: 24px" class=3D"itiner=
+ary-text"
+                                valign=3D"top" align=3D"left">
+                                <span style=3D"font-weight:bold;color:#1313=
+13">Record Locator: </span><span
+                                    style=3D"font-weight:bold;color:#131313=
+;">DMWZHJ</span>
+                            </td>
+                        </tr>
+                   =20
+                   =20
+                   =20
+                   =20
+                </tbody>
+            </table>
+        </td>
+    </tr>
+           =20
+           =20
+           =20
+        </thead>
+        <tbody>
+            <!-- date -->
+           =20
+            <tr>
+                <td style=3D"padding:16px 20px 0px 20px" align=3D"left;" bg=
+color=3D"#ffffff">
+                    <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"=
+0" border=3D"0">
+                        <tbody>
+                            <tr>
+                                <td style=3D"font-family:Roboto,Arial;color=
+:#000000;padding:0px 0px 0px 0px;line-height:26px;"
+                                    class=3D"itinerary-header" align=3D"lef=
+t" bgcolor=3D"#ffffff">
+                                    <span
+                                        style=3D"color:#004AA3;font-weight:=
+bold;text-decoration:none;"
+                                        class=3D"itinerary-header">Wednesda=
+y, July 12, 2023</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style=3D"padding:0px 20px 0px 20px" align=3D"left" bgco=
+lor=3D"#ffffff">
+                    <table width=3D"100%">
+                        <tr>
+                            <!-- image -->
+                            <td style=3D"vertical-align: top;Margin-top:8px=
+;" class=3D"itinerary-image-padding">
+                                <img style=3D"height:110px; width:14px;" bo=
+rder=3D"0" height=3D"100%" hspace=3D"-1" vspace=3D"0"
+                                    src=3D"https://www.aa.com/content/image=
+s/email/cne/depart-return-indicator.png"
+                                    alt=3D"">
+                            </td>
+                            <!-- departure + arrival -->
+                            <td>
+                                <table width=3D"100%">
+                                    <tr>
+                                        <td style=3D"vertical-align:top;">
+                                            <!-- departure -->
+                                            <table cellspacing=3D"0" cellpa=
+dding=3D"0" border=3D"0">
+                                                <tbody style=3D"min-width: =
+150px;">
+                                                    <tr>
+                                                        <td style=3D"font-f=
+amily:Roboto,Arial;font-weight:bold;"
+                                                            class=3D"itiner=
+ary-iata itinerary-data-spacing">BUR</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=3D"font-f=
+amily:Roboto,Arial;white-space:nowrap;min-width: 150px;"
+                                                            class=3D"itiner=
+ary-small-text itinerary-data-spacing">Burbank</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td style=3D"font-f=
+amily:Roboto,Arial;font-weight:bold;text-decoration:none;white-space:nowrap=
+;Margin-bottom:7px;min-width: 150px;"
+                                                            class=3D"itiner=
+ary-text itinerary-data-spacing">8:20 AM</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td width=3D"10%"></td>
+                                        <td style=3D"vertical-align:top;" a=
+lign=3D"left" width=3D"40%">
+                                            <table width=3D"100%">
+                                                <!-- flight number  -->
+                                                <tr>
+                                                    <td style=3D"white-spac=
+e:nowrap;">
+                                                        <table width=3D"100=
+%">
+                                                            <tr>
+                                                               =20
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span
+                                                                        sty=
+le=3D"font-weight:bold;font-family:Roboto,Arial;width: 60px;vertical-align:=
+ top;"
+                                                                        cla=
+ss=3D"itinerary-small-text">AA 942=C2=A0=C2=A0</span>&nbsp;<img
+                                                                        sty=
+le=3D"vertical-align: top;" border=3D"0"
+                                                                        hei=
+ght=3D"16" vspace=3D"0" width=3D"20"
+                                                                        src=
+=3D"https://www.aa.com/content/images/email/cne/aa-logo.png"
+                                                                        alt=
+=3D"">
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style=3D"color:#000=
+000; font-family:Roboto,Arial;width:130px;">
+                                                       =20
+                                                       =20
+                                                       =20
+                                                        <span class=3D"itin=
+erary-small-text"
+                                                            style=3D"text-d=
+ecoration:none;vertical-align: top; display: inline-block;"></span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- TODO make dynamic if disclosure pr=
+esent -->
+                                    <tr class=3D"itinerary-spacing">
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td style=3D"vertical-align:top;">
+                                            <!-- arrival -->
+                                            <table cellspacing=3D"0" cellpa=
+dding=3D"0" border=3D"0">
+                                                <tbody style=3D"min-width: =
+150px;">
+                                                    <tr>
+                                                        <td style=3D"font-f=
+amily:Roboto,Arial;font-weight:bold;"
+                                                            class=3D"itiner=
+ary-iata itinerary-data-spacing">PHX</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=3D"font-f=
+amily:Roboto,Arial;white-space:nowrap;min-width: 150px;padding-bottom:4px;p=
+adding-top:0px;"
+                                                            class=3D"itiner=
+ary-small-text">Phoenix</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=3D"font-f=
+amily:Roboto,Arial;font-weight:bold;text-decoration:none;white-space:nowrap=
+;min-width: 150px;"
+                                                            class=3D"itiner=
+ary-text itinerary-data-spacing">10:01 AM</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td width=3D"20%"></td>
+
+                                        <td style=3D"color:#000000; font-fa=
+mily:Roboto,Arial;"
+                                            class=3D"itinerary-small-text">
+                                            <table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style=3D"color:=
+#000000; font-family:Roboto,Arial;"
+                                                            class=3D"itiner=
+ary-small-text">
+                                                            <table border=
+=3D"0" cellpadding=3D"2px" cellspacing=3D"0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td=
+>
+                                                                           =
+ <span class=3D"itinerary-small-text"
+                                                                           =
+     style=3D"color:#000000; ">Seat:</span>
+                                                                        </t=
+d>
+                                                                        <td=
+>
+                                                                           =
+=20
+                                                                           =
+     <span class=3D"itinerary-small-text"
+                                                                           =
+         style=3D"color:#000000;font-weight:bold;">
+                                                                           =
+         <span class=3D"itinerary-small-text">18C</span>
+                                                                           =
+     </span>
+                                                                           =
+=20
+                                                                        </t=
+d>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td=
+ style=3D"color:#000000; font-family:Roboto,Arial;"
+                                                                           =
+ class=3D"itinerary-small-text">
+                                                                           =
+ <table border=3D"0" cellpadding=3D"0"
+                                                                           =
+     cellspacing=3D"0">
+                                                                           =
+     <tbody>
+                                                                           =
+         <tr>
+                                                                           =
+             <td>
+                                                                           =
+                 <span
+                                                                           =
+                     class=3D"itinerary-small-text"
+                                                                           =
+                     style=3D"color:#000000; ">Class:</span>
+                                                                           =
+             </td>
+                                                                           =
+         </tr>
+                                                                           =
+     </tbody>
+                                                                           =
+ </table>
+                                                                        </t=
+d>
+                                                                        <td=
+ style=3D"color:#000000;font-weight:bold;">
+                                                                           =
+=20
+                                                                           =
+=20
+                                                                           =
+=20
+                                                                           =
+ <span class=3D"itinerary-small-text"
+                                                                           =
+     style=3D"color:#000000; ">Economy</span>
+                                                                           =
+=20
+                                                                           =
+=20
+                                                                           =
+=20
+                                                                           =
+ <span class=3D"itinerary-small-text"
+                                                                           =
+     style=3D"color:#000000; "> (S)</span>
+                                                                        </t=
+d>
+
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td=
+ style=3D"color:#000000;">
+                                                                           =
+ <table border=3D"0" cellpadding=3D"0"
+                                                                           =
+     cellspacing=3D"0">
+                                                                           =
+     <tbody>
+                                                                           =
+         <tr>
+                                                                           =
+             <td>
+                                                                           =
+                 <span
+                                                                           =
+                     class=3D"itinerary-small-text"
+                                                                           =
+                     style=3D"color:#000000; ">Meals:</span>
+                                                                           =
+             </td>
+                                                                           =
+         </tr>
+                                                                           =
+     </tbody>
+                                                                           =
+ </table>
+                                                                        </t=
+d>
+                                                                        <td=
+ style=3D"color:#000000;font-weight:bold;">
+                                                                           =
+=20
+                                                                        </t=
+d>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- arrive next day -->
+           =20
+        </tbody>
+        <tbody>
+            <!-- date -->
+            <tr>
+                <td>
+                    <table width=3D"90%" align=3D"center">
+                        <tr>
+                            <td style=3D"height:10px;"></td>
+                        </tr>
+                        <tr>
+                            <td style=3D"border-top:#E4E9EC 1px solid; heig=
+ht:10px;"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+            <tr>
+                <td style=3D"padding:0px 20px 0px 20px" align=3D"left" bgco=
+lor=3D"#ffffff">
+                    <table width=3D"100%">
+                        <tr>
+                            <!-- image -->
+                            <td style=3D"vertical-align: top;Margin-top:8px=
+;" class=3D"itinerary-image-padding">
+                                <img style=3D"height:110px; width:14px;" bo=
+rder=3D"0" height=3D"100%" hspace=3D"-1" vspace=3D"0"
+                                    src=3D"https://www.aa.com/content/image=
+s/email/cne/depart-return-indicator.png"
+                                    alt=3D"">
+                            </td>
+                            <!-- departure + arrival -->
+                            <td>
+                                <table width=3D"100%">
+                                    <tr>
+                                        <td style=3D"vertical-align:top;">
+                                            <!-- departure -->
+                                            <table cellspacing=3D"0" cellpa=
+dding=3D"0" border=3D"0">
+                                                <tbody style=3D"min-width: =
+150px;">
+                                                    <tr>
+                                                        <td style=3D"font-f=
+amily:Roboto,Arial;font-weight:bold;"
+                                                            class=3D"itiner=
+ary-iata itinerary-data-spacing">PHX</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=3D"font-f=
+amily:Roboto,Arial;white-space:nowrap;min-width: 150px;"
+                                                            class=3D"itiner=
+ary-small-text itinerary-data-spacing">Phoenix</td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td style=3D"font-f=
+amily:Roboto,Arial;font-weight:bold;text-decoration:none;white-space:nowrap=
+;Margin-bottom:7px;min-width: 150px;"
+                                                            class=3D"itiner=
+ary-text itinerary-data-spacing">12:12 PM</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td width=3D"10%"></td>
+                                        <td style=3D"vertical-align:top;" a=
+lign=3D"left" width=3D"40%">
+                                            <table width=3D"100%">
+                                                <!-- flight number  -->
+                                                <tr>
+                                                    <td style=3D"white-spac=
+e:nowrap;">
+                                                        <table width=3D"100=
+%">
+                                                            <tr>
+                                                               =20
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span
+                                                                        sty=
+le=3D"font-weight:bold;font-family:Roboto,Arial;width: 60px;vertical-align:=
+ top;"
+                                                                        cla=
+ss=3D"itinerary-small-text">AA 338=C2=A0=C2=A0</span>&nbsp;<img
+                                                                        sty=
+le=3D"vertical-align: top;" border=3D"0"
+                                                                        hei=
+ght=3D"16" vspace=3D"0" width=3D"20"
+                                                                        src=
+=3D"https://www.aa.com/content/images/email/cne/aa-logo.png"
+                                                                        alt=
+=3D"">
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style=3D"color:#000=
+000; font-family:Roboto,Arial;width:130px;">
+                                                       =20
+                                                       =20
+                                                       =20
+                                                        <span class=3D"itin=
+erary-small-text"
+                                                            style=3D"text-d=
+ecoration:none;vertical-align: top; display: inline-block;"></span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- TODO make dynamic if disclosure pr=
+esent -->
+                                    <tr class=3D"itinerary-spacing">
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td style=3D"vertical-align:top;">
+                                            <!-- arrival -->
+                                            <table cellspacing=3D"0" cellpa=
+dding=3D"0" border=3D"0">
+                                                <tbody style=3D"min-width: =
+150px;">
+                                                    <tr>
+                                                        <td style=3D"font-f=
+amily:Roboto,Arial;font-weight:bold;"
+                                                            class=3D"itiner=
+ary-iata itinerary-data-spacing">ORD</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=3D"font-f=
+amily:Roboto,Arial;white-space:nowrap;min-width: 150px;padding-bottom:4px;p=
+adding-top:0px;"
+                                                            class=3D"itiner=
+ary-small-text">Chicago O'Hare</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=3D"font-f=
+amily:Roboto,Arial;font-weight:bold;text-decoration:none;white-space:nowrap=
+;min-width: 150px;"
+                                                            class=3D"itiner=
+ary-text itinerary-data-spacing">5:48 PM</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td width=3D"20%"></td>
+
+                                        <td style=3D"color:#000000; font-fa=
+mily:Roboto,Arial;"
+                                            class=3D"itinerary-small-text">
+                                            <table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style=3D"color:=
+#000000; font-family:Roboto,Arial;"
+                                                            class=3D"itiner=
+ary-small-text">
+                                                            <table border=
+=3D"0" cellpadding=3D"2px" cellspacing=3D"0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td=
+>
+                                                                           =
+ <span class=3D"itinerary-small-text"
+                                                                           =
+     style=3D"color:#000000; ">Seat:</span>
+                                                                        </t=
+d>
+                                                                        <td=
+>
+                                                                           =
+=20
+                                                                           =
+     <span class=3D"itinerary-small-text"
+                                                                           =
+         style=3D"color:#000000;font-weight:bold;">
+                                                                           =
+         <span class=3D"itinerary-small-text">22D</span>
+                                                                           =
+     </span>
+                                                                           =
+=20
+                                                                        </t=
+d>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td=
+ style=3D"color:#000000; font-family:Roboto,Arial;"
+                                                                           =
+ class=3D"itinerary-small-text">
+                                                                           =
+ <table border=3D"0" cellpadding=3D"0"
+                                                                           =
+     cellspacing=3D"0">
+                                                                           =
+     <tbody>
+                                                                           =
+         <tr>
+                                                                           =
+             <td>
+                                                                           =
+                 <span
+                                                                           =
+                     class=3D"itinerary-small-text"
+                                                                           =
+                     style=3D"color:#000000; ">Class:</span>
+                                                                           =
+             </td>
+                                                                           =
+         </tr>
+                                                                           =
+     </tbody>
+                                                                           =
+ </table>
+                                                                        </t=
+d>
+                                                                        <td=
+ style=3D"color:#000000;font-weight:bold;">
+                                                                           =
+=20
+                                                                           =
+=20
+                                                                           =
+=20
+                                                                           =
+ <span class=3D"itinerary-small-text"
+                                                                           =
+     style=3D"color:#000000; ">Economy</span>
+                                                                           =
+=20
+                                                                           =
+=20
+                                                                           =
+=20
+                                                                           =
+ <span class=3D"itinerary-small-text"
+                                                                           =
+     style=3D"color:#000000; "> (S)</span>
+                                                                        </t=
+d>
+
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td=
+ style=3D"color:#000000;">
+                                                                           =
+ <table border=3D"0" cellpadding=3D"0"
+                                                                           =
+     cellspacing=3D"0">
+                                                                           =
+     <tbody>
+                                                                           =
+         <tr>
+                                                                           =
+             <td>
+                                                                           =
+                 <span
+                                                                           =
+                     class=3D"itinerary-small-text"
+                                                                           =
+                     style=3D"color:#000000; ">Meals:</span>
+                                                                           =
+             </td>
+                                                                           =
+         </tr>
+                                                                           =
+     </tbody>
+                                                                           =
+ </table>
+                                                                        </t=
+d>
+                                                                        <td=
+ style=3D"color:#000000;font-weight:bold;">
+                                                                           =
+=20
+                                                                           =
+     <span class=3D"itinerary-small-text">
+                                                                           =
+         <span class=3D"itinerary-small-text">Food for purchase</span>
+                                                                           =
+     </span>
+                                                                           =
+=20
+                                                                        </t=
+d>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- arrive next day -->
+           =20
+        </tbody>
+
+        <!-- manage your trip -->
+        <tfoot>
+            <tr>
+                <td style=3D"padding-top:40px;padding-left:30px; padding-ri=
+ght:30px;padding-bottom: 20px;" align=3D"right">
+                    <table style=3D"border:2px; font-family:Roboto,Arial; "=
+ class=3D"itinerary-text" border=3D"0"
+                        cellpadding=3D"0" cellspacing=3D"0" color=3D"#fffff=
+f">
+                        <tbody>
+                            <tr>
+                                <td style=3D"padding-bottom:8px; padding-le=
+ft:30px; border:1px solid #0078D2; padding-right:30px; padding-top:8px; tex=
+t-align:center; text-decoration:none;"
+                                    class=3D"itinerary-text">
+                                    <a style=3D"text-decoration:none; "
+                                        href=3D"http://link.info.email.aa.c=
+om/ls/click?upn=3D6Bg-2BgqSVznbULFxyD8xRE6-2FLllQDuZ0hcIwUjbwJg2UbvSQaKS1qZ=
+gL8jg19ejhAKAnQQNY4nhvzDsXILQPvHEnZpLLOG6jg5TLRG8pivnoLcpqQoBzp5-2B8vokko1l=
+FrsdEDtn17DMS1v1xOLendSA-3D-3DuU26_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-=
+2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyI=
+BrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7M=
+HZwFKRXYgfFyU8b3zxiQWmUFE6vlC6JXfSzuHmUIRWMV-2Bp-2B8P5su7gKHyiP7aT-2Fv7RiCs=
+Mt41VrLEUkIzbuUBIvYWa1fN9RGy5uIhCPgo7RESuJnuyycfh-2BWOg-2FaExevIZDMHYIOjPgV=
+IYt3KxvTuzgJW7e2c5q70su22tPhFNc2tAhoMrtZulRU9CI7Q2dGsIMD7U">
+                                        <span style=3D"color:#0078D2; font-=
+weight: 700;text-decoration:none;">Manage your trip</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+           =20
+        </tfoot>
+    </table>
+</td>
+                                                                    </tr>
+                                                                   =20
+                                                                    <!--End=
+ of stuff inside the overlap-->
+                                                                </table>
+                                                            </td>
+                                                            <!-- white sect=
+ion right of card, below header background -->
+                                                            <td class=3D"ov=
+erlap" valign=3D"top" bgcolor=3D"#ffffff"
+                                                                align=3D"ce=
+nter">
+                                                                <table cell=
+spacing=3D"0" cellpadding=3D"0" border=3D"0"
+                                                                    width=
+=3D"100%">
+                                                                    <tbody>
+                                                                        <tr=
+>
+                                                                           =
+ <!-- header background section right of card -->
+                                                                           =
+ <td height=3D"150px" bgcolor=3D"#004AA3"
+                                                                           =
+     align=3D"center"
+                                                                           =
+     style=3D"height: 150px; background-color: #004AA3;">
+                                                                           =
+ </td>
+                                                                        </t=
+r>
+                                                                    </tbody=
+>
+                                                                </table>
+                                                            </td>
+                                                            <!-- end of sec=
+tion right of card, below header background -->
+                                                        </tr>
+                                                    </table>
+                                                    <!--End of the overlap =
+table-->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=3D"padding-generi=
+c" style=3D"padding-bottom:20px; padding-top:20px;" valign=3D"top" align=3D=
+"center">
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+        <tr>
+            <td style=3D"width:70%; ">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"90%">
+                    <tr>
+                        <td id=3D"citiads1">
+                            <span>Earn 10,000 bonus miles</span>
+                           =20
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id=3D"citiads2">
+                            <span>Plus $50 back and no annual fee. Terms Ap=
+ply.</span>
+                           =20
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id=3D"citiads3">
+                            <a href=3D"http://link.info.email.aa.com/ls/cli=
+ck?upn=3D6Bg-2BgqSVznbULFxyD8xRE5IeU-2BIv5Kg-2FggH3kVzI9SY4TOmFi9eM78Ekv49W=
+WuThhblURyXJDhBMpap5pkTg4M9de1p3aOfgTFFNJRTvRbHanSVKL6bHbbuAWUJ5WQ-2BLkIgX5=
+xLuyXNydY7g-2FRzyu4Vl5eZob4m3HwiAT4UHuNG-2BVdP-2FBmYXYjjHLMQzdaNtjSkN_2qdsS=
+ky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5k=
+keB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2Ffw=
+Gkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRhJOEnO7wOqp1jHwqyxgNoo948NxP0eVsj4=
+xbmxJyLxAdrLILYuLVumSWNxNAFEgYZ7TLvtVbccAlA6ajANXapoZovu5dG98HSYrv5eVGUQIj9=
+LXVoM0NpsKsWqXFnp1LJZhW-2BKYIvh3DQkE9CMB0Y4YNFJ4NkZRx0kRULaPuvIfSlF5Dr2WMRv=
+HBixRuxZMj" style=3D"color:rgb(0, 120, 210); text-decoration:none; "><span>=
+Learn more</span></a>
+                           =20
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td class=3D"citiads_image" style=3D"width: 30%;">
+                <img height=3D"95" width=3D"140" src=3D"https://www.aa.com/=
+content/images/email/cne/citi-mileup-icon.jpg" alt=3D"">
+                <img src=3D"https://www.aa.com/content/images/common/wa.gif=
+?Log=3D1&amp;camp=3Dtc_na&amp;guid=3De5df27a8-63ff-4933-be31-d3497c6070f0&a=
+mp;ts=3D2023-05-19T23:21Z&amp;id=3D-207379756" alt=3D"">
+            </td>
+           =20
+        </tr>
+    </table>
+</td>
+                                            </tr>
+                                           =20
+                                            <tr>
+                                                <td>
+                                                    <table width=3D"100%" c=
+ellspacing=3D"0" cellpadding=3D"0" border=3D"0"
+                                                        bgcolor=3D"#ffffff"=
+ style=3D"border-collapse: collapse;">
+                                                        <tr>
+                                                            <td valign=3D"t=
+op" align=3D"center" style=3D"display: flex;"
+                                                                max-width=
+=3D"486px">
+                                                                <table widt=
+h=3D"100%" cellspacing=3D"0" cellpadding=3D"0"
+                                                                    border=
+=3D"0">
+                                                                    <tr>
+                                                                        <td=
+ style=3D"background-color: #ffffff; margin-left:20px; margin-right:20px; "=
+>
+    <table align=3D"center" width=3D"100%"
+        cellspacing=3D"0" border=3D"0"
+        style=3D"background-color: #f5f7f7; border: 1px solid #f5f7f7; bord=
+er-radius: 4px; max-width: 496px;">
+       =20
+        <tbody>
+           =20
+                <tr>
+    <td style=3D"padding-bottom:5px; padding-top:12px; color:#004aa3; font-=
+weight:bold; font-family:Roboto,Arial; font-size:22px; " class=3D"padding-g=
+eneric">Your purchase</td>
+</tr>
+           =20
+           =20
+            <tr>
+    <td class=3D"padding-generic basic">
+        <table style=3D"padding-bottom:0px; " border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" width=3D"100%">
+            <tbody style=3D"padding-bottom:0px; ">
+                <tr style=3D"padding-bottom:0px; ">
+                    <td style=3D"font-weight:bold; height:12px; line-height=
+:25px; padding-bottom:0px; padding-top:12px; " class=3D"basic">
+                        <span>Michael</span>
+                        <span>Purkhiser</span>
+                       =20
+                    </td>
+                </tr>
+                <tr>
+                    <td style=3D"font-family:Roboto,Arial; font-size:14px; =
+font-weight:normal; ">
+                        <span style=3D"color:#0078D2; text-decoration:none;=
+ "><a href=3D"http://link.info.email.aa.com/ls/click?upn=3D6Bg-2BgqSVznbULF=
+xyD8xRE-2FGynbFDaEsHoEp9c6DAQSMe1-2B2EFzrqExsrtaODqWNKleXeoFxqRIK2Gm9gg8SnS=
+fUu-2F9GdH2FCSApF4Avi9Eg-3D87t7_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fu=
+u2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrL=
+orHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZw=
+FKRgU-2FLbm-2BIntqFII0jXyZqPlBi3Zt9cMqgiZ5AyQM06OnIyOyRPCLPCucUdiuVOZYQ9jE1=
+I6SX75Hczy67HoCpHy-2BgTzqc-2FoiX823f5LGbkrt4tbBwCHviS0BrAvVnh-2BWzdr5H4zYpR=
+MqdOvDs2XOwYOXgOOpOshLiQUvtqiX53iVz-2B6ejEYC-2B6RB-2B7lB0V0OV" style=3D"col=
+or:#0078D2; text-decoration:none; ">Join the AAdvantage<sup>=C2=AE</sup> Pr=
+ogram</a></span>
+                       =20
+                       =20
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class=3D"itinerary" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%">
+            <tbody class=3D"itinerary">
+                <tr>
+                    <td style=3D"font-weight:normal; line-height:21px; padd=
+ing-top:5px; width:65%; " class=3D"basic">
+                        <span class=3D"receipt">New ticket (0012395047703)<=
+/span>
+                       =20
+                       =20
+                       =20
+                       =20
+                       =20
+                       =20
+                       =20
+                       =20
+                       =20
+                       =20
+                       =20
+                       =20
+                       =20
+                    </td>
+                    <td style=3D"font-weight:normal; line-height:21px; padd=
+ing-top:5px; vertical-align: top;" align=3D"right" class=3D"basic">$230.20<=
+/td>
+                   =20
+                </tr>
+                <tr class=3D"itinerary">
+                    <td class=3D"itinerary" style=3D"line-height:20px; widt=
+h:65%; ">
+                       =20
+                    </td>
+                </tr>
+                <tr style=3D"color:#000000">
+                    <td style=3D"line-height:20px; ">
+                        <span>[</span><span>$191.63</span><span></span><spa=
+n>+ Taxes & carrier-imposed fees $38.57</span><span>]</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       =20
+    </td>
+</tr>
+           =20
+           =20
+            <tr>
+    <td class=3D"padding-generic">
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%">
+            <tbody>
+               =20
+            </tbody>
+        </table>
+    </td>
+</tr>
+            <tr>
+                <td>
+                    <table width=3D"90%"
+                        align=3D"center">
+                        <tr>
+                            <td class=3D"divider">
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+    <td class=3D"padding-generic">
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%">
+            <tbody>
+                <tr>
+                    <td style=3D"color:#36495a; font-family:Roboto,Arial; p=
+adding-bottom:12px; padding-top:12px; font-weight:bold; ">
+                        <span style=3D"font-size:17px; ">Total cost </span>
+                       =20
+                    </td>
+                   =20
+                    <td style=3D"color:#36495a; font-family:Roboto,Arial; f=
+ont-size:17px; font-weight:bold; padding-bottom:12px; padding-top:12px; tex=
+t-align:right; ">$230.20</td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+           =20
+                <tr>
+    <td style=3D"font-family:Roboto,Arial; font-size:22px; padding-bottom:1=
+0px; padding-top:25px; " class=3D"padding-generic">
+        <span style=3D"color: #004aa3; font-weight:bold; font-family:Roboto=
+,Arial; font-size:22px; padding-bottom:25px; ">Your payment</span>
+    </td>
+</tr>
+                <tr>
+    <td class=3D"padding-generic">
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"it=
+inerary" width=3D"100%">
+            <tbody class=3D"itinerary">
+               =20
+                    <tr>
+                        <td style=3D"font-weight:normal; line-height:21px; =
+width:65%; " class=3D"basic">
+                            <span>
+                                <span>
+                                   =20
+                                    <span>Visa</span>
+                                </span>
+                               =20
+                            </span>
+                           =20
+                           =20
+                           =20
+                           =20
+                           =20
+                           =20
+                           =20
+                           =20
+                           =20
+                           =20
+                           =20
+                           =20
+                           =20
+                           =20
+                            <span>(</span><span>ending 1890</span><span>)</=
+span>
+                        </td>
+                        <td style=3D"font-weight:normal; line-height:21px; =
+" align=3D"right" class=3D"basic">$230.20</td>
+                    </tr>
+               =20
+            </tbody>
+        </table>
+    </td>
+</tr>
+                <tr>
+                    <td>
+                        <table width=3D"90%"
+                            align=3D"center">
+                            <tr>
+                                <td class=3D"divider">
+                                    &nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+    <td class=3D"padding-generic">
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"it=
+inerary" width=3D"100%">
+            <tbody class=3D"itinerary">
+                <tr>
+                    <td style=3D"font-size:17px; font-weight:bold; line-hei=
+ght:21px; padding-top:15px; width:33%; " class=3D"basic">
+                       =20
+                       =20
+                    </td>
+                   =20
+                </tr>
+                <tr>
+                    <td class=3D"total-heading-text">Total paid </td>
+                   =20
+                    <td class=3D"total-heading-text" style=3D"text-align:ri=
+ght; ">$230.20</td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+                <tr>
+    <td class=3D"padding-generic" style=3D"padding-top:20px; ">
+        <table width=3D"100%" class=3D"itinerary" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+            <tbody class=3D"itinerary">
+               =20
+                <tr>
+                   =20
+                </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+               =20
+               =20
+           =20
+        </tbody>
+    </table>
+</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td=
+ style=3D"height:20px; ">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td=
+>
+                                                                           =
+ <table style=3D"max-width: 496px; "
+                                                                           =
+     align=3D"center" border=3D"0"
+                                                                           =
+     cellpadding=3D"0" cellspacing=3D"0"
+                                                                           =
+     width=3D"100%">
+                                                                           =
+     <tbody>
+    <!--This is the baggageInformation fragment-->
+    <tr>
+        <td
+            style=3D"color: #131313; font-family:Arial; font-size:18px; fon=
+t-weight:normal; padding-bottom:24px; padding-top:20px; ">
+            <span>Bag information</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%">
+                <tbody>
+                    <tr>
+                        <td align=3D"top">
+                            <!--Start of stuff to do with Checked Bag Cost =
+Stuff-->
+                           =20
+                                <!--[if (gte mso 9)|(IE)]>
+                                        <table width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0">
+                                            <tr><![endif]-->
+
+                               =20
+                                   =20
+                                        <!--[if (gte mso 9)|(IE)]>
+                                                    <td style=3D"width:100%=
+" width=3D"100%" valign=3D"top">
+                                                <![endif]-->
+                                        <table style=3D"float:left; height:=
+20px; " class=3D"checkedbag-table" border=3D"0"
+                                            cellpadding=3D"0" cellspacing=
+=3D"0">
+                                            <tr>
+                                                <td>
+    <!--This is the CheckedBagCostTable-->
+    <table style=3D"width:100%" width=3D"100%">
+        <thead>
+            <tr>
+                <th class=3D"checkedbag-header">
+                    <span>Checked Bag </span>
+                   =20
+                    <span>(</span><span>Airport</span><span>)</span>
+                </th>
+            </tr>
+            <tr>
+                <th style=3D"padding:3px; "></th>
+            </tr>
+        </thead>
+        <tbody>
+   =20
+       =20
+           =20
+           =20
+            <!--Inner OnlineCostTable; this repeats for every slice-->
+           =20
+               =20
+           =20
+               =20
+                   =20
+                   =20
+                    <tr>
+                        <td style=3D"color:#131313; font-size:14px; font-we=
+ight:normal; ">
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%">
+                                <tbody>
+                                    <tr>
+                                        <td class=3D"checkedbag-standard" s=
+tyle=3D"margin-bottom: 0; ">
+                                            <span>1<sup>st</sup> bag</span>
+                                        </td>
+                                        <td class=3D"checkedbag-standard" s=
+tyle=3D"margin-bottom: 0; ">
+                                           =20
+                                            <span>$30.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class=3D"checkedbag-standard" s=
+tyle=3D"margin-bottom: 0; padding-bottom: 0;">
+                                            <span>2<sup>nd</sup> bag</span>
+                                        </td>
+                                        <td class=3D"checkedbag-standard" s=
+tyle=3D"margin-bottom: 0;  padding-bottom: 0;">
+                                           =20
+                                            <span>$40.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+               =20
+           =20
+       =20
+   =20
+</tbody>
+    </table>
+</td>
+                                            </tr>
+                                        </table>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                <![endif]-->
+                                   =20
+                                   =20
+                                       =20
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                    <td style=3D"width:100%=
+" width=3D"100%" valign=3D"top">
+                                                <![endif]-->
+                                            <table style=3D"float:right; he=
+ight:20px; " class=3D"checkedbag-table"
+                                                border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0">
+                                                <tr>
+                                                    <td>
+    <!--This is the CheckedBagCostTable-->
+    <table style=3D"width:100%" width=3D"100%">
+        <thead>
+            <tr>
+                <th class=3D"checkedbag-header">
+                    <span>Checked Bag </span>
+                   =20
+                    <span>(</span><span>Online*</span><span>)</span>
+                </th>
+            </tr>
+            <tr>
+                <th style=3D"padding:3px; "></th>
+            </tr>
+        </thead>
+        <tbody>
+   =20
+       =20
+           =20
+           =20
+            <!--Inner OnlineCostTable; this repeats for every slice-->
+           =20
+               =20
+                   =20
+                   =20
+                    <tr>
+                        <td style=3D"color:#131313; font-size:14px; font-we=
+ight:normal; ">
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%">
+                                <tbody>
+                                    <tr>
+                                        <td class=3D"checkedbag-standard" s=
+tyle=3D"margin-bottom: 0; ">
+                                            <span>1<sup>st</sup> bag</span>
+                                        </td>
+                                        <td class=3D"checkedbag-standard" s=
+tyle=3D"margin-bottom: 0; ">
+                                           =20
+                                            <span>$30.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class=3D"checkedbag-standard" s=
+tyle=3D"margin-bottom: 0; padding-bottom: 0;">
+                                            <span>2<sup>nd</sup> bag</span>
+                                        </td>
+                                        <td class=3D"checkedbag-standard" s=
+tyle=3D"margin-bottom: 0;  padding-bottom: 0;">
+                                           =20
+                                            <span>$40.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+               =20
+           =20
+               =20
+           =20
+       =20
+   =20
+</tbody>
+    </table>
+</td>
+                                                </tr>
+                                            </table>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                <![endif]-->
+                                       =20
+                                   =20
+                                    <!--[if (gte mso 9)|(IE)]>
+                                            </tr>
+                                        </table> <![endif]-->
+                               =20
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"
+        style=3D"color:#131313; font-family:Arial; font-size:14px; height:2=
+0px;">
+        <tr>
+            <th style=3D"padding:3px; "></th>
+        </tr>
+       =20
+            <!--Inner weightAndDimensions table; this repeats for every sli=
+ce-->
+           =20
+           =20
+           =20
+           =20
+                <tr>
+                    <td style=3D"width: 100%; padding-left: 10px; padding-r=
+ight: 10px; ">
+                        <span>Maximum dimensions:  </span>
+                        <span>
+                            <span>62 </span>
+                            <span>inches or</span>
+                           =20
+                        </span><span>
+                            <span>158 </span>
+                           =20
+                            <span>centimeters</span>
+                        </span>
+                        <span>calculated as (length + width + height)</span=
+>
+                    </td>
+                </tr>
+                <tr>
+                    <td style=3D"width: 100%; padding-left: 10px; padding-r=
+ight: 10px; ">
+                        <span class=3D"receipt">Maximum weight:  </span>
+                        <span>
+                            <span>50 </span>
+                            <span>pounds or</span>
+                           =20
+                        </span><span>
+                            <span>23 </span>
+                           =20
+                            <span>kilograms</span>
+                        </span>
+                    </td>
+                </tr>
+           =20
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+       =20
+        <!--End of section that repeats for every slice-->
+    </table>
+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td
+            style=3D"width: 100%; font-family: Roboto,Arial; font-size: 14p=
+x; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; ">
+            <span>For information regarding American Airlines checked bagga=
+ge policies, please visit: <a href=3D"http://link.info.email.aa.com/ls/clic=
+k?upn=3D6Bg-2BgqSVznbULFxyD8xRE8mR1uiBGi8yaZETR-2BbajhgREdsUJCk8uW2xPFBCa00=
+EDxWfTs4CJ-2FMz8yKyG8Mi2Gy-2B0Ry9Sn4TkViu-2BVBAtKb9iGsS9DdWfoXN7aLVU1qR67qe=
+_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7=
+wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R8=
+w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKREEZHn9kWcquqv72cAyeBTbKcYq87=
+Mb-2FfueNyNyeyMONyKhb5fm1pXVG1AYG-2FF66CTG3Ch7KaHm0xWlEoRb4PjkKXICfubkkO7Mv=
+ERUzyZP4NYlFx-2BwlWHvX3dlfTPI5F5bKBl0k5jwxKPiCQxeRcOYklyHuA9cQicemDQG2fBdMq=
+c2ruB7YCfGTsp0oO8ipb" style=3D"color:#0078d2; text-decoration:none; ">Bag a=
+nd optional fees</a></span>
+        </td>
+    </tr>
+    <tr>
+        <td style=3D"width: 100%; font-family: Roboto,Arial; font-size: 14p=
+x; padding-left: 10px; padding-right: 10px; ">
+            <span>Bag fees apply at each Check-in location. Additional allo=
+wances and/or discounts may apply.</span>
+            <span style=3D"color:#0078d2; "><a href=3D"http://link.info.ema=
+il.aa.com/ls/click?upn=3D6Bg-2BgqSVznbULFxyD8xRE8mR1uiBGi8yaZETR-2BbajhgREd=
+sUJCk8uW2xPFBCa00EDxWfTs4CJ-2FMz8yKyG8Mi2Gy-2B0Ry9Sn4TkViu-2BVBAtKb9iGsS9Dd=
+WfoXN7aLVU1qRhrON_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp5=
+WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH5kbfs=
+FtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRNZlXKb6PutD=
+E8-2FU1gTpTtm7fidznBfAH30rjDyqrJeoIY2UnCOA-2FoBB9c9FJgBjbXdYVXIVSkgDqvAxv-2=
+BFP9e87xZk0UT9kBL-2BHbEy-2F45ytLVXEM9EF3Ig8TCRT2JgNCvJiKFz6M9mf0McVKrFnnlOg=
+cA4ltvrokjOANSU8iFbMtug-2BthDxwSe7bY65Zwpni" style=3D"color:#0078D2; text-d=
+ecoration:none; ">Bag and optional fees</a></span>
+        </td>
+    </tr>
+    <tr>
+        <td style=3D"width: 100%; font-family: Roboto,Arial; font-size: 14p=
+x; padding-left: 10px; padding-right: 10px; ">
+            <span>If your flight is operated by a partner airline, see the =
+<a href=3D"http://link.info.email.aa.com/ls/click?upn=3D6Bg-2BgqSVznbULFxyD=
+8xRE8mR1uiBGi8yaZETR-2BbajhgREdsUJCk8uW2xPFBCa00EDxWfTs4CJ-2FMz8yKyG8Mi2Gy-=
+2B0Ry9Sn4TkViu-2BVBAtKYHCdv5Bx7Vzbyf3Eu9SbsUcNVIWR7cCNrctQq9YOZFbw-3D-3DNnk=
+u_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW=
+7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R=
+8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRI25PKPpyLtEY7AQlN9MGCv4XIF8=
+kdFeECImq0n-2BsPwISmC82sZgZME26robIdPMuas2Rcie1BR-2Fmrux3py8K8Yz493oD4T2hFG=
+P2sc5sB1uM0i01zC6hufT5N4wtJO0Dk55h3NKkT2U7XM-2FQUPI1WtiNs5sLZR7qKwkVxSnXhJ1=
+RV2fEogyfdRRvBciCL4uT" style=3D"color:#0078D2; text-decoration:none; ">othe=
+r airline=E2=80=99s</a> website for carry-on and checked bag policies.</spa=
+n>
+        </td>
+    </tr>
+    <tr>
+        <td
+            style=3D"width: 100%; font-family: Roboto,Arial; font-size: 14p=
+x; padding-left: 10px; padding-right: 10px; padding-top: 10px; ">
+            <span>*Online payment available beginning 24 hours (and up to 4=
+ hours) before departure.</span>
+        </td>
+    </tr>
+    <tr>
+        <td style=3D"height:20px;">&nbsp;</td>
+    </tr>
+    <tr>
+        <td>
+            <table style=3D"border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <th style=3D"color:#131313; background-color: #F5F7=
+F7; font-family:Arial; font-size:14px; font-weight:normal; padding:10px; te=
+xt-align: left;"
+                            colspan=3D"2">
+                            <span class=3D"carryOnHeaderTab" style=3D"paddi=
+ng-left: 20px;">Carry-on bags </span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td
+                            style=3D"color:#131313; font-family:Arial; font=
+-size:14px; padding: 10px; padding-bottom:12px; margin-bottom: 0; border-bo=
+ttom: #D0DAE0 1px solid; white-space: nowrap;">
+                            <span><b style=3D"color:#36495a; ">1<sup>st</su=
+p> carry-on</b></span>
+                        </td>
+                        <td
+                            style=3D"color:#131313; font-family:Arial; font=
+-size:14px; padding: 10px; padding-bottom:12px; margin-bottom: 0; border-bo=
+ttom: #D0DAE0 1px solid;">
+                            <span>Includes purse, briefcase, laptop bag, or=
+ similar item that must fit under the seat in front of you.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            style=3D"color:#131313; font-family:Arial; padd=
+ing: 10px; padding-top:12px; margin-top: 0; font-size:14px; white-space: no=
+wrap;">
+                            <span><b style=3D"color:#36495a; ">2<sup>nd</su=
+p> carry-on</b></span>
+                        </td>
+                        <td
+                            style=3D"color:#131313; font-family:Arial; padd=
+ing: 10px; padding-top:12px; margin-top: 0; font-size:14px;">
+                            <span>Maximum dimensions not to exceed:  22" lo=
+ng x 14" wide x 9" tall (56 x 35 x 23 cm).</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</tbody>
+                                                                           =
+ </table>
+                                                                        </t=
+d>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td=
+ style=3D"border-bottom:#D0DAE0 1px solid; ">
+                                                                           =
+ &nbsp;</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!--Put stuff outside the overl=
+ap table below here-->
+                                            <tr>
+                                                <td style=3D"padding-bottom=
+:20px; padding-top:20px; width: 100%; margin-left: auto; margin-right: auto=
+;" class=3D"padding-generic">
+  <div style=3D"color:#0061ab; float:left; padding:0px;" class=3D"bookingLi=
+nksMain">
+    <!--[if (gte mso 9)|(IE)]>
+  <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+    <tr>
+      <td width=3D"50%"> <![endif]-->
+    <table style=3D"font-family:Roboto,Arial; padding: 0px; margin: 0px; ma=
+rgin-left: auto;" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%">
+      <tbody>
+        <tr style=3D"line-height: 10px;">
+          <td style=3D"width: 50%; height: 100%; text-align:center; backgro=
+und-color: #ffffff; margin: 0px;" nowrap=3D"0">
+            <div>
+              <img style=3D"border-bottom-width:0px; border-left-width:0px;=
+ border-right-width:0px; border-top-width:0px;"
+                hspace=3D"-1" vspace=3D"0" src=3D"https://www.aa.com/conten=
+t/images/email/cne/icon_hotel.png" alt=3D"">
+              <br>
+              <br>
+              <div style=3D"line-height:20px; text-align:center;  ">
+                <a style=3D"text-decoration:none; "
+                  href=3D"http://link.info.email.aa.com/ls/click?upn=3D6Bg-=
+2BgqSVznbULFxyD8xRE2c874at-2ButwD5Brq-2Ft59u1-2FBNn1vKR3VKi70PNBZch7quLu8h4=
+bFFRgh2cRzrfkHsvEwM7EnD3Fyy-2Fc-2B-2Bkvdug-3DZQSN_2qdsSky8lotuFBAcemxXrAjgb=
+TsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nC=
+bEXDVejkQeCTyyIBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHc=
+hZzpqQ0mTpCQX7MHZwFKRcv-2Bg934NY0MU9muZclIo1xtkiBGrU65SonVso0quIN5oQUE1lwdB=
+X2air5U9p6GTsofhwaj133RYEvYAJtf8AMq7utUxqrdqOdgj-2BRqd-2BGIAZ-2BayXsrzB9YUi=
+yjvshn3NfdM51LUjqJMjmfDpbXTN2ZxHABLXLoEBCv4Z7MtI8YvvNdR9Ui0kGy3qMaQwkIh">
+                  <span style=3D"color:#0078d2; font-size:11px; font-weight=
+:normal; white-space:normal;">Book a hotel =C2=BB</span>
+                </a>
+              </div>
+            </div>
+          </td>
+          <td style=3D"width: 50%; height: 100%; text-align:center; backgro=
+und-color: #ffffff; margin: 0px;" align=3D"center"
+            nowrap=3D"0">
+            <div>
+              <img style=3D"border-bottom-width:0px; border-left-width:0px;=
+ border-right-width:0px; border-top-width:0px;"
+                hspace=3D"-1" vspace=3D"0" src=3D"https://www.aa.com/conten=
+t/images/email/cne/icon_bookcar.png" alt=3D"">
+              <br>
+              <br>
+              <div style=3D"line-height:20px; text-align:center; ">
+                <a style=3D"text-decoration:none; " href=3D"http://link.inf=
+o.email.aa.com/ls/click?upn=3D6Bg-2BgqSVznbULFxyD8xRE567cfRMf6n2C-2BtKuoCf1=
+XY478BRac9wucBUpJbTwQ2rIIzIURAS7lcSqe-2BaGhctog-3D-3DJGjR_2qdsSky8lotuFBAce=
+mxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge=
+8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0=
+adLDBgHchZzpqQ0mTpCQX7MHZwFKRuZFsF7IEODTqBYecPKfsfroDnI2BrYPwZV-2F9w8j-2Fck=
+eqCMzwfShqcr2PHofURYwKNc6wBqalyWMkSRaOb-2F2lUnR50KMunjtJAp7Deip0BjrB-2BqqFC=
+yoH5ZBgwWI-2FuLX9XxtNcsYydaKLc-2FGri3wEk0csl2S1eonONXw6ukHKRNzryOOINrqe24UA=
+ag1I-2B2BL">
+                  <span style=3D"color:#0078d2; font-size:11px; font-weight=
+:normal; white-space:normal;">Book a car =C2=BB</span>
+                </a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--[if (gte mso 9)|(IE)]>
+</td>
+<td width=3D"50%" style=3D"vertical-align:text-top; "> <![endif]-->
+  <div style=3D"color:#0061ab; float:left; padding:0px;" class=3D"bookingLi=
+nksMain">
+    <table style=3D"font-family:Roboto,Arial; padding-left: 0px; margin: 0p=
+x; margin-right: auto;" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%">
+      <tbody>
+        <tr style=3D"line-height: 10px;">
+          <td style=3D"width: 50%; height: 100%; text-align:center; backgro=
+und-color: #ffffff; margin: 0px;" nowrap=3D"0">
+            <div>
+              <img style=3D"border-bottom-width:0px; border-left-width:0px;=
+ border-right-width:0px; border-top-width:0px;"
+                hspace=3D"-1" vspace=3D"0" src=3D"https://www.aa.com/conten=
+t/images/email/cne/trip_insurance_icon2.png"
+                alt=3D"">
+              <br>
+              <br>
+              <div style=3D"line-height:20px; text-align:center;  ">
+                <a style=3D"text-decoration:none; " href=3D"http://link.inf=
+o.email.aa.com/ls/click?upn=3D6Bg-2BgqSVznbULFxyD8xRE44qWZuYrYA-2Fl1Cu91PE-=
+2Bv5PkfRoQQMX0KuLMgXBtrVXGbsmUXNVPPJgqMj6AEdVrA-3D-3DOqM5_2qdsSky8lotuFBAce=
+mxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge=
+8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0=
+adLDBgHchZzpqQ0mTpCQX7MHZwFKRKIfFU-2FCB0NfM-2B-2B-2BTYkZvCtHZ1VGChTKPEJr0sv=
+RXArFTrNrT3OoN87mbAKaFnC0ylw97NpYExOSejZMQFbziObCCl4BkJnJJ9zjPXijXTXVqt8ymU=
+t8sAP7M1DkBb9JSCH5-2FvDJong-2BVMGhl35lSr0FEfDpXmJbnNA49PnhjAdb08S2i4iF62opa=
+W0nUMBFb">
+                  <span style=3D"color:#0078d2; font-size:11px; font-weight=
+:normal; white-space:normal;">Buy trip insurance =C2=BB</span>
+                </a>
+              </div>
+            </div>
+          </td>
+          <td style=3D"width: 50%; height: 100%; text-align:center; backgro=
+und-color: #ffffff;" align=3D"center"
+            nowrap=3D"0">
+            <div>
+              <img style=3D"border-bottom-width:0px; border-left-width:0px;=
+ border-right-width:0px; border-top-width:0px;"
+                hspace=3D"-1" vspace=3D"0" src=3D"https://www.aa.com/conten=
+t/images/email/cne/icon_camera.png" alt=3D"">
+              <br>
+              <br>
+              <div style=3D"line-height:20px; text-align:center;  ">
+                <a style=3D"text-decoration:none; " href=3D"http://link.inf=
+o.email.aa.com/ls/click?upn=3D6Bg-2BgqSVznbULFxyD8xRE7ej-2FUg-2BNoVEyKUnbLE=
+nofEGsxcp2P9AH8ahnjfKQ5f8U7Ic8-2FJ3pFd71y4wBGcjbm8lnrXrqKhDTXs7dKy4Yl8-3D_P=
+Nv_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aa=
+W7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63=
+R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKR3zw5iWU7YWZS7pKw7KcEiBrtWi=
+WO8aJ54TGcMKAw7nOh9eSXG4S1cIgijPM4Jt-2BGx-2BJmwM0Tg6dqVfyyh6kHVH-2BQueMJSz3=
+3HsO4jkrYmr5SU18LGv88EaM3jyoPzpgfhMMuq2dfmrLGLusrEY7-2BYuS0J8-2FgP1KrmO-2BS=
+8eaWc9-2BfN7NT-2FjZ7EMQ2y7Nc5SoX">
+                  <span style=3D"color:#0078d2; font-size:11px; font-weight=
+:normal; white-space:normal;">AAVacations
+                    =C2=BB</span>
+                </a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+  </td>
+  </tr>
+  </table> <![endif]-->
+  </div>
+</td>
+                                            </tr>
+                                            <tr>
+                                                <td style=3D"padding:20px;"=
+ align=3D"center">
+  <!--This is the AdServer Fragment-->
+  <table>
+    <tr>
+      <td style=3D"color:#0061ab;" width=3D"50%">
+
+        <table style=3D"font-family:Roboto,Arial; " border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%">
+          <tbody>
+          <tr style=3D"line-height:10px; ">
+            <td style=3D"padding-left:0px; text-align:center; " nowrap=3D"0=
+">
+              <a href=3D"http://link.info.email.aa.com/ls/click?upn=3D6Bg-2=
+BgqSVznbULFxyD8xRE567cfRMf6n2C-2BtKuoCf1XbU9nqQHfha269FbPj3utv-2BvE7HN1YCSO=
+HxtdT24zEfeA-3D-3DgXV4_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWO=
+uHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH=
+5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRDaG93t=
+DpyRaIo4pV043v9G9Gp-2FBf1duWg5qio1rdxZOs14efzI4hWtENUSYIUW5Fg1fBs-2FZrvHNvo=
+6qtFee9s2AChFXevPqmYKzM5KID7kxBSyY2Q1Md8vIXhQTB1fezIBoRTDT-2BFIbcExz97qYtEg=
+Om1Rdl4jHedLydUdIItx04P7iM-2B-2FUa6p-2Fqd2GjYnzC">
+                <img width=3D"100%" src=3D"https://cdn.aa.com/confirmation-=
+email/a12a9a88-5d78-4c25-84a0-05d3f3107d29.jpeg" alt=3D"">
+              </a>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </td>
+      <td style=3D"color:#0061ab;" width=3D"50%">
+        <table style=3D"font-family:Roboto,Arial; " border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%">
+          <tbody>
+          <tr style=3D"line-height:10px; ">
+            <td style=3D"text-align:center; " align=3D"center" nowrap=3D"0"=
+>
+              <a href=3D"http://link.info.email.aa.com/ls/click?upn=3D6Bg-2=
+BgqSVznbULFxyD8xRE2c874at-2ButwD5Brq-2Ft59u1-2FBNn1vKR3VKi70PNBZch7quLu8h4b=
+FFRgh2cRzrfkHt0L9Au1laUq1yEDLdOHbn3BuKSEvD-2BtlN9wIHiGgctHjKZo_2qdsSky8lotu=
+FBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2c=
+vRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960E=
+Fv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRqto6M-2BGILX2w7SQT-2B0wXlXpIQqMLXWJOiDcJI=
+UDvUTA1p9vtlDVBlxEfcVyx0nCoNRS5LbyMrCFdbcvvTCGW2xIBZQ4zMSM7huJ2fclEpUbinHoG=
+jBD37ziaGTIJBbAbRbiaanKyG2AuQkiRm9MUQ6uDPM-2FntXWF4J-2FxOAeymUnRTR0EdiNQRRo=
+KMvyGsYhl">
+                <img width=3D"100%" src=3D"https://cdn.aa.com/confirmation-=
+email/42a661e2-8ae5-4ded-b2eb-5760b6064252.jpeg" alt=3D"">
+              </a>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td style=3D"color:#0061ab;" width=3D"50%">
+        <table style=3D"font-family:Roboto,Arial;" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%">
+          <tbody>
+          <tr style=3D"line-height:10px; ">
+            <td style=3D"padding-left:0px; text-align:center; " nowrap=3D"0=
+">
+              <a href=3D"http://link.info.email.aa.com/ls/click?upn=3D6Bg-2=
+BgqSVznbULFxyD8xRE7MNM1MDNB675axvQLzy4W4hqLpMi7q5FKW8FRp-2FEOKM_l77_2qdsSky=
+8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kke=
+B7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGk=
+n960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRDDtEV0VIw924rfXjXpNplMNZHfB43Lus2Z5r=
+wn8HV5ToQXIAzJ2NRCJqT7jldb90lIbwFdh8BPYvpI5VYelBp9N7qv9bny4YfRYwjdL7TeTQR7m=
+pdbwjjMTIT2aOzUnk96rrRAVbfQkW2q5yCFYd2yJyYEturV9OvgiNTBLR-2BWosTXOYzHbwexKm=
+1S8x83Kb">
+                <img width=3D"100%" src=3D"https://cdn.aa.com/confirmation-=
+email/3ea82443-930d-479a-afb9-2a04d922e6f2.jpeg" alt=3D"">
+              </a>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </td>
+      <td style=3D"color:#0061ab;" width=3D"50%">
+        <table style=3D"font-family:Roboto,Arial;" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%">
+          <tbody>
+          <tr style=3D"line-height:10px; ">
+            <td style=3D"text-align:center; " align=3D"center" nowrap=3D"0"=
+>
+              <a href=3D"http://link.info.email.aa.com/ls/click?upn=3D6Bg-2=
+BgqSVznbULFxyD8xRE6SNbfXq8rMYYYZvWzoB7Y99Bwi1ZscRRTb0CsxGsil-2B499BnLzaW9HX=
+qOqlbq3HLZhI6c9GWgw4g93LdRzSupHBur4OW0Wkh30vdg5PGSPP4I3xPQmNXdx1Ahs8HnLcmqK=
+KZ1KuQ5-2FVzEFW0LjIKeLZziCZnq2REii5PMK4MaTDlEfi_2qdsSky8lotuFBAcemxXrAjgbTs=
+gXgobjSPMhdx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbE=
+XDVejkQeCTyyIBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHchZ=
+zpqQ0mTpCQX7MHZwFKR1R6teSFyFAZfeqI3-2F082oFY8BUcRkiDX7uRy1oU64s2i6MboaU90yd=
+xQPq6c-2FHupdh2tDdANAdbFoBXfNZR-2Ba1jImRCjGQH7hPA-2BeixiuvcEOPlJ5-2Bzwwv5Ys=
+6rcG5uUqYdARel1Vw9V8MI-2BiIHqa-2BNCX25LFnqWaEtRSlAE648UG0xui-2Fsk0LBkSYDlEx=
+GK">
+                <img width=3D"100%" src=3D"https://cdn.aa.com/confirmation-=
+email/07b45fc1-057e-42fe-b3ee-b9ee0418f913.jpeg" alt=3D"">
+              </a>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+</td>
+                                            </tr>
+                                            <tr>
+    <td class=3D"padding-generic" style=3D"background-color:#2B2B2B; ">
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%">
+            <tbody>
+                <tr>
+                    <td style=3D"height:30px; ">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class=3D"footer-table-main">
+                        <!--[if (gte mso 9)|(IE)]><table width=3D"100%" cel=
+lpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td><![endif]-->
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"footer-table" width=3D"100%" style=3D"float:left; padding-b=
+ottom:20px; ">
+                            <tbody>
+                                <tr>
+                                    <td align=3D"left" style=3D"font-family=
+:Roboto,Arial; color:#ffffff; font-size:12px; font-weight:normal; ">
+                                        <a style=3D"color:#ffffff; font-fam=
+ily:Roboto,Arial; font-size:12px; text-decoration:none; " tabindex=3D"32768=
+" target=3D"_blank" href=3D"http://link.info.email.aa.com/ls/click?upn=3D6B=
+g-2BgqSVznbULFxyD8xRE8mR1uiBGi8yaZETR-2BbajhgREdsUJCk8uW2xPFBCa00E4CNs9Yx9u=
+tOgpzBlUd9M2pWdd1OlfaO-2B6FbCamWYni-2BigZpXgD9cieg-2FOxLDtA8ZCq7jkvLoOiXC6Y=
+SsJZlhMA-3D-3D5Hfn_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp=
+5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH5kbf=
+sFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRLiJ1LKHq-2=
+BehezY0fHcBbqbkVBBujNBFYfL0nGOG4yE1O1zKE5KXb-2FPzjgFAizvYiVftx6JdIhDr8B21O-=
+2FB5i8jEzqU6KDvsgaCZNcedYcPY-2FPO6BFU0SrcONObCbuYJOG3dd2NRt9wicNBQuLAB-2BuJ=
+uzG8hAx5U-2BayrjGP0GdxcXXHdLFXGcI1wfMr8wj4Ta">Contact us</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style=3D"padding-top:12px; color:#f=
+fffff; font-family:Roboto,Arial; font-size:12px; font-weight:normal; ">
+                                        <a style=3D"color:#ffffff; font-fam=
+ily:Roboto,Arial; font-size:12px; text-decoration:none; " href=3D"http://li=
+nk.info.email.aa.com/ls/click?upn=3D6Bg-2BgqSVznbULFxyD8xRE8mR1uiBGi8yaZETR=
+-2BbajhgREdsUJCk8uW2xPFBCa00EgNAgIc-2BPJxzPSWiGr6YcfNQrU9FfYJUekAUMA3WEKVU-=
+3Dgs08_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf=
+14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH5kbfsFtgeVHvC4fP=
+4g63R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRaX1gb-2FYv-2BhTkuFaFwa=
+KSGiDOCEJLyVs3TydJOC8ZRNTw4OFS36D5SNWTLo61VY4fffO6Jqja862Ddr4xof2FerR1OGKCv=
+4aLgO4zf5Xn7YCWEUwbGbeDJa7QjnIjqfVr8523clQ2YRJU7W1UzIYuJkaEhtHI1qIM6Smmk1Rm=
+venRNxYnQ4B-2B1nUMheMYWs-2Bx">Privacy policy</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]></td><td width=3D"50%" st=
+yle=3D"vertical-align:text-top; "><![endif]-->
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"footer-table" width=3D"100%">
+                            <tbody>
+                                <tr>
+                                    <td style=3D"color:#36495a; font-size:1=
+4px; font-weight:normal; ">
+                                        <table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td style=3D"color:#364=
+95a; font-family:Roboto,Arial; font-size:14px; font-weight:normal; width:12=
+5px; text-align:right; ">
+                                                        <a tabindex=3D"3276=
+8" href=3D"http://link.info.email.aa.com/ls/click?upn=3D6Bg-2BgqSVznbULFxyD=
+8xRE5VIo70MXizT-2BI8XkzNhxUce2ZmvzFnVZTOMWwLGfVyIfQl48dIroLmHb79vewiXebVONl=
+96zZpsXRIgoZ8enOc-3DOfBH_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfi=
+WOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwX=
+vH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRVS-2=
+Bcj34gB2gnfhe-2FSuEfkuG8BagBIPn4WIaXEzL-2FJd-2BVUxv4-2FXiJhCoXuJYWVuT1Z6tf2=
+8tKYRILy8up6QV-2F99gCOG5UoDMb3oBl4BlyWJShmnuZ37ElnwBDBNaUZz3TFudMgDd3EgsdWB=
+OhAoYlVbuSwFxlgOghQRbnY9ksDsOGckQodrzkIoI3IRefh5sD">
+                                                            <img style=3D"h=
+eight:33px; width:110px; " class=3D"img" hspace=3D"-1" vspace=3D"0" src=3D"=
+https://www.aa.com/content/images/email/cne/Download-AppStore.png" width=3D=
+"110" height=3D"33" alt=3D"">
+                                                        </a>
+                                                    </td>
+                                                    <td style=3D"color:#364=
+95a; font-family:Roboto,Arial; font-size:14px; font-weight:normal; text-ali=
+gn:right; ">
+                                                        <a tabindex=3D"3276=
+8" href=3D"http://link.info.email.aa.com/ls/click?upn=3D6Bg-2BgqSVznbULFxyD=
+8xRE22gMpkdp5jhc3F6BX0MDJpmDEdzZLPalooGL9mjrwFQsr45W0qgo52R-2BDIe07MKyZp2Js=
+f1wvj5-2F5-2Fxn1H8-2ByI-3DIqQ2_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu=
+2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLo=
+rHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwF=
+KRSYOx1Yv9Zz1yzguYINGWXZ8GK3ExK-2FNgh6SnCyx1vDvwc8zw8vZao0Zi98jkocOBVFoR4kO=
+7m3e2e8bAniseUI4rXw5sr-2FZKipa6DO5nsi2LHQvXlTshq6VnJ2dA4SHVdjICz-2B6ugHRBvW=
+iJa4jSKeNgc9II-2B1tZctVUjttBpLhr2fJRqZFDV5KvXDk2owhw">
+                                                            <img style=3D"h=
+eight:33px; width:110px; " class=3D"img" hspace=3D"-1" vspace=3D"0" src=3D"=
+https://www.aa.com/content/images/email/cne/Download-GooglePlay.png" width=
+=3D"110" height=3D"33" alt=3D"">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]></td></tr></table><![endi=
+f]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+                                            <tr>
+    <td style=3D"background-color:#2B2B2B; ">
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%">
+            <tbody>
+                <tr>
+                    <td class=3D"space"/>
+                    <td class=3D"space"/>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+                                            <tr>
+    <td class=3D"padding-generic" style=3D"background-color:#2B2B2B; ">
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%">
+            <tbody>
+                <tr>
+                    <td>
+                        <table class=3D"padding-left" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" width=3D"100%">
+                            <tbody>
+                                <tr>
+                                    <td style=3D"border-top:1px solid #C9CD=
+CF; padding-top:12px; "/>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <table class=3D"padding-right" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" width=3D"100%">
+                            <tbody>
+                                <tr>
+                                    <td style=3D"border-top:1px solid #C9CD=
+CF; padding-top:12px; "/>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=3D"padding-left" align=3D"left" style=3D"font=
+-family:Roboto,Arial; color:#ffffff; font-size:12px; font-weight:normal; pa=
+dding-bottom:30px; ">
+                        <span>=C2=A9 American Airlines, Inc. All Rights Res=
+erved.</span>
+                    </td>
+                    <td class=3D"padding" style=3D"vertical-align:top; text=
+-align:right; ">
+                        <a href=3D"http://link.info.email.aa.com/ls/click?u=
+pn=3D6Bg-2BgqSVznbULFxyD8xRE8mR1uiBGi8yaZETR-2Bbajhh8tNec-2F9kW4TnTN1H-2FdM=
+Txq16X8V-2Fc9aCPcg6B5yI5htRicidEafS2xig6t6anLNaIpjXuqRtDZQs4RgLEBh8Rml71_2q=
+dsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtI=
+A5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2=
+FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRmtWzfQyhZXG5-2BqXmF3wXThJPclvB4=
+-2F64t2OWXwbulB8g-2FiLIB3UpbyyEMu9k4Yso2nfvhTY2UmH8OkyOJhvxZYmxoBEMSWQkDqyj=
+wGK16L8kzIXySZQuYarGmQ1Hw8NS3O2K84OvSsWy8PE5K4VSA2NWsLZkHXToTI2Y40ZdOp394G3=
+XmF0Ekd4df8QFM64O" target=3D"_blank" tabindex=3D"32768">
+                            <img style=3D"float:right; " alt=3D"" src=3D"ht=
+tps://www.aa.com/content/images/email/cne/Logo-oneworld.png" width=3D"20" v=
+space=3D"0" hspace=3D"-1" height=3D"20" border=3D"0">
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+                                            <tr>
+                                                <td align=3D"center" style=
+=3D"background-color: #F5F7F7;">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+  <tbody>
+    <tr><td style=3D"height:30px; ">&nbsp;</td></tr>
+    <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:12p=
+x; " class=3D"padding-generic">Additional Services are subject to credit ca=
+rd approval at time of ticketing. Additional Services may appear on multipl=
+e accompanied documents as a matter of reference.</td></tr>
+    <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+   =20
+      <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:1=
+2px; " class=3D"padding-generic">If you have purchased a NON-REFUNDABLE far=
+e, the itinerary must be canceled before the ticketed departure time of the=
+ first unused coupon or the ticket has NO VALUE. If the fare allows changes=
+, a fee may be assessed for changes and restrictions may apply.</td></tr>
+      <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+      <tr>
+        <td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:12p=
+x; " class=3D"padding-generic">
+          <span>You have up to 24 hours from the time of ticket purchase to=
+ receive a full refund if you booked at least 2 days before departure. You =
+must <a href=3D"http://link.info.email.aa.com/ls/click?upn=3D6Bg-2BgqSVznbU=
+LFxyD8xRE5HAK6qW3tLb4xI4ezpMA2LKTYNDtsMzQBctsWXySlnkXl06v3vMqvS5S2pEPgPGLw-=
+3D-3D4-kz_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp5WK7Sdj6f=
+BLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH5kbfsFtgeVHvC=
+4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRafQlA8AhMbuI3ZP902W=
+wGBnrsBewjgSqMleWsir-2BcsYmpiyljZkFzJ0UAIGCtuiEIDPC-2FOB3gJ2R-2BsrjOgwwnwCo=
+QZT4tiPP9ip0dGEh4PrIugZ4E-2FhOmZziFvIcKb8kkMKriC0oV7DjB5Xntub5Jscxb9h6t0tEu=
+QkExGA0Jysk1gyr5d7QOk5ul-2F2qZR-2BS" style=3D"text-decoration:none; color:#=
+0078d2; ">log in</a> on aa.com or <a href=3D"http://link.info.email.aa.com/=
+ls/click?upn=3D6Bg-2BgqSVznbULFxyD8xRE8mR1uiBGi8yaZETR-2BbajhgREdsUJCk8uW2x=
+PFBCa00E4CNs9Yx9utOgpzBlUd9M2tMtvhcrKina0SB2ciI9l46k-2BR1Z0Z3eSdHcyAGmu-2Bz=
+GBxLu-2FYgEVAkdeWYmZ60j1A-3D-3DEK_1_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx=
+-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyy=
+IBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7=
+MHZwFKRruTE0WZ351FvzYmqTMBhwjoZWV8Qk1R9Wl-2FHn6aBhRnbpRMaauCYT0QkrOHjNUusro=
+sFeF6IQPmKeUQOVXxli0DV9DbAYNwCcWuTuLXTYDzjgVzvxgcqa-2F-2FkxfMLW9jKygbZGkOzr=
+tSctGt2lBf7J8-2BxMBnSpQXupGPSDE01uNuC2ijcpa8s937cpYjkdH0E" style=3D"text-de=
+coration:none; color:#0078d2; ">Contact Reservations</a> to cancel. Once ca=
+ncelled, your refund will be processed automatically.<a href=3D"http://link=
+.info.email.aa.com/ls/click?upn=3D6Bg-2BgqSVznbULFxyD8xRE8mR1uiBGi8yaZETR-2=
+BbajhgREdsUJCk8uW2xPFBCa00EodpVzZ9fXbr1p7F7ckwV-2FZ096ol0Cx-2FUMniEHOmLVxs3=
+IvMnBrCwtc2waaqX-2FOmspv4-_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmP=
+fiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfN=
+wXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRU2=
+bIpL93LxuA-2FMPdk69S9MjdM25XELeaCBLaZ8H11iJqfF4iDkCYohYZQU0P50dMFRVkU8zYFmc=
+UxqJAxNnuUTsJ5VMGMIE3mkLwSOF2su1MSokEaBhFfiJGTK7nYfKZYd-2BqprzyFGBrTpSIqmwI=
+sgiNjbB4mBaSXkQcK4RIPS37KEJXF2zLTrcrFfbp1hNt" style=3D"text-decoration:none=
+; color:#0078d2; ">Refunds</a>.</span>
+         =20
+        </td>
+      </tr>
+      <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+   =20
+   =20
+   =20
+      <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:1=
+2px; " class=3D"padding-generic">Some American Airlines check-in counters d=
+o not accept cash as a form of payment. For more information, visit our <a =
+href=3D"http://link.info.email.aa.com/ls/click?upn=3D6Bg-2BgqSVznbULFxyD8xR=
+E8mR1uiBGi8yaZETR-2Bbajhi5MSqA5bx-2BH-2Ft-2FnazLF7G9oehxHHkKqhgXlJyWH8a2Fpm=
+DAtf2vWJwAyMaG4ZZWlw-3D9jk6_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2Um=
+PfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHf=
+NwXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRG=
+5BsrWs6AzEBlYKWUoZfGXiM75fVMmH7Mde-2FoSOf7tyA-2FenMV5LXISknokZ4I5hW-2FQXgPR=
+rIocMZ4LH-2BWzcVxsz2ssUYMSPBMvGUDcPzLoV1XJ3McPyWIMho4oTIBtjL5MpTo9WhLMyfLwx=
+yLYCzmtWoD5cWkKHALd2sxEF7RRvrSCbiCP85Wp8rABunhNBA" style=3D"text-decoration=
+:none; color:#0078d2; ">Airport Information</a> page.</td></tr>
+      <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+      <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:1=
+2px; " class=3D"padding-generic">The policy for traveling with Emotional Su=
+pport and Service animals has changed. Visit <a href=3D"http://link.info.em=
+ail.aa.com/ls/click?upn=3D6Bg-2BgqSVznbULFxyD8xRE8mR1uiBGi8yaZETR-2Bbajhg-2=
+BHCfahjOPDJosxWF-2BZuar48cJ-2FJ8Z-2BDPXfOX7eNW6qNd5hoNCL6Ww7oDRjqpElPfuPa9G=
+LKmjFhLAqT3-2FraOo0pjf_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWO=
+uHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH=
+5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRtslF2h=
+H9xZsh0mjdIvAQ10KrQB8VcspPo2GmZJbQAaSc6pJ3SAVk00qlZdLYMuKYGWVhWIJy1EYy7Czfi=
+4QAEvbJDYT8Nc-2FbbI-2FatwU8XLqQ4g60rEFf75-2B72LOEOWH5sWcHvpDTZcL-2Bu-2FtN-2=
+BEv3rlnafWXxUkHZjcW-2FJQQOHwulCRhKP0YOmZCMZMBCCFhn" style=3D"text-decoratio=
+n:none; color:#0078d2; ">Traveling with Service Animals</a> for more inform=
+ation.</td></tr>
+      <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+      <tr>
+        <td style=3D"width:100%; word-break: ; " class=3D"padding-generic">
+          <img style=3D"width:50px; " src=3D"https://www.aa.com/content/ima=
+ges/email/cne/hazmat-icons-batteries.png" alt=3D"">
+          <img style=3D"width:50px; " src=3D"https://www.aa.com/content/ima=
+ges/email/cne/hazmat-icons-explosives.png" alt=3D"">
+          <img style=3D"width:50px; " src=3D"https://www.aa.com/content/ima=
+ges/email/cne/hazmat-icons-aerosol.png" alt=3D"">
+          <img style=3D"width:50px; " src=3D"https://www.aa.com/content/ima=
+ges/email/cne/hazmat-icons-flammables.png" alt=3D"">
+          <img style=3D"width:50px; " src=3D"https://www.aa.com/content/ima=
+ges/email/cne/hazmat-icons-oxidizers.png" alt=3D"">
+          <img style=3D"width:50px; " src=3D"https://www.aa.com/content/ima=
+ges/email/cne/hazmat-icons-toxins.png" alt=3D"">
+          <img style=3D"width:50px; " src=3D"https://www.aa.com/content/ima=
+ges/email/cne/hazmat-icons-radioactive.png" alt=3D"">
+          <img style=3D"width:50px; " src=3D"https://www.aa.com/content/ima=
+ges/email/cne/hazmat-icons-corosives.png" alt=3D"">
+          <img style=3D"width:50px; " src=3D"https://www.aa.com/content/ima=
+ges/email/cne/hazmat-icons-ecigar.png" alt=3D"">
+        </td>
+      </tr>
+      <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+      <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:1=
+2px; " class=3D"padding-generic">Some everyday products, like e-cigarettes =
+and aerosol spray starch, can be dangerous when transported on the aircraft=
+ in carry-on and/or checked baggage.  Changes in temperature or pressure ca=
+n cause some items to leak, generate toxic fumes or start a fire.  Carriage=
+ of prohibited items may result in fines or in certain cases imprisonment. =
+ Please ensure there are no forbidden hazardous materials in your baggage l=
+ike:</td></tr>
+      <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+      <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:1=
+2px; " class=3D"padding-generic">Some Lithium batteries (e.g. spares in che=
+cked baggage, batteries over a certain size), Explosives / Fireworks, Strik=
+e anywhere matches/ Lighter fluid,  Compressed gases / Aerosols Oxygen bott=
+les/ Liquid oxygen, Flammable liquids, Pesticides/ Poison, Corrosive materi=
+al.</td></tr>
+      <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+      <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:1=
+2px; " class=3D"padding-generic">There are special exceptions for small qua=
+ntities (up to 70 ounces total) of medicinal and toilet articles carried in=
+ your luggage, spare lithium batteries for most consumer electronic devices=
+ in carry-on baggage, and certain smoking materials carried on your person.=
+</td></tr>
+      <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+      <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:1=
+2px; " class=3D"padding-generic">Certain items are required to be carried w=
+ith you onboard the aircraft. For example, spare lithium batteries for port=
+able electronic devices, cigarette lighters and e-cigarettes must be remove=
+d from checked or gate-checked baggage and carried onboard the aircraft. Ho=
+wever, e-cigarettes may not be used on-board the aircraft.</td></tr>
+      <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+      <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:1=
+2px; " class=3D"padding-generic">Traveling with medical oxygen, liquid oxyg=
+en, mobility aids and other assistive devices may require airline pre-appro=
+val or be restricted from carriage entirely. Passengers requiring these ite=
+ms should contact the airline operator for information on use of such devic=
+es.</td></tr>
+      <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+     =20
+     =20
+     =20
+     =20
+     =20
+     =20
+     =20
+     =20
+      <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:1=
+2px; " class=3D"padding-generic">NOTICE OF INCORPORATED TERMS OF CONTRACT</=
+td></tr>
+      <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+      <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:1=
+2px; " class=3D"padding-generic">Air Transportation, whether it is domestic=
+ or international (including domestic portions of international journeys), =
+is subject to the individual terms of the transporting air carriers, which =
+are herein incorporated by reference and made part of the contract of carri=
+age.  Other carriers on which you may be ticketed may have different condit=
+ions of carriage.  International air transportation, including the carrier'=
+s liability, may also be governed by applicable tariffs on file with the U.=
+S. and other governments and by the Warsaw Convention, as amended, or by th=
+e Montreal Convention.  Incorporated terms may include, but are not restric=
+ted to: 1. Rules and limits on liability for personal injury or death, 2. R=
+ules and limits on liability for baggage, including fragile or perishable g=
+oods, and availability of excess valuation charges, 3. Claim restrictions, =
+including time periods in which passengers must file a claim or bring an ac=
+tion against the air carrier, 4. Rights on the air carrier to change terms =
+of the contract, 5. Rules on reconfirmation of reservations, check-in times=
+ and refusal to carry, 6. Rights of the air carrier and limits on liability=
+ for delay or failure to perform service, including schedule changes, subst=
+itution of alternate air carriers or aircraft and rerouting.</td></tr>
+      <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+      <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:1=
+2px; " class=3D"padding-generic">You can obtain additional information on i=
+tems 1 through 6 above at any U.S. location where the transporting air carr=
+ier's tickets are sold.  You have the right to inspect the full text of eac=
+h transporting air carrier's terms at its airport and city ticket offices. =
+ You also have the right, upon request, to receive (free of charge) the ful=
+l text of the applicable terms incorporated by reference from each of the t=
+ransporting air carriers.  Information on ordering the full text of each ai=
+r carrier's terms is available at any U.S. location where the air carrier's=
+ tickets are sold or you can click on the Conditions of Carriage link below=
+.</td></tr>
+      <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+      <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:1=
+2px; " class=3D"padding-generic">Air transportation on American Airlines an=
+d the American Eagle carriers=C2=AE is subject to American's <a href=3D"htt=
+p://link.info.email.aa.com/ls/click?upn=3D6Bg-2BgqSVznbULFxyD8xRE8mR1uiBGi8=
+yaZETR-2BbajhgREdsUJCk8uW2xPFBCa00E-2Frnh-2B64bkS2pMt-2FNjf-2FGKLGdX4jpNoY2=
+6YOpF7lDnsHWdD4GPBOcVH8MuEcA-2Bk6VgGAH_2qdsSky8lotuFBAcemxXrAjgbTsgXgobjSPM=
+hdx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cvRwge8YiRf7nCbEXDVejkQeC=
+TyyIBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EFv9x0adLDBgHchZzpqQ0mTpC=
+QX7MHZwFKRduEjeKplXubmZMyNAnkqORHy95ZdGhDAMDCi-2Bu3vfkFdTvEm90d3JhX9gmvzKkC=
+KKb5jpi5rxCWQgx4e-2Febg5m-2BshSXYvXQ-2FX-2BOKOouOpJXBilY-2FvNJvjk0ZCOT2w-2B=
+PSX7jMVzTRBHzA8jkOinlLp4za-2BNRK7JOompLOm8yysROj6XSDypQsXrn-2F4dzNDkLP" sty=
+le=3D"text-decoration:none; color:#0078d2; ">conditions of carriage.</a></t=
+d></tr>
+      <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+      <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:1=
+2px; " class=3D"padding-generic">For more on Canada passenger protection re=
+gulations visit <a href=3D"http://link.info.email.aa.com/ls/click?upn=3D6Bg=
+-2BgqSVznbULFxyD8xRE8mR1uiBGi8yaZETR-2BbajhgREdsUJCk8uW2xPFBCa00EiJFNATQBKL=
+taYEx-2FM4snO-2BR4ST0k4MubwvtiVPE48zoGRvMLeevpQr0BSOtGxbiL_GJQ_2qdsSky8lotu=
+FBAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2c=
+vRwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960E=
+Fv9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRPrK43AEOc7nwjgI9trrKmQu9SLKRKvunWYL6nFZIL=
+oM1HwTejIEY0dPG7OYVKV2v-2Bz28jYV4kHW602gyUXHLwHUC9-2BwzNjdWs9-2FNdM5tIbACp4=
+MST16HA0j6N0IHatZXrsxV3Kuh39o-2BH7EzL7zJZTfA0iz-2BDr7UNSrqIKt9ZQulMuR-2BOOq=
+a6zbWoWNEdwn0" style=3D"text-decoration:none; color:#0078d2; ">aa.com/Canad=
+aPassengers.</a></td></tr>
+      <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+   =20
+    <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:12p=
+x; " class=3D"padding-generic">Please do not reply to this email address as=
+ it is not monitored. This email was sent to testuser@example.com</td></=
+tr>
+    <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+    <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:12p=
+x; " class=3D"padding-generic">NOTICE: This email and any information, file=
+s or attachments are for the exclusive and confidential use of the intended=
+ recipient. This message contains confidential and proprietary information =
+of American Airlines (such as customer and business data) that may not be r=
+ead, searched, distributed or otherwise used by anyone other than the inten=
+ded recipient. If you are not an intended recipient, do not read, distribut=
+e, or take action in reliance upon this message. Do you think you received =
+this email by mistake? If so, please forward this <a style=3D"text-decorati=
+on:none;color:#627a88;" href=3D"mailto:aadvantage.customer.svc@aa.com">emai=
+l to us</a> with an explanation.</td><br></tr>
+    <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:12p=
+x; " class=3D"padding-generic">For all other questions about bookings or up=
+coming trips, visit our contact page. <a style=3D"color: #627A88; text-deco=
+ration: none;font-family:Roboto, Arial;" href=3D"http://link.info.email.aa.=
+com/ls/click?upn=3D6Bg-2BgqSVznbULFxyD8xRE8mR1uiBGi8yaZETR-2BbajhgREdsUJCk8=
+uW2xPFBCa00E4CNs9Yx9utOgpzBlUd9M2pWdd1OlfaO-2B6FbCamWYni-2BigZpXgD9cieg-2FO=
+xLDtA8Zza7NjIxQ4I1LHXfEZy9f3v-2Bil6XxLRlP1UaxWBl-2B5Lk-3Dlxon_2qdsSky8lotuF=
+BAcemxXrAjgbTsgXgobjSPMhdx-2Fuu2UmPfiWOuHIp5WK7Sdj6fBLf14aaW7wtIA5kkeB7M2cv=
+Rwge8YiRf7nCbEXDVejkQeCTyyIBrLorHfNwXvH5kbfsFtgeVHvC4fP4g63R8w-2FfwGkn960EF=
+v9x0adLDBgHchZzpqQ0mTpCQX7MHZwFKRJwUMYMyc2dbSbUSlEeIpn-2B-2B00XZ6AKbFGF-2BO=
+iJeg0iqvBCe1ekKd0WxOXz-2BCqAoiXv1S6U2-2BMKAHpNBkQPbbHnwfB-2FtjiVX8i2M0PVEr5=
+v-2BvNS76zfc6H5h-2FPpJtsTlMIvXC4ZWxHfG4VE7hjc9HRArvNj8tRkr5nTE20ng7mF15FE3M=
+Wwuu2NIYClweJMqC">Contact American ></a></td></tr>
+    <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+    <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:12p=
+x; " class=3D"padding-generic"><b>one</b>world is a registered trademark of=
+ <b>one</b>world Alliance, LLC.</td></tr>
+    <tr><td style=3D"color:#627A88; font-family:Roboto,Arial; font-size:12p=
+x; " class=3D"padding-generic">=C2=A9 American Airlines, Inc. All Rights Re=
+served.</td></tr>
+    <tr><td style=3D"height:20px; ">&nbsp;</td></tr>
+  </tbody>
+</table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table> <![endif]-->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<img src=3D"http://link.info.email.aa.com/wf/open?upn=3DlwsO7WYzrFvfwKzHFCq=
+g8D7E56iDE4grQVpR6ie-2FcQb1jL-2BI13MjzqBk63yLx64EnxhAKdZ5yAaQhSbWVzJ0vS5nWR=
+fYSkTayYLMGyH-2BwUU98PKE11YMTpDDPGxyJAUu94A-2FYtXf38ZoXGAvw3rnn0Esw6kaZk2xS=
+bafiikm419JmmRkZvcn4Jp-2FBvwhRmsz5ab2fTRt28q0XvcCMh2RrM7vE2IwwsZY3-2F4Jwtwc=
+2YYHakh-2BUVUBqfaO8Z5raQatWTLTKqMOdzpWQIoMMxHYnpHEM5gW2dE5jam3F-2FbBRaQug5O=
+WnQdlXzgm4ydhEUXljypWtwFFeRuSU3HtJpcDQBGUlw0cyVDju3El-2BfdrgrhDt83beeuDvc6y=
+6YVImneJ" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1p=
+x !important;width:1px !important;border-width:0 !important;margin-top:0 !i=
+mportant;margin-bottom:0 !important;margin-right:0 !important;margin-left:0=
+ !important;padding-top:0 !important;padding-bottom:0 !important;padding-ri=
+ght:0 !important;padding-left:0 !important;"/></body>
+
+</html>

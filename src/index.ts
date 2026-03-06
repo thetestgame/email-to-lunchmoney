@@ -7,6 +7,11 @@ import {Hono} from 'hono';
 import {bearerAuth} from 'hono/bearer-auth';
 import PostalMime, {Email} from 'postal-mime';
 
+import {alaskaProcessor} from 'src/processors/airline-alaska';
+import {americanProcessor} from 'src/processors/airline-american';
+import {deltaProcessor} from 'src/processors/airline-delta';
+import {southwestProcessor} from 'src/processors/airline-southwest';
+import {unitedProcessor} from 'src/processors/airline-united';
 import {amazonProcessor} from 'src/processors/amazon';
 import {appleEmailProcessor} from 'src/processors/apple';
 import {bookingProcessor} from 'src/processors/booking';
@@ -22,6 +27,13 @@ import {checkOldActionEntries} from './old-actions-checker';
 import {EmailProcessor, LunchMoneyAction} from './types';
 
 let EMAIL_PROCESSORS: EmailProcessor[] = [
+  // Airlines
+  alaskaProcessor,
+  americanProcessor,
+  deltaProcessor,
+  southwestProcessor,
+  unitedProcessor,
+  // Other processors
   amazonProcessor,
   bookingProcessor,
   lyftBikeProcessor,

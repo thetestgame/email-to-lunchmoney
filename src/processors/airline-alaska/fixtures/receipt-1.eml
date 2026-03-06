@@ -1,0 +1,1599 @@
+From: "Alaska Airlines Reservation" <reservation@email.alaskaair.com>
+To: <testuser@example.com>
+Subject: Your confirmation receipt: IUZWKS for your flight to San Francisco on 2025-12-04
+Date: Wed, 29 Oct 2025 21:39:39 -0600
+MIME-Version: 1.0
+Reply-To: "Alaska Airlines Reservation" <reply-fecf15757762057c-2014_HTML-86843168-546015121-19326@email.alaskaair.com>
+Message-ID: <REDACTED@example.com>
+Content-Type: multipart/alternative;
+	boundary="GyuQVjnAvWCJ=_?:"
+
+This is a multi-part message in MIME format.
+
+--GyuQVjnAvWCJ=_?:
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+
+
+--GyuQVjnAvWCJ=_?:
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=yes">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>Alaska Airlines</title>
+<meta name="color-scheme" content="light dark" />
+<meta name="supported-color-schemes" content="light dark" />
+<style type="text/css">
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+    table {border-collapse:collapse;padding: 0;}
+    table td {padding: 0;}
+    img, a img{border:0; height:auto; outline:none; text-decoration:none;}
+    body{height:100% !important; margin:0 auto !important; padding:0; width:100% !important;}
+    a{text-decoration:none;}
+    a[x-apple-data-detectors] {color: inherit !important;text-decoration: none !important;font-size: inherit !important;font-family: inherit !important;font-weight: inherit !important;line-height: inherit !important;}
+    u + .body .gmail{display:block !important;}
+
+    p, ul, li, h1, h2, h3, h4 {margin:0;padding:0;font-variant-ligatures: no-common-ligatures!important;}
+    p, ul, li {font-family: 'AS Circular Light',  Helvetica, Arial,sans-serif;font-size: 18px;line-height: 26px;}
+    h1, h2, h3, h4{font-family: 'AS Circular Bold',  Helvetica, Arial,sans-serif;}
+    .bold{font-family: 'AS Circular Bold', Helvetica, Arial,sans-serif;font-weight:700;}
+    .book{font-family: 'AS Circular Book', Helvetica, Arial,sans-serif;font-weight:400;}
+    .light{font-family: 'AS Circular Light', Helvetica, Arial,sans-serif;font-weight:500;}
+
+    img {border:0;display:block;padding:0;outline:0;font-family: 'AS Circular Book', Helvetica, Arial, sans-serif;}
+    sup {line-height: 0; font-size:65%;mso-text-raise:60%;}
+    
+    @media (prefers-color-scheme: dark) {
+        .bg-dark {background-color: #01426A !important;}
+        .lightimage {display: none !important;}
+        .darkimageWrapper, .darkimage {
+            display: block !important;
+            width: 100% !important;
+            float: none !important;
+            max-width: 220px !important;
+        }
+        .fnt-drk{color:#01426a!important;}
+    }
+
+    a.txt-link:hover {text-decoration:underline!important;}
+    .cta-blue:hover{background-color:#054687!important;border: 2px solid #054687!important;text-decoration:none!important;}
+    .cta-blue:hover a{color:#fdfeff !important;text-decoration:none!important;}
+    .cta-blue-ghost:hover{background-color: #e9e9e9!important;text-decoration: none!important;}
+
+@media screen and (max-width:480px){
+    u ~ div .full-wrap {min-width: 100vw;}
+    div > u ~ div .full-wrap {min-width: 100%;}
+    .center{margin: 0 auto!important;float: none!important;}
+    .fnt16{font-size: 16px !important;line-height: 22px!important;}
+    .fnt22{font-size: 22px !important;line-height: 28px!important;}
+    .fnt34{font-size: 34px !important;line-height: 40px!important;}
+    .fnt40{font-size: 40px !important;line-height: 46px!important;}
+    .fnt60 {font-size:60px!important;line-height:64px!important;}
+    .fnt220 {font-size:220px!important;line-height:250px!important;}
+ .mblhd{display:none !important;}
+    .mblshw{display:block !important;}
+    .mblsidemargin{margin:16px 0 40px!important;}
+    .mw100{max-width:100% !important;}
+    .txt-cntr{text-align: center!important;}
+    .w46{width: 46%!important;}
+    .w82{width: 82%!important;}
+    .w84{width: 84%!important;}
+    .w89{width: 89%!important;}
+    .w92{width: 92%!important;}
+    .w100{width: 100%!important;}
+}
+@media screen and (max-width:380px){
+    .fnt16{font-size: 14px !important;line-height: 20px!important;}
+    .fnt22{font-size: 18px !important;line-height: 26px!important;}
+}
+
+@font-face {
+font-family:"AS Circular Book";
+src:url("https://resource.alaskaair.net/-/media/1DD02F55437F4346B7EF7D5A08326D71.woff") format("woff");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;mso-font-alt: Calibre;
+}
+
+@font-face {
+font-family:"AS Circular Light";
+src:url("https://resource.alaskaair.net/-/media/CAAEEC88586944808EDE9B36A3460098.woff") format("woff");
+font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;mso-font-alt: Calibre;
+}
+@font-face{
+font-family:"AS Circular Bold";
+src:url(https://resource.alaskaair.net/stylesheets/circular/ASCircularWeb-Bold.woff) format("woff");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;mso-font-alt: Calibre;
+}
+</style>
+<!--[if mso]> <style type="text/css"> ul, ol {margin:0 !important;} li {margin-left:27px !important;} .listOutlook {margin-left: -25px !important;} </style> <xml> <o:OfficeDocumentSettings> <o:AllowPNG/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml><![endif]-->
+</head>
+
+<body style="background-color:#efefef; Margin: 0px; padding: 0px;"><style type="text/css">
+div.preheader 
+{ display: none !important; } 
+</style>
+<div class="preheader" style="font-size: 1px; display: none !important;">Manage your trip with us</div>    
+  <div style="font-size:0; line-height:0;"><img src="https://click.email.alaskaair.com/open.aspx?ffcb10-fecf15757762057c-fe4812787d630c747612-fe36117473640578741671-ff3816707460-fe531c767d60077c731c-fefa1579766602&d=130006&bmt=0" width="1" height="1" alt=""></div>
+
+<div dir="ltr" lang="en" style="background-color: #efefef;" class="full-wrap">
+<table align="center" role="presentation" style="background-color:#efefef;border:0;border-spacing:0;width:100%;Margin:0 auto;">
+  <tr>
+    <td align="center" valign="top">
+      <div style="mso-line-height-rule:exactly;display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;"><!--[if !mso]><!-->
+<div style="mso-line-height-rule:exactly;display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+   
+ &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+</div>
+<!--<![endif]--></div>
+      <!--[if mso]> <table align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#FDFEFF" style="width:640px;"> <tr> <td align="center" valign="top"> <![endif]-->
+      <table align="center" role="presentation" width="640" style="background-color:#FDFEFF;border:0;border-spacing:0;width:100%; max-width:640px;">
+        <tr>
+          <td>
+            
+
+
+          </td>
+        </tr>
+        <tr>
+          <td align="center" valign="top">
+            <tr>
+              <td>
+                
+
+
+<!-- ASA OW Header - op ta 650  --> 
+<tr>
+    <td align="center">
+        <table cellpadding="0" cellspacing="0" border="0" role="presentation" align="center" style="width: 100%; max-width: 650px;border-bottom: 1px solid #E5EDF2; background-color: #ffffff;">
+            <tr>
+                <td align="center" style="padding-top: 30px; padding-bottom: 30px; padding-left: 20px;">
+                    <!-- LOGO  -->
+                    <a href="https://click.email.alaskaair.com/?qs=f72e2754168483242300942c250cfec6e398742fd018e81562b3f0ea7cd6801cc5f9e7fd5ef1bc0e282eecb06aa15de2b74425abc26f2110142fe0dbf3ac476d" >
+                      <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/349c7ce1-c303-45ed-adcd-6059cfc04c64.png" width="221" border="0" style="width: 221px; height: auto; display:block; font-family: Circular, Arial, sans-serif; font-size:20px; color:#2774ae;" alt="Alaska&reg; - oneworld" /></a>
+                </td> 
+            </tr>
+        </table>   
+    </td>
+</tr>
+<!-- ASA OW Header - op ta 650  --> 
+
+
+              </td>
+            </tr>
+        <!--main-->
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+
+
+        <table cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#ffffff" style="width: 100%; max-width: 650px;">
+            <tr>
+                <td align="center" style="padding-top: 55px;">
+                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 86%; max-width: 559px;" class="">
+                        <tr>
+                            <td align="center" style="padding-bottom: 25px;">
+                                <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/eab50216-6b13-462a-bf16-3aac897acb90.png" width="29" border="0" style="width: 29px; height: auto; display: block; font-family: Helvetica, sans-serif; font-size: 20px; color: #ffffff;" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="padding-bottom: 15px; font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:40px;line-height:46px;color:#2774ae;">
+                                <!-- passengers.name.firstname -->
+                                Evan, <br>you&rsquo;re all&nbsp;set. 
+                            </td>
+                        </tr>
+                    </table>
+                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 78%; max-width: 507px;" class="">
+                        <tr>
+                            <td align="center" style="padding-bottom: 50px; font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#3c3b3f;">
+                                <!--                                      "All                                     If PassengerId = 1.1 does have value in Passengers/MemberNumber field"                                        ---                                     CS- PLEASE ADD THE BELOW LOGIC AROUND ONLY THE FINAL SENTENCE: "Don’t miss out on miles, join Mileage Plan now."                                     AND MAKE SAME CHANGE TO TEXT ONLY VERSION                                       "All                                     If PassengerId = 1.1 does not have value in Passengers/MemberNumber field"                                  -->
+                                
+                                        We can't wait to see you on board. Before you fly, <a href="https://click.email.alaskaair.com/?qs=f72e27541684832450b767a5df8f009d695da80d0a6890364d6feb9a56d50f3e3e12eea74a23cd03431bf98650e291ec15447312dcf86965a1a3f1b3b56955ad"  style="color:#2774ae; text-decoration:underline;">view full reservation</a> details or make changes to your flight online.
+                                
+                            </td>
+                        </tr>
+                            <tr>
+                                <td align="center" style="padding-bottom: 40px;">
+                                    <!-- border cta -->
+                                    <!--[if gte mso 9]>                                     <style type="text/css">                                     .primary_manage_cta { background-color:#2774ae !important; padding:13px 24px !important; border-collapse: collapse !important; }                                     .resetBorder { border: none !important; }                                     </style>                                     <![endif]-->
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td class="primary_manage_cta">
+                                        <div>
+                                            <a href="https://click.email.alaskaair.com/?qs=f72e275416848324991ee14df8e260898896db6e54472ae8d5ebb02d7599e7895e7231242c3abd80955fca8923682190be76ff36a0388948f3795b3fe35594a1"  style="background-color:#2774ae; border: 1px solid #2774ae; padding: 13px 24px; border-radius: 0px; color: #ffffff; display: inline-block; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; font-weight: bold; line-height: 20px; text-align: center; text-decoration: none;" class="resetBorder buttonHover">
+                                                MANAGE&nbsp;TRIP
+
+
+                                            </a>
+                                        </div>
+                                    </td></tr></table>
+                                    <!-- /border cta -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="padding-bottom: 5px; font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#2774ae;">
+                                    
+                                  Confirmation code:
+                                  
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="padding-bottom: 50px; font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:30px;line-height:40px;color:#3c3b3f;">
+                                    <a href="https://click.email.alaskaair.com/?qs=f72e2754168483244f0b333cbdb328ff42c2c091b17c5d33ad3926cdec5e73a5d1273e261ace08be1ab5cdcddc146017afadd20a6e987ae52d98865af377563d"  style="color:#3c3b3f; text-decoration:underline;">
+                                        <!-- .confirmationcode. -->
+                                        <strong>IUZWKS</strong>
+                                    </a>
+                                </td>
+                            </tr>
+                    </table>
+           <!-- HR -->
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#e9e9e9" style="width: 94%; max-width: 611px;"><tr><td style="line-height:2px; font-size:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr></table>
+                                        </td>
+                                    </tr>
+                                </table>
+</td></tr></table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+
+
+
+        <table cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#ffffff" style="width: 100%; max-width: 650px;">
+            <tr>
+                <td align="center" style="padding-top: 15px; padding-bottom: 40px;">
+                    <!--                     FLIGHT INFO                     TRAVELER MOD 1                     -->
+     
+                    <div style="font-size:1px;line-height:40px;mso-line-height-rule:exactly;">&nbsp;</div>
+                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" align="center" bgcolor="#f5f5f5" style="width: 94%; max-width: 611px;">
+                        <tr>
+                            <td align="center" style="padding-top: 20px;">
+                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" align="center" style="width: 92%; max-width: 562px;">
+                                    <tr>
+                                        <td align="left" valign="top" style="vertical-align:top;font-size:0;direction:ltr">
+                                            <!--[if (gte mso 9)|(IE)]><table cellpadding="0" role="presentation" cellspacing="0" border="0" style="width:562px;"><tr><td valign="top" style="width:190px;"><![endif]-->
+                                            <div style="display:inline-block;width:100%;max-width:190px;vertical-align:top;direction:ltr;" class="mw100">
+                                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:100%;">
+             
+                                                    <tr>
+                                                        <td align="left" style="padding-bottom:20px;font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:24px;color:#3c3b3f;">
+                                                            <!-- FLIGHT NAME -->
+                                                            <strong>Alaska</strong>
+                                                            <br>
+                                                            <!-- FLIGHT NUMBER -->
+                                                            <span style="color: #656565;">Flight 293</span>
+                                                            <br>
+                                                            <!-- EQUIPMENT TYPE -->
+                                                            <span style="color: #656565;">Boeing 737-9 MAX (ETOPS)</span>
+                                                        </td>
+                                                    </tr>
+             
+                                                </table>
+                                            </div>
+                                            <!--[if (gte mso 9)|(IE)]></td><td valign="top" style="width:372px"><![endif]-->
+                                           <div style="display:inline-block;width:100%;max-width:372px;vertical-align:top;direction:ltr;" class="mw100">
+                  <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:100%;">
+                   <tr>
+                    <td align="left" style="font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:24px;color: #3c3b3f;">
+                     <strong>Traveler(s)</strong>
+                    </td>
+                   </tr>
+                                                    <!-- REPEAT FOR EACH TRAVELER -->
+               
+                                                    <tr>
+                                                        <td align="left" style="padding-bottom:20px;font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:24px;color: #656565;">
+                                                            <!-- TRAVELER NAME -->
+                                                            Test User
+                                                            <br>
+                                                            <!-- TRAVELER INFO -->
+                                                            
+                                                            Seat: 25D
+                                                          
+
+                    Class: Q (Main)
+                                                        </td>
+                                                    </tr>
+                                                    
+             
+             
+                                                    
+             
+             
+             
+                                                   
+             
+                                                    
+                                                    <!-- /REPEAT FOR EACH TRAVELER -->
+                                                </table>
+                                            </div>
+                                            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                        </td>
+                                    </tr>
+                                    
+                                    <!--                                     12 | 13 | 14                                     ONLY DISPLAY IF CONDITIONS MET                                     -->
+                                    
+
+
+
+                                    <tr>
+                                        <td align="left" style="padding-bottom:20px;font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:24px;color: #656565;">
+                                            Flight Operated by Alaska.
+           
+                                        </td>
+                                    </tr>
+                                    
+
+                        
+                                    <!-- /12 | 13 | 14  -->
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--                     FLIGHT INFO                     ORIGIN|DESTINATION MOD 1                     -->
+                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" align="center" style="width: 100%;">
+                        <tr>
+                            <td style="padding-top: 60px; padding-bottom: 20px;">
+                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" align="center" style="width: 94%; max-width: 611px;">
+                                    <tr>
+                                        <td align="center" valign="top" style="vertical-align:top;font-size:0;direction:ltr">
+                                            <!--[if (gte mso 9)|(IE)]><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:611px;"><tr><td style="width:215px;"><![endif]-->
+                                            <div style="display:inline-block;width:35%;max-width:215px;vertical-align:top;direction:ltr;" class="mw100 w45">
+                                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:100%;">
+                                                    <tr>
+                                                        <td align="center" style="padding-bottom:10px;font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:20px;color:#3c3b3f;">
+                                                            <strong>
+                                                            <!-- ORIGIN DATE -->
+               Thu, Dec 04 
+                                                            
+                                                            <br>
+                                                            <!-- ORIGIN TIME -->
+               06:10 PM
+                                                            
+                                                            </strong>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding-bottom:10px;font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:40px;line-height:44px;color:#3c3b3f;">
+                                                            <strong>
+                                                            <!-- ORIGIN AIRPORT -->
+               EWR
+                                                            
+                                                            </strong>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:20px;color:#656565;word-break:break-word;" class="flight_info--city">
+                                                            <!-- ORIGIN CITY -->
+                                                            Newark-Liberty Intl.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                </div><!--[if (gte mso 9)|(IE)]></td><td style="width:181px"><![endif]--><div style="display:inline-block;width:30%;max-width:181px;vertical-align:top;direction:ltr;" class="mw100 w10">
+                                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:100%;">
+                                                    <tr>
+                                                        <td height="124" align="center" valign="middle" style="height: 124px;">
+                                                            <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/012a3b72-5ae8-4441-89b7-5138cb01f2da.png" width="181" height="" border="0" style="width:100%;max-width:181px;display:block;" alt="" class="hide">
+                                                            <!--[if !mso]><!-->
+                                                            <div class="show" style="display:none; float:left; overflow:hidden; width:0; max-height:0; line-height:0;">
+                                                                <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/d0f8650c-6d07-4281-bd3d-2a072005e9cf.png" width="31" height="" border="0" style="width:100%;max-width:31px;display:block;" alt="">
+                                                            </div>
+                                                            <!--<![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                </div><!--[if (gte mso 9)|(IE)]></td><td style="width:215px"><![endif]--><div style="display:inline-block;width:35%;max-width:215px;vertical-align:top;direction:ltr;" class="mw100 w45">
+                                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:100%;">
+                                                    <tr>
+                                                        <td align="center" style="padding-bottom:10px;font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:20px;color:#3c3b3f;">
+                                                            <strong>
+                                                            <!-- DESTINATION DATE -->
+                                                            Thu, Dec 04
+               
+                                                            <br>
+                                                            <!-- DESTINATION TIME -->
+               09:50 PM
+                                                            
+                                                            </strong>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding-bottom:10px;font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:40px;line-height:44px;color:#3c3b3f;">
+                                                            <strong>
+                                                            <!-- DESTINATION AIRPORT -->
+               SFO
+                                                            
+                                                            </strong>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:20px;color:#656565;word-break:break-word;" class="flight_info--city">
+                                                            <!-- DESTINATION CITY -->
+               San Francisco
+                                                           
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                        </td>
+                                    </tr>
+                                    
+                                    
+                                    
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>
+     
+                    <div style="font-size:1px;line-height:40px;mso-line-height-rule:exactly;">&nbsp;</div>
+                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" align="center" bgcolor="#f5f5f5" style="width: 94%; max-width: 611px;">
+                        <tr>
+                            <td align="center" style="padding-top: 20px;">
+                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" align="center" style="width: 92%; max-width: 562px;">
+                                    <tr>
+                                        <td align="left" valign="top" style="vertical-align:top;font-size:0;direction:ltr">
+                                            <!--[if (gte mso 9)|(IE)]><table cellpadding="0" role="presentation" cellspacing="0" border="0" style="width:562px;"><tr><td valign="top" style="width:190px;"><![endif]-->
+                                            <div style="display:inline-block;width:100%;max-width:190px;vertical-align:top;direction:ltr;" class="mw100">
+                                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:100%;">
+             
+                                                    <tr>
+                                                        <td align="left" style="padding-bottom:20px;font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:24px;color:#3c3b3f;">
+                                                            <!-- FLIGHT NAME -->
+                                                            <strong>Alaska</strong>
+                                                            <br>
+                                                            <!-- FLIGHT NUMBER -->
+                                                            <span style="color: #656565;">Flight 292</span>
+                                                            <br>
+                                                            <!-- EQUIPMENT TYPE -->
+                                                            <span style="color: #656565;">Boeing 737-900 (Winglets)</span>
+                                                        </td>
+                                                    </tr>
+             
+                                                </table>
+                                            </div>
+                                            <!--[if (gte mso 9)|(IE)]></td><td valign="top" style="width:372px"><![endif]-->
+                                           <div style="display:inline-block;width:100%;max-width:372px;vertical-align:top;direction:ltr;" class="mw100">
+                  <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:100%;">
+                   <tr>
+                    <td align="left" style="font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:24px;color: #3c3b3f;">
+                     <strong>Traveler(s)</strong>
+                    </td>
+                   </tr>
+                                                    <!-- REPEAT FOR EACH TRAVELER -->
+               
+                                                    <tr>
+                                                        <td align="left" style="padding-bottom:20px;font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:24px;color: #656565;">
+                                                            <!-- TRAVELER NAME -->
+                                                            Test User
+                                                            <br>
+                                                            <!-- TRAVELER INFO -->
+                                                            
+                                                            Seat: 28D
+                                                          
+
+                    Class: Q (Main)
+                                                        </td>
+                                                    </tr>
+                                                    
+             
+             
+                                                    
+             
+             
+             
+                                                   
+             
+                                                    
+                                                    <!-- /REPEAT FOR EACH TRAVELER -->
+                                                </table>
+                                            </div>
+                                            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                        </td>
+                                    </tr>
+                                    
+                                    <!--                                     12 | 13 | 14                                     ONLY DISPLAY IF CONDITIONS MET                                     -->
+                                    
+
+
+
+                                    <tr>
+                                        <td align="left" style="padding-bottom:20px;font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:24px;color: #656565;">
+                                            Flight Operated by Alaska.
+           
+                                        </td>
+                                    </tr>
+                                    
+
+                        
+                                    <!-- /12 | 13 | 14  -->
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--                     FLIGHT INFO                     ORIGIN|DESTINATION MOD 1                     -->
+                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" align="center" style="width: 100%;">
+                        <tr>
+                            <td style="padding-top: 60px; padding-bottom: 20px;">
+                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" align="center" style="width: 94%; max-width: 611px;">
+                                    <tr>
+                                        <td align="center" valign="top" style="vertical-align:top;font-size:0;direction:ltr">
+                                            <!--[if (gte mso 9)|(IE)]><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:611px;"><tr><td style="width:215px;"><![endif]-->
+                                            <div style="display:inline-block;width:35%;max-width:215px;vertical-align:top;direction:ltr;" class="mw100 w45">
+                                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:100%;">
+                                                    <tr>
+                                                        <td align="center" style="padding-bottom:10px;font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:20px;color:#3c3b3f;">
+                                                            <strong>
+                                                            <!-- ORIGIN DATE -->
+               Mon, Dec 08 
+                                                            
+                                                            <br>
+                                                            <!-- ORIGIN TIME -->
+               10:15 AM
+                                                            
+                                                            </strong>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding-bottom:10px;font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:40px;line-height:44px;color:#3c3b3f;">
+                                                            <strong>
+                                                            <!-- ORIGIN AIRPORT -->
+               SFO
+                                                            
+                                                            </strong>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:20px;color:#656565;word-break:break-word;" class="flight_info--city">
+                                                            <!-- ORIGIN CITY -->
+                                                            San Francisco
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                </div><!--[if (gte mso 9)|(IE)]></td><td style="width:181px"><![endif]--><div style="display:inline-block;width:30%;max-width:181px;vertical-align:top;direction:ltr;" class="mw100 w10">
+                                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:100%;">
+                                                    <tr>
+                                                        <td height="124" align="center" valign="middle" style="height: 124px;">
+                                                            <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/012a3b72-5ae8-4441-89b7-5138cb01f2da.png" width="181" height="" border="0" style="width:100%;max-width:181px;display:block;" alt="" class="hide">
+                                                            <!--[if !mso]><!-->
+                                                            <div class="show" style="display:none; float:left; overflow:hidden; width:0; max-height:0; line-height:0;">
+                                                                <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/d0f8650c-6d07-4281-bd3d-2a072005e9cf.png" width="31" height="" border="0" style="width:100%;max-width:31px;display:block;" alt="">
+                                                            </div>
+                                                            <!--<![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                </div><!--[if (gte mso 9)|(IE)]></td><td style="width:215px"><![endif]--><div style="display:inline-block;width:35%;max-width:215px;vertical-align:top;direction:ltr;" class="mw100 w45">
+                                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:100%;">
+                                                    <tr>
+                                                        <td align="center" style="padding-bottom:10px;font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:20px;color:#3c3b3f;">
+                                                            <strong>
+                                                            <!-- DESTINATION DATE -->
+                                                            Mon, Dec 08
+               
+                                                            <br>
+                                                            <!-- DESTINATION TIME -->
+               06:46 PM
+                                                            
+                                                            </strong>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding-bottom:10px;font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:40px;line-height:44px;color:#3c3b3f;">
+                                                            <strong>
+                                                            <!-- DESTINATION AIRPORT -->
+               EWR
+                                                            
+                                                            </strong>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="font-family:Arial,'Helvetica Neue', Helvetica,sans-serif;font-size:16px;line-height:20px;color:#656565;word-break:break-word;" class="flight_info--city">
+                                                            <!-- DESTINATION CITY -->
+               Newark-Liberty Intl.
+                                                           
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                        </td>
+                                    </tr>
+                                    
+                                    
+                                    
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>
+     
+                    
+     
+                                                                                                               <!-- <#if partnerFlag == true>-->
+                              
+                </td>
+            </tr>
+        </table>
+        
+        
+        <!-- HR -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#e9e9e9" style="width: 94%; max-width: 611px;"><tr><td style="line-height:2px; font-size:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr></table>
+</td></tr></table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><!-- SUMMARY OF CHARGES -->
+
+
+<!-- IMPRESSION REGION LOGIC -->
+
+  
+    <!-- Non-Member Impression Region -->    
+    
+  
+        <table cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#ffffff" style="width: 100%; max-width: 650px;">
+            <tr>
+                <td align="center" style="padding-top: 35px; padding-bottom: 35px;">
+                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 86%; max-width: 559px;">
+                        <tr>
+                            <td align="left" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#3c3b3f;" class="summary_of_charges--items">
+                                <strong>Summary of airfare charges</strong>
+                            </td>
+                        </tr>
+                    </table>
+            
+                          <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 86%; max-width: 559px;">
+                            <tr>
+                                <td align="left" style="padding-top: 20px; padding-bottom: 20px; font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#656565;" class="summary_of_charges--items">
+                                    <!-- First and Last Name -->
+                                    Test User
+                                    <!-- Mileage Plan Information -->
+                                     
+                                          <!-- Is Member -->
+                                          <em><br>
+                                              Atmos&trade; Rewards Member:
+                                                  
+                                                  
+                                              # ***** 1234
+                                              
+                                          </em>
+                                          
+                                     
+                                    <!-- End Mileage Plan Information -->
+                                  
+                                    <!-- TICKET --><br>Ticket 0272121813063
+                                  <!-- /TICKET -->
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 86%; max-width: 559px;">
+                                                <tr>
+                                                    <td align="left" valign="top" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#656565;" class="summary_of_charges--items">
+                                                      Base fare and surcharges
+                                                      
+                                                    </td>
+                                                    <td align="right" valign="top" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#656565;" class="summary_of_charges--items">
+                                                      <!--.base fare.-->
+                                                        $331.16
+                                                      
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" valign="top" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#656565;" class="summary_of_charges--items">
+                                                      Taxes and other fees
+                                                      
+                                                    </td>
+                                                    <td align="right" valign="top" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#656565;" class="summary_of_charges--items">
+                                                      <!-- .tax. -->
+                                                        $55.44
+                                                      
+                                                    </td>
+                                                </tr>
+                                                <!--Display partner Award Fee -->
+                                                   <!-- End Partner Award -->
+                                            <tr>
+                                                    <td align="left" valign="top" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#656565;" class="summary_of_charges--items">
+                                                        Per-person total
+                                                    </td>
+                                                    <td align="right" valign="top" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#656565;" class="summary_of_charges--items">
+                                                        <!-- .total. -->
+                                                        $386.60
+                                                    </td>
+                                                </tr>
+                                              
+                                            </table>
+
+                       <!-- End Passenger Information -->
+                           
+                   
+                
+
+            <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 86%; max-width: 559px;">
+                <tr>
+                    <td align="left" valign="top" style="padding-top:20px;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#3c3b3f;" class="summary_of_charges--items">
+                        <strong>Total charges for air travel</strong>
+                    </td>
+                    <td align="right" valign="top" style="padding-top:20px;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#3c3b3f;" class="summary_of_charges--items">
+                        <!-- .grand total amount. -->  <strong style="white-space: nowrap;">$386.60</strong>
+                    </td>
+                </tr>
+            </table>
+            
+            <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 86%; max-width: 559px;">
+                <tr>
+                    <td align="left" valign="top" style="padding-top:20px;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:12px;line-height:18px;color:#656565;">
+                        <a href="https://click.email.alaskaair.com/?qs=f72e2754168483245436c7e8dda2115b8fba67a855a521282a152c3155a82c752c73cda05def435f902c08a762b2ab34da91bfa0b20bb5bc58be69bdd5ae477d"  style="color:#2774ae; text-decoration:underline;">View all taxes, fees and charges</a>.
+                    </td>
+                </tr>
+            </table>
+            
+
+             <!-- END SEAT PURCHASES -->
+
+            
+                
+
+               <!-- main preferred charges end -->
+                
+                 <!-- End total for additional charges -->
+                  
+
+            <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 86%; max-width: 559px;">
+                <tr>
+                    <td align="left" valign="top" style="padding-top:30px;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:12px;line-height:18px;color:#656565;">
+                             
+                     
+
+                           <!-- No Charge -->
+                                                      
+                      
+
+                      <!-- EWallet Refund --> 
+                      
+                      
+                      <!-- Credit Refund -->
+                      
+                      
+                      <!-- Cert Refund -->
+                      
+                      
+                            <!-- Wallet -->
+                            
+                           <!-- Charges -->
+                                    
+                                       Nonrefundable fare of $386.60 to be charged to the Visa card with number ************ 1234 held by Test User on Oct 29, 2025.<br><br>
+                      
+                                   
+                             <!-- End Charges -->
+                      
+                           <!-- Miles Redeemed -->
+                            
+                      
+                      <!-- Points Redeemed -->
+
+                            
+                      
+                            <!-- Gift Certificates -->
+                             
+
+                            <!-- Discount Code -->
+                                                     
+
+                        </td>
+                        </tr>
+                    </table>
+                </td>          
+            </tr>
+        </table>
+        <!-- HR -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#e9e9e9" style="width: 94%; max-width: 611px;"><tr><td style="line-height:2px; font-size:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr></table>
+    
+
+ 
+<!-- END OF CHARGES -->
+</td></tr></table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+
+</td></tr></table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+
+<!-- TRIP INSURANCE BY ALLIANZ GLOBAL ASSISTANCE -->
+
+    
+        <table cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#ffffff" style="width: 100%; max-width: 650px;">
+            <tr>
+                <td align="center" style="padding-top: 35px; padding-bottom: 30px;">
+                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 86%; max-width: 559px;">
+                        <tr>
+                            <td align="left" style="padding-bottom: 20px; font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#3c3b3f;">
+                                <strong>Trip insurance by Allianz Global&nbsp;Assistance</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#3c3b3f;">
+                                <!-- TripInsurancePurchased = false -->
+                            
+                              
+                                    Purchase travel insurance benefits and travel assistance services for your trip from <a href="https://click.email.alaskaair.com/?qs=f72e275416848324414d433510bd48a7f8599bd696024d394c000fd250c9bc9a152e98e00e00d512dc8cd2455c6c87f06aed28b0d383174acf55623c68fee645"  style="color:#2774ae; text-decoration:underline;">Allianz Global Assistance</a>. <a href="https://click.email.alaskaair.com/?qs=f72e27541684832431309ed5211e24862e34bac457ab420b45a1704bb465a6d719d64fa77ec197ca2f8d57835cbd8a48522ceb99d3cf3a7669d89d234960599f"  style="color:#2774ae; text-decoration:underline;">Learn&nbsp;more</a>.
+                              
+                            
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+
+
+
+<!-- Sustainable Aviation Fuel (SAF) credit by CHOOOSE -->
+ </td></tr></table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+        <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="650" style="width: 100%; max-width: 650px;">
+        <tr>
+        <td align="center" style="background-color: #e9e9e9; padding:10px 0; ">
+            <a href="https://click.email.alaskaair.com/?qs=f72e275416848324877729866296e6049b3f688fd679ab8acaf8861224b42475d3e29d118526494163c192e992d62610567d62e5f4ad3a0144a1533dcbe5e030" ><img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/d55075c8-3224-4c62-902c-ac5f1869bec0.jpg" alt="" width="650" style="display:block;border:0;outline:0;padding:0;width:100%;max-width: 650px;"></a>
+        </td>
+        </tr>
+        <tr>
+        <td align="center" style="background-color: #ffffff;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:68%;" class="w92">
+            <tr>
+            <td align="center" style="padding-top:50px;">
+                 <h2 style="margin: 0;padding: 0;color: #2774AE;font-family: 'Circular', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align: center;">Use the app to get ready for your&nbsp;trip.</h2>
+            </td>
+            </tr>
+            </table>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:76%;" class="w92">
+            <tr>
+            <td align="center" style="padding-top:20px;">
+                <p style="margin: 0;padding: 0;color: #3c3d3f;font-family: 'Circular', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:18px;line-height:26px;text-align: center;">Easily manage your reservation, change your seat, upgrade, and pre-order your inflight meal with the Alaska Airlines mobile&nbsp;app.</p>
+            </td>
+            </tr>
+            <tr>
+            <td align="center" style="padding-top:40px;padding-bottom:60px;">
+                <!--[if mso]>                 <style type="text/css">                 .mobile_app_cta {                 background-color:#ffffff;                 border: 2px solid #2774AE;                 padding:17px 60px !important;                 border-collapse:collapse !important;                 }                 .resetBorder {                 border:none !important;                 }                 </style>                 <![endif]-->
+                <table valign="top" cellpadding="0" cellspacing="0" border="0" role="presentation" class="mobile_app_cta">
+                <tr>
+                <td>
+                    <div>
+                    <a href="https://click.email.alaskaair.com/?qs=f72e275416848324877729866296e6049b3f688fd679ab8acaf8861224b42475d3e29d118526494163c192e992d62610567d62e5f4ad3a0144a1533dcbe5e030"  style=" background-color:#ffffff; color: #2774AE;border: 2px solid #2774AE; padding: 18px 60px 16px 60px; border-radius: 0px; display: inline-block; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-align: center; text-decoration: none; border-collapse: collapse;text-transform: uppercase;" class="resetBorder btnWhite">Go mobile</a>
+                    </div>
+                </td>
+                </tr>
+                </table>
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        </table>
+
+
+</td></tr></table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+
+
+
+        <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="650" style="width: 100%; max-width: 650px;">        
+<tr>
+        <td align="center" style="background-color: #e9e9e9; padding:10px 0; ">
+            <table align="center" role="presentation" style="border:0;border-spacing:0; width:100%;max-width:650px;">
+            <tr>
+            <td align="center" style="padding:40px 0;">
+                <table align="center" role="presentation" style="border:0;border-spacing:0; width:84%;" class="w90">
+                <tr>
+                <td align="center">
+                    <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/34c2b560-6bc9-4e5b-aba2-a4f5c685df75.png" alt="" width="100" style="width:100px;">
+                    <h2 style="margin:16px 0 0;color:#02426D;font-family:Circular,Helvetica, Arial,sans-serif;font-size:36px;font-weight:400;line-height:42px;text-align:center;">Make sure you have the right&nbsp;ID</h2>
+                    <p style="margin:24px 0;color:#0A2240;font-family:Circular,Helvetica, Arial,sans-serif;font-size:20px;font-weight:400;line-height:28px;text-align:center;">State-issued driver's licenses that aren't Real ID-compliant will not be accepted for your flight.</p>
+                </td>
+                </tr>
+                </table>
+
+                <table align="center" role="presentation" style="background-color:#F9FBFC;border:1px solid #02426D;border-collapse:separate;border-spacing:0;border-radius:12px;width:76%;" class="w90">
+                <tr>
+                <td align="center" style="padding:24px 0;">
+                    <table align="center" role="presentation" style="border:0;border-spacing:0;width:80%;" class="w90">
+                    <tr>
+                    <td align="center">
+                        <h3 style="margin:0;color:#02426D;font-family:Circular,Helvetica, Arial,sans-serif;font-size:24px;font-weight:700;line-height:32px;text-align:center;">Here are some of the <span style="text-transform:uppercase;">Real ID</span>-compliant forms of&nbsp;ID:</h3>
+                    </td>
+                    </tr>
+                    </table>
+                    
+                    <table align="center" role="presentation" style="border:0;border-spacing:0;width:66%;" class="w88">
+                    <tr>
+                    <td align="center" valign="top" width="36" style="padding-top:8px;width:8%;">
+                        <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/616a21f1-1552-4612-b973-78548001218a.png" alt="" width="24" style="width:24px;">
+                    </td>
+                    <td align="center" style="padding-left:6px;padding-top:8px;width:90%;">
+                        <p style="margin:0;color:#0A2240;font-family:Circular,Helvetica, Arial,sans-serif;font-size:20px;font-weight:400;line-height:28px; text-align:left;">Valid Passport</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td align="center" valign="top" width="36" style="padding-top:8px;width:8%;">
+                        <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/616a21f1-1552-4612-b973-78548001218a.png" alt="" width="24" style="width:24px;">
+                    </td>
+                    <td align="center" style="padding-left:6px;padding-top:8px;width:90%;">
+                        <p style="margin:0;color:#0A2240;font-family:Circular,Helvetica, Arial,sans-serif;font-size:20px;font-weight:400;line-height:28px; text-align:left;">U.S. Passport Card</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td align="center" valign="top" width="36" style="padding-top:8px;width:8%;">
+                        <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/616a21f1-1552-4612-b973-78548001218a.png" alt="" width="24" style="width:24px;">
+                    </td>
+                    <td align="center" style="padding-left:6px;padding-top:8px;width:90%;">
+                        <p style="margin:0;color:#0A2240;font-family:Circular,Helvetica, Arial,sans-serif;font-size:20px;font-weight:400;line-height:28px; text-align:left;">U.S. Department of Defense&nbsp;ID</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td align="center" valign="top" width="36" style="padding-top:8px;width:8%;">
+                        <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/616a21f1-1552-4612-b973-78548001218a.png" alt="" width="24" style="width:24px;">
+                    </td>
+                    <td align="center" style="padding-left:6px;padding-top:8px;width:90%;">
+                        <p style="margin:0;color:#0A2240;font-family:Circular,Helvetica, Arial,sans-serif;font-size:20px;font-weight:400;line-height:28px; text-align:left;">Global Entry ID</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td align="center" valign="top" width="36" style="padding-top:8px;width:8%;">
+                        <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/616a21f1-1552-4612-b973-78548001218a.png" alt="" width="24" style="width:24px;">
+                    </td>
+                    <td align="center" style="padding-left:6px;padding-top:8px;width:90%;">
+                        <p style="margin:0;color:#0A2240;font-family:Circular,Helvetica, Arial,sans-serif;font-size:20px;font-weight:400;line-height:28px; text-align:left;"><span style="text-transform:uppercase;">Real ID</span> or Enhanced ID&nbsp;Card</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td align="center" valign="top" width="36" style="padding-top:8px;padding-bottom:32px;width:8%;">
+                        <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/616a21f1-1552-4612-b973-78548001218a.png" alt="" width="24" style="width:24px;">
+                    </td>
+                    <td align="center" style="padding-left:6px;padding-top:8px;padding-bottom:32px;width:90%;">
+                        <p style="margin:0;color:#0A2240;font-family:Circular,Helvetica, Arial,sans-serif;font-size:20px;font-weight:400;line-height:28px; text-align:left;"><span style="text-transform:uppercase;">Real ID</span> or Enhanced Driver's&nbsp;License</p>
+                    </td>
+                    </tr>
+                    </table>
+
+                    <table align="center" role="presentation" style="border:0;border-spacing:0;background-color:#02426D;border: 2px solid #02426D;border-collapse:separate;border-radius:12px;transition: ease all .2s;width:220px;">
+                    <tr>
+                    <td height="64" valign="middle" style="text-align: center; height: 64px;">
+                        <a href="https://click.email.alaskaair.com/?qs=f72e2754168483249a5e41a6d4a75b2199e268a2097d064495afe370720e1f98a0ad727c63faf6e574c6fa2fa539145b172171c81d68d4d2521c972b28356135"  style="display: inline-block; padding:14px 10px 10px; color:#fdfeff;font-family:Circular,Helvetica, Arial,sans-serif;font-size:20px; font-weight:400;line-height:24px; text-decoration:none;">All <span style="text-transform:uppercase;">Real ID</span> options</a>
+                    </td>
+                    </tr>
+                    </table>
+                </td>
+                </tr>
+                </table>
+
+                
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+</table>
+
+</td></tr></table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"></td></tr></table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><!-- BEFORE YOU FLY -->
+
+    
+                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#ffffff" style="width: 100%; max-width: 650px;">
+                                    <tr>
+                                        <td align="center" style="padding-top: 35px; padding-bottom: 0px;">
+<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 86%; max-width: 559px;">
+                                                <tr>
+                            <td align="left" style="padding-bottom: 25px; font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:30px;line-height:40px;color:#2774ae;">
+                                <strong>Before you fly</strong>
+                            </td>
+                        </tr>
+
+                
+                        <tr>
+                            <td align="left" style="padding-bottom: 25px; font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#3c3b3f;">
+                                <strong>Baggage</strong>
+                            </td>
+                        </tr>
+                                                
+         <!-- Baggage variable error and not a partner Award template -->                               
+
+                                          
+  <tr><td align="left" style="padding-bottom: 20px; font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:24px;color:#3c3b3f;">
+        <strong>Carry-on baggage:</strong> On Alaska Airlines flights, each traveler is limited to one carry-on bag plus one personal item. See our <a href="https://click.email.alaskaair.com/?qs=f72e27541684832485b231052158244f4149758b6eee4a92a5ea6f74389975e26ae92e9820fbb00f927b8d65f9cd702740c3c0c249f5ac6e48112f8abfa31692"  style="color:#2774ae; text-decoration:underline;">carry&#8209;on&nbsp;baggage</a> page for the latest policies and size&nbsp;information.
+        <br><br>
+        <strong>Checked baggage:</strong> Alaska Airlines rules and fees apply for this itinerary. See the <a href="https://click.email.alaskaair.com/?qs=f72e275416848324fd9b0dbbc451e5f1e5eb712e2a91d010c4b7420e84cd50df3243a82aa7be98500bb93a17980bd640c4c460fa6df8341e567a435637aefbf0"  style="color:#2774ae; text-decoration:underline;">checked baggage</a> page for details and&nbsp;exceptions.
+    </td>
+</tr>
+
+
+   
+  
+
+                                          </table></td></tr></table>
+</td></tr></table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"></td></tr></table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner">
+
+
+
+<table cellpadding="0" cellspacing="0" border="0" role="presentation" align="center" style="width:86%; max-width:559px; margin:0 auto;">
+  <tr>
+    <td>
+      <h5 style="margin:0;padding-bottom: 5px;;color:#3c3b3f;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:12px;line-height:18px;">Fees listed below are for one-way travel.</h5>
+<!-- Baggage Table 1 (self-contained sections) -->
+<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-top:1px solid #dddddc;border-bottom:1px solid #dddddc;width:100%;">
+  <tr>
+    <td style="padding:0 0px 0px 0px;">
+      <table cellpadding="2" cellspacing="0" border="0" role="presentation" style="width:100%;">
+        <tr style="background:#f9f9f9;border-top:1px solid #dddddc ">
+          <td colspan="8" style="padding-top:10px;padding-bottom:4px; padding-left: 8px;">
+            <p class="fnt8" style="margin:0;color:#3c3b3f;font-family:Arial, sans-serif;font-size:10px;line-height:16px;"><strong>Standard</strong></p>
+          </td>
+        </tr>
+        <tr style="background:#f9f9f9;">
+          
+          <td style="width:10%; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Carry-on</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #1</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #2</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #3</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #4+</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Overweight bag<span style="font-size:8px;line-height:0;vertical-align:2px;">*</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">**</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">***</span></p></td>
+        </tr>
+        <tr style="background:#f9f9f9;">
+          
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$35</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$45</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$100/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+        </tr>
+        
+
+        <tr style="background:#ffffff; border-top:1px solid #dddddc">
+          <td colspan="8" style="padding-top:10px;padding-bottom:4px; padding-left: 8px;">
+            <p class="fnt8" style="margin:0;color:#3c3b3f;font-family:Arial, sans-serif;font-size:10px;line-height:16px;"><strong>Club 49&trade; member</strong></p>
+          </td>
+        </tr>
+        <tr style="background:#ffffff;">
+          
+          <td style="width:10%; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Carry-on</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #1</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #2</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #3</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #4+</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Overweight bag<span style="font-size:8px;line-height:0;vertical-align:2px;">*</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">**</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">***</span></p></td>
+        </tr>
+        <tr style="background:#ffffff;">
+          
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free<span style="font-size:8px;line-height:0;vertical-align:2px;">1</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free<span style="font-size:8px;line-height:0;vertical-align:2px;">1</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$100/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+        </tr>
+        
+
+        <tr style="background:#f9f9f9;border-top:1px solid #dddddc ">
+          <td colspan="8" style="padding-top:10px;padding-bottom:4px; padding-left: 8px;">
+            <p class="fnt8" style="margin:0;color:#3c3b3f;font-family:Arial, sans-serif;font-size:10px;line-height:16px;"><strong>Atmos<sup style="font-size: 8px; line-height: 0; vertical-align: 3px;">&trade;</sup> Silver and Gold</strong></p>
+          </td>
+        </tr>
+        <tr style="background:#f9f9f9;">
+          
+          <td style="width:10%; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Carry-on</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #1</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #2</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #3</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #4+</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Overweight bag<span style="font-size:8px;line-height:0;vertical-align:2px;">*</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">**</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">***</span></p></td>
+        </tr>
+        <tr style="background:#f9f9f9;">
+          
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free<span style="font-size:8px;line-height:0;vertical-align:2px;">2</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free<span style="font-size:8px;line-height:0;vertical-align:2px;">2</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$100/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+        </tr>
+        
+
+        <tr style="background:#ffffff; border-top:1px solid #dddddc">
+          <td colspan="8" style="padding-top:10px;padding-bottom:4px; padding-left: 8px;">
+            <p class="fnt8" style="margin:0;color:#3c3b3f;font-family:Arial, sans-serif;font-size:10px;line-height:16px;"><strong>Atmos<sup style="font-size: 8px; line-height: 0; vertical-align: 3px;">&trade;</sup> Platinum and Titanium</strong></p>
+          </td>
+        </tr>
+        <tr style="background:#ffffff;">
+          
+          <td style="width:10%; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Carry-on</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #1</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #2</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #3</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #4+</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Overweight bag<span style="font-size:8px;line-height:0;vertical-align:2px;">*</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">**</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">***</span></p></td>
+        </tr>
+        <tr style="background:#ffffff;">
+          
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free<span style="font-size:8px;line-height:0;vertical-align:2px;">2</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free<span style="font-size:8px;line-height:0;vertical-align:2px;">2</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free<span style="font-size:8px;line-height:0;vertical-align:2px;">2</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag<span style="font-size:8px;line-height:0;vertical-align:2px;">6</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$100/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          
+        </tr>
+        
+
+        <tr style="background:#f9f9f9;border-top:1px solid #dddddc ">
+          <td colspan="8" style="padding-top:10px;padding-bottom:4px; padding-left: 8px;">
+            <p class="fnt8" style="margin:0;color:#3c3b3f;font-family:Arial, sans-serif;font-size:10px;line-height:16px;"><strong>oneworld<sup style="font-size: 8px; line-height: 0; vertical-align: 3px;">&reg;</sup> Ruby &amp; Saphire members Companions are subject to Alaska's <a href="https://click.email.alaskaair.com/?qs=f72e27541684832402f3886119295c1e742130dea157e063249d41ca1af1ca7cb20b7f37f463722cabb0569ffc38e05c74f73490faeb5efa0b05f20c7ff511e7"  style="text-decoration: underline; color: #0000EE;">standard baggage&nbsp;fees</a>.</strong></p>
+          </td>
+        </tr>
+        <tr style="background:#f9f9f9;">
+          
+          <td style="width:10%; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Carry-on</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #1</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #2</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #3</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #4+</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Overweight bag<span style="font-size:8px;line-height:0;vertical-align:2px;">*</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">**</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">***</span></p></td>
+        </tr>
+        <tr style="background:#f9f9f9;">
+          
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free<span style="font-size:8px;line-height:0;vertical-align:2px;">7</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free<span style="font-size:8px;line-height:0;vertical-align:2px;">7</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$100/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+        </tr>
+        
+
+        <tr style="background:#ffffff; border-top:1px solid #dddddc">
+          <td colspan="8" style="padding-top:10px;padding-bottom:4px; padding-left: 8px;">
+            <p class="fnt8" style="margin:0;color:#3c3b3f;font-family:Arial, sans-serif;font-size:10px;line-height:16px;"><strong>oneworld<sup style="font-size: 8px; line-height: 0; vertical-align: 3px;">&reg;</sup> Emerald members Companions are subject to Alaska's <a href="https://click.email.alaskaair.com/?qs=f72e27541684832402f3886119295c1e742130dea157e063249d41ca1af1ca7cb20b7f37f463722cabb0569ffc38e05c74f73490faeb5efa0b05f20c7ff511e7"  style="text-decoration: underline; color: #0000EE;">standard baggage&nbsp;fees</a></strong></p>
+          </td>
+        </tr>
+        <tr style="background:#ffffff;">
+          
+          <td style="width:10%; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Carry-on</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #1</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #2</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #3</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #4+</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Overweight bag<span style="font-size:8px;line-height:0;vertical-align:2px;">*</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">**</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">***</span></p></td>
+        </tr>
+        <tr style="background:#ffffff;">
+          
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free<span style="font-size:8px;line-height:0;vertical-align:2px;">7</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free<span style="font-size:8px;line-height:0;vertical-align:2px;">7</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free<span style="font-size:8px;line-height:0;vertical-align:2px;">7</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag<span style="font-size:8px;line-height:0;vertical-align:2px;">6</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$100/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+        </tr>
+        
+
+        <tr style="background:#f9f9f9;border-top:1px solid #dddddc ">
+          <td colspan="8" style="padding-top:10px;padding-bottom:4px; padding-left: 8px;">
+            <p class="fnt8" style="margin:0;color:#3c3b3f;font-family:Arial, sans-serif;font-size:10px;line-height:16px;"><strong>Eligible Alaska Airlines credit card holders</strong></p>
+          </td>
+        </tr>
+        <tr style="background:#f9f9f9;">
+          
+          <td style="width:10%; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Carry-on</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #1</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #2</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #3</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #4+</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Overweight bag<span style="font-size:8px;line-height:0;vertical-align:2px;">*</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">**</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">***</span></p></td>
+        </tr>
+        <tr style="background:#f9f9f9;">
+          
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free<span style="font-size:8px;line-height:0;vertical-align:2px;">3</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$45</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$100/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+        </tr>
+        
+
+        <tr style="background:#ffffff; border-top:1px solid #dddddc">
+          <td colspan="8" style="padding-top:10px;padding-bottom:4px; padding-left: 8px;">
+            <p class="fnt8" style="margin:0;color:#3c3b3f;font-family:Arial, sans-serif;font-size:10px;line-height:16px;"><strong>Passengers confirmed in First Class at the time of check-in</strong></p>
+          </td>
+        </tr>
+        <tr style="background:#ffffff;">
+          
+          <td style="width:10%; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Carry-on</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #1</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #2</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #3</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #4+</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Overweight bag<span style="font-size:8px;line-height:0;vertical-align:2px;">*</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">**</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">***</span></p></td>
+        </tr>
+        <tr style="background:#ffffff;">
+          
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free<span style="font-size:8px;line-height:0;vertical-align:2px;">4</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free<span style="font-size:8px;line-height:0;vertical-align:2px;">4</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$100/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+        </tr>
+        
+
+        <tr style="background:#f9f9f9;border-top:1px solid #dddddc ">
+          <td colspan="8" style="padding-top:10px;padding-bottom:4px; padding-left: 8px;">
+            <p class="fnt8" style="margin:0;color:#3c3b3f;font-family:Arial, sans-serif;font-size:10px;line-height:16px;"><strong>Passengers traveling wholly in the state of Alaska*</strong></p>
+          </td>
+        </tr>
+        <tr style="background:#f9f9f9;">
+          
+          <td style="width:10%; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Carry-on</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #1</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #2</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #3</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #4+</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Overweight bag<span style="font-size:8px;line-height:0;vertical-align:2px;">*</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">**</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">***</span></p></td>
+        </tr>
+        <tr style="background:#f9f9f9;">
+          
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag<span style="font-size:8px;line-height:0;vertical-align:2px;">6</span></p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$100/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">$150/bag</p></td>
+        </tr>
+        
+
+        <tr style="background:#ffffff; border-top:1px solid #dddddc">
+          <td colspan="8" style="padding-top:10px;padding-bottom:4px; padding-left: 8px;">
+            <p class="fnt8" style="margin:0;color:#3c3b3f;font-family:Arial, sans-serif;font-size:10px;line-height:16px;"><strong>Active duty US military</strong></p>
+          </td>
+        </tr>
+        <tr style="background:#ffffff;">
+          
+          <td style="width:10%; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Carry-on</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #1</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #2</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #3</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #4+</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Overweight bag<span style="font-size:8px;line-height:0;vertical-align:2px;">*</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">**</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">***</span></p></td>
+        </tr>
+        <tr style="background:#ffffff;">
+          
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free up to 5, then $150</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free up to 70lbs, then $100</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">No additional charge</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">No additional charge</p></td>
+        </tr>
+        
+
+        <tr style="background:#f9f9f9;border-top:1px solid #dddddc ">
+          <td colspan="8" style="padding-top:10px;padding-bottom:4px; padding-left: 8px;">
+            <p class="fnt8" style="margin:0;color:#3c3b3f;font-family:Arial, sans-serif;font-size:10px;line-height:16px;"><strong>US military dependents on travel orders</strong></p>
+          </td>
+        </tr>
+        <tr style="background:#f9f9f9;">
+          
+          <td style="width:10%; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Carry-on</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #1</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #2</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #3</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Checked bag #4+</p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Overweight bag<span style="font-size:8px;line-height:0;vertical-align:2px;">*</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">**</span></p></td>
+          <td style="width:10%;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-weight:bold;font-size:10px;line-height:12px;">Oversize bag<span style="font-size:8px;line-height:0;vertical-align:2px;">***</span></p></td>
+        </tr>
+        <tr style="background:#f9f9f9;">
+          
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free up to 5, then $150</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">Free up to 70lbs, then $100</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">No additional charge</p></td>
+          <td style="padding-bottom: 10px; padding-left: 8px;"><p class="fnt8" style="margin:0;color:#666566;font-family:Arial, sans-serif;font-size:10px;line-height:16px;">No additional charge</p></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+      <!-- Disclaimers -->
+      <table cellpadding="8" cellspacing="0" border="0" role="presentation" style="background-color:#f9f9f9;border-top:1px solid #dddddc;width: 100%;">
+        <tr>
+          <td style="padding-bottom: 30px; padding-left: 10px; padding-right: 5px; padding-top: 10px;">
+            <p style="margin:0;padding:0;color:#666566;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:10px;line-height:18px;"><span style="font-size:8px;line-height: 0;vertical-align: 2px;"><strong>*</strong></span> <strong>51&ndash;100 lbs</strong></p>
+            <p style="margin:0;padding:0;margin-top:4px;color:#666566;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:10px;line-height:18px;"><span style="font-size:8px;line-height: 0;vertical-align: 2px;"><strong>**</strong></span> <strong>63&ndash;80&quot; linear</strong></p>
+            <p style="margin:0;padding:0;margin-top:4px;color:#666566;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:10px;line-height:18px;"><span style="font-size:8px;line-height: 0;vertical-align: 2px;"><strong>***</strong></span> <strong>80&ndash;115&quot; linear</strong></p>
+            <p style="margin:0;padding:0;margin-top:8px;color:#666566;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:10px;line-height:18px;"><span style="font-size:8px;line-height: 0;vertical-align: 2px;">1</span> Reservation must contain at least one Alaskan city. Refer to Club 49 terms and conditions for more&nbsp;information.</p>
+            <p style="margin:0;padding:0;margin-top:4px;color:#666566;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:10px;line-height:18px;"><span style="font-size:8px;line-height: 0;vertical-align: 2px;">2</span> Includes companions traveling with and booked in the same reservation as the Alaska Airlines elite level Atmos Rewards&trade;. For group bookings made by the Alaska Airlines group desk, only the actual elite member receives the baggage fee waiver. All other passengers in a group reservation are subject to Alaska&rsquo;s <a href="https://click.email.alaskaair.com/?qs=f72e27541684832402f3886119295c1e742130dea157e063249d41ca1af1ca7cb20b7f37f463722cabb0569ffc38e05c74f73490faeb5efa0b05f20c7ff511e7"  style="text-decoration: underline; color: #0000EE;">standard baggage&nbsp;fees</a>.</p>
+            <p style="margin:0;padding:0;margin-top:4px;color:#666566;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:10px;line-height:18px;"><span style="font-size:8px;line-height: 0;vertical-align: 2px;">3</span> Includes companions traveling with and booked in the same reservation as the cardholder. Refer to full terms and conditions for more&nbsp;information.</p>
+            <p style="margin:0;padding:0;margin-top:4px;color:#666566;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:10px;line-height:18px;"><span style="font-size:8px;line-height: 0;vertical-align: 2px;">4</span> Passengers upgraded after baggage has been accepted are not eligible for refund of baggage fees&nbsp;paid.</p>
+            <p style="margin:0;padding:0;margin-top:4px;color:#666566;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:10px;line-height:18px;"><span style="font-size:8px;line-height: 0;vertical-align: 2px;">5</span> Passengers are allowed one bag measuring no more than 22&quot; x 14&quot; x 9&quot; or 45 linear inches (including wheels and handle), plus one personal item such as a purse, briefcase, or laptop&nbsp;bag.</p>
+            <p style="margin:0;padding:0;margin-top:4px;color:#666566;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:10px;line-height:18px;"><span style="font-size:8px;line-height: 0;vertical-align: 2px;">6</span> Platinum Atmos Rewards Members and oneworld Emeralds may check up to 4 bags for free for itineraries wholly within the State of Alaska. Restrictions may&nbsp;apply.</p>
+            <p style="margin:0;padding:0;margin-top:4px;color:#666566;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:10px;line-height:18px;"><span style="font-size:8px;line-height: 0;vertical-align: 2px;">7</span> For group bookings made by the Alaska Airlines group desk, only the actual elite member receives the baggage fee waiver. All other passengers in a group reservation are subject to Alaska&rsquo;s standard baggage&nbsp;fees.</p>
+            <p style="margin:0;padding:0;margin-top:8px;color:#666566;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:10px;line-height:18px;">Alaska Airlines baggage service guarantee: Get your bag in 20 minutes or less,&nbsp;guaranteed.</p>
+            <p style="margin:0;padding-:0;margin-top:4px;color:#666566;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:10px;line-height:18px;">The federal government has specific restrictions about hazardous materials in carry-on and checked baggage. Failure to declare hazardous materials may result in civil and criminal penalties. For more information, <a href="https://click.email.alaskaair.com/?qs=f72e275416848324450117430bb239915b1cd3e81ee3a97e465dd1631e121604e59269d9701b3c85fb5c6f09a5c77a5d384f3e0555caf1400aadf0d907862106"  style="text-decoration: underline; color: #0000EE;">visit the FAA&nbsp;website</a>.</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</td></tr></table>
+              </td>
+            </tr>
+         <!--/main-->
+         <!--footer-->
+            <tr>
+              <td>
+                 
+<!--footer-->
+
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #01426A;border-top:1px solid #01426A;width:100%; max-width:650px;">
+  <tr>
+    <td align="center" valign="top" style="padding-top:30px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:86%;" class="w92">
+        <tr>
+          <td align="center" style="font-size:0;width:100%;">
+            <!--[if (gte mso 9)|(IE)]>             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:516px;">               <tr>                 <td valign="middle" style="width:265px;">                   <![endif]-->
+                  <div style="display: inline-block;vertical-align:middle;width:100%;max-width:265px;" class="mw100">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%" class="w89">
+                      <tr>
+                        <td valign="top" style="padding-top:30px;" class="txt-cntr">
+                          <a href="https://click.email.alaskaair.com/?qs=f72e2754168483248057e46284b3731006be828a12b1c20813260b932d0c272128b44fcd231e4a3791c1fd8740b79593df2233d43e15296eba8a4e632ed6986c" >
+        <img alt="Alaska Airlines" src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/38ed1a0d-e616-4283-80ca-e92233e8a266.png" width="220" style="border: 0;display:block;padding:0;outline: 0;width:220px;" class="center" /></a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>                 </td>                 <td align="center" valign="middle" style="width:251px;">                   <![endif]-->
+                  <div style="display: inline-block;vertical-align: middle;width:100%;max-width:251px;" class="mw100">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%" class="w89">
+                      <tr>
+                        <td valign="top" style="padding-top:35px;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="center">
+                            <tr>
+                              <td align="center">
+                                <a href="https://click.email.alaskaair.com/?qs=f72e2754168483240a4ab0354cf176f5f666d3e3e6920d059bffd2944be0638e2a94c4fc31b710dea2a102a3447af971200ac7b887cce919a09a0ed827738342" >
+        <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/eaa9db9f-496b-4972-96ee-60f73ee5ba09.png" alt="TikTok" style="display:block;padding:0;border:0;outline:0;font-family:Helvetica, Arial, sans-serif; font-size: 14px; color:#c9d2e0; text-align:center;width:33px;" width="33" /></a>
+                              </td>
+                              <td align="center" style="padding:0 10px;">
+                                <a href="https://click.email.alaskaair.com/?qs=f72e275416848324e0145f28a492003a749f08117db4d4ed66b755d219cdf54e1dbda0ed77faf02444d2d414975a760bf7c011115c0a11b7126b697fb433e165" >
+        <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/80e152f5-fbdc-4157-845c-6a4f09faf642.png" alt="Facebook" style="display:block;padding:0;border:0;outline:0;font-family:Helvetica, Arial, sans-serif; font-size: 14px; color:#c9d2e0; text-align:center;width:33px;" width="33" /></a>
+                              </td>
+                              <td align="center">
+                                <a href="https://click.email.alaskaair.com/?qs=f72e2754168483240634b473872e16cea38a899c1fe1b26c65e556a6ce808ee0092ae812a37dba84a69b53356c8745285b2b351c809a2e037ec4bfc94f87749c" >
+        <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/8f4aa47e-da2f-4e9a-9141-2ff758e41d88.png" alt="X" style="display:block;padding:0;border:0;outline:0;font-family:Helvetica, Arial, sans-serif; font-size: 14px; color:#c9d2e0; text-align:center;width:33px;" width="33" /></a>
+                              </td>
+                              <td align="center" style="padding:0 10px;">
+                                <a href="https://click.email.alaskaair.com/?qs=f72e2754168483243597108efa2e687a0661510fe7549ff70da20ba9b9e6c502bb78226ece818114709554cea684949051fb9d212a1279edc0082e555a6415df" >
+        <img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/e3bc988c-dac3-43a6-99b5-3d2efc9bd7a1.png" alt="Instagram" style="display:block;padding:0;border:0;outline:0;font-family:Helvetica, Arial, sans-serif; font-size: 14px; color:#c9d2e0; text-align:center;width:33px;" width="33" /></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>                 </td>               </tr>             </table>             <![endif]-->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="padding-top: 26px;" class="mblpd">
+      <!--desktop recovery links-->
+      <div style="display:block;" class="mblhd">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:78%;">
+          <tr>
+            <td align="center" valign="top">
+              <table  align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%">
+                <tr>
+                  <td class="mblhd" align="center">
+                    <p style="margin:0;padding:0;color:#ffffff;font-family:'AS Circular', Helvetica, Arial, sans-serif; font-size:15px;font-weight: 500;line-height:26px;text-align:left;">
+     <a href="https://click.email.alaskaair.com/?qs=f72e27541684832477ed4f291526df7a032f56d3891d874c1f7bfc08db5f5dc0d5aef2f2629ca9dd380b53fa9663325936475bd731fb5b910d4c6a725db786fa"  style="color:#ffffff;text-decoration:none;">Book</a> &nbsp;|&nbsp; 
+     <a href="https://click.email.alaskaair.com/?qs=f72e275416848324e2416515e1a2330ed2580b66057cedcf2afb1950b7b505091499bbc6d7e3896f8aeaf4ae0c87226348cd2f0ef4500bfc36a2545aa925ba55"  style="color:#ffffff;text-decoration:none;">My&nbsp;account</a> &nbsp;|&nbsp; 
+     <a href="https://click.email.alaskaair.com/?qs=f72e275416848324f49e09adb5bf7ebc485bd021118d1c6ca8ecd3d9397b79af5b1bdb8169084c74697130e2124804c48acdd915bf0ccfe3a549881b90a2eb88"  style="color:#ffffff;text-decoration:none;">Contact&nbsp;us</a> &nbsp;|&nbsp; 
+     <a href="https://click.email.alaskaair.com/?qs=f72e2754168483243c2c2dea2a002da59c5795981bc16eca054aff742ad525f00acc62889e7d2d10b65f5b669ed3faf93c6547a79370cd025ad90676234df133"  style="color:#ffffff;text-decoration:none;"><strong>one</strong>world<sup style="font-size:8px;line-height:0;vertical-align:6px;">&reg;</sup></a></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--/desktop recovery links-->
+      <!--mobile recovery links-->
+      <div style="display:none;" class="mblshw">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-hide: all;width:100%">
+          <tr>
+            <td style="border-top: 1px solid #ffffff;padding:24px 0;">
+              <p style="margin:0;padding:0;font-family:'AS Circular', Helvetica, Arial, sans-serif; font-size:16px;font-weight: 500;line-height:24px;text-align:center;">
+                <a href="https://click.email.alaskaair.com/?qs=f72e275416848324599ce3f48e429113fde3ad97aa7017ffe4625e0c94c39a9a92f375d524cb11b2dd9a95d094f23f9b7b7d36ac5371c66deae910e349f3c415"  style="color:#ffffff;text-decoration:none;">Book</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-top: 1px solid #ffffff;padding:24px 0;">
+              <p style="margin:0;padding:0;color:#ffffff;font-family:'AS Circular', Helvetica, Arial, sans-serif; font-size:16px;font-weight: 500;line-height:24px;text-align:center;">
+                <a href="https://click.email.alaskaair.com/?qs=f72e275416848324e2416515e1a2330ed2580b66057cedcf2afb1950b7b505091499bbc6d7e3896f8aeaf4ae0c87226348cd2f0ef4500bfc36a2545aa925ba55"  style="color:#ffffff;text-decoration:none;">My&nbsp;account</a></p>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="border-top: 1px solid #ffffff;padding:24px 0;">
+              <p style="margin:0;padding:0;font-family:'AS Circular', Helvetica, Arial, sans-serif; font-size:16px;font-weight: 500;line-height:24px;text-align:center;">
+                <a href="https://click.email.alaskaair.com/?qs=f72e275416848324f49e09adb5bf7ebc485bd021118d1c6ca8ecd3d9397b79af5b1bdb8169084c74697130e2124804c48acdd915bf0ccfe3a549881b90a2eb88"  style="color:#ffffff;text-decoration:none;">Contact&nbsp;us</a></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-top: 1px solid #ffffff;border-bottom: 1px solid #ffffff;padding:24px 0;">
+              <p style="margin:0;padding:0;font-family:'AS Circular', Helvetica, Arial, sans-serif; font-size:16px;font-weight: 500;line-height:24px;text-align:center;">
+                <a href="https://click.email.alaskaair.com/?qs=f72e2754168483243c2c2dea2a002da59c5795981bc16eca054aff742ad525f00acc62889e7d2d10b65f5b669ed3faf93c6547a79370cd025ad90676234df133"  style="color:#ffffff;text-decoration:none;"><strong>one</strong>world<sup style="font-size:8px;line-height:0;vertical-align:6px;">&reg;</sup></a></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--/mobile recovery links-->
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="padding-bottom:80px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:78%;">
+        <tr>
+          <td align="center">
+            <p style="margin:0;padding:0;margin-top:24px;color:#ffffff;font-family:'AS Circular', Helvetica, Arial, sans-serif; font-size:14px;line-height:20px;text-align:left;"><img src="https://image.email.alaskaair.com/lib/fe36117473640578741671/m/1/317f95f3-cb76-477b-ba86-aaacca7009ea.png" alt="" width="15" style="border:0;display:inline-block;outline:0;padding:0;vertical-align: middle;width:15px;" />&nbsp;&nbsp;For iPhone and Android. 
+   <a href="https://click.email.alaskaair.com/?qs=f72e2754168483245a16194cdff9e56ea12dae483a962d0a08d1770a16d53b1252d3473f7d50980ea6837927757c0d3dc16066e9ded062980e25e4195ac2d551"  style="color:#ffffff;text-decoration:underline">Get the app</a></p>
+</td>
+</tr>
+  <tr>
+                                                      <td align="center">
+                                                           <p style="margin:0;padding:0;margin-top:20px;color:#ffffff;font-family:'AS Circular', Helvetica, Arial, sans-serif; font-size:14px;line-height:20px;text-align:left;">                                               
+Please review important information about your <a href="https://click.email.alaskaair.com/?qs=f72e275416848324130e4e9a382c9e5799aab6659edae8c0c59d26fff086fdbd8a0484d9405b17052a08e08a8879a8e152ff674b7fb3af44957aa113adc82887"  style="color:#ffffff; text-decoration:underline;">consumer rights and our limitations of liability</a>. You may also wish to review the <a href="https://click.email.alaskaair.com/?qs=f72e275416848324ec501a9b7cecbe15d37f4e0bd82071cc0c1b68c7d4d45688fc0c46ff1cc2fd53ad335bccbdab7a39e6a6f72dcc67c5b6a8d2fe5fa941ddad"  style="color:#ffffff; text-decoration:underline;">contract&nbsp;of&nbsp;carriage</a> applicable to your trip.
+<br /><br />
+
+Reference number 62279e14-f187-4572-8557-40d46a6e3f6b. Requested at 10/30/2025 03:39:37
+                                                             
+                                                             </p>
+                                                      </td>
+                                                   </tr>
+        <tr>
+          <td align="center">
+              <p style="margin:0;padding:0;margin-top:24px;color:#ffffff;font-family:'AS Circular', Helvetica, Arial, sans-serif; font-size:14px;line-height:20px;text-align:left;"><span style="color:#ffffff;text-decoration:none;">This mailbox does not accept replies. If you need assistance, please visit <a style="color:#ffffff; text-decoration:underline;" href="https://click.email.alaskaair.com/?qs=f72e275416848324831831c0285eaaf49f2dfc87e75e7824443bf21ddaba5e76a39ea3a5079a889a47a56ea3fe66784048ffaf02e96eff626f522b0fe7fd8e8a" >our help center</a>.</span>
+              </p>
+            <p style="margin:0;padding:0;margin-top:24px;color:#ffffff;font-family:'AS Circular', Helvetica, Arial, sans-serif; font-size:14px;line-height:20px;text-align:left;">This email was sent to <a href="mailto:testuser@example.com" style="color:#fdfeff;text-decoration:none;">testuser@example.com</a>.</p>
+            <p style="margin:0;padding:0;margin-top:24px;color:#ffffff;font-family:'AS Circular', Helvetica, Arial, sans-serif; font-size:14px;line-height:20px;text-align:left;">Alaska Airlines, PO Box 68900, Seattle, WA 98168-0900.</p>
+            <p style="margin:0;padding:0;color:#ffffff;font-family:'AS Circular', Helvetica, Arial, sans-serif; font-size:14px;line-height:20px;text-align:left;">&copy; Alaska Airlines. 2025. All rights reserved.</p>
+            <p style="margin:0;padding:0;margin-top: 24px;color:#ffffff;font-family:'AS Circular', Helvetica, Arial, sans-serif; font-size:14px;line-height:20px;text-align:left;">View our <a href="https://click.email.alaskaair.com/?qs=f72e27541684832402cc0d8bbff3005fc90118b0f78a667aeade7b450f1c6581a9251f8e6fbab3121010f03704c0a9f83dd558517d745debe74333e51d8927a0"  style="color:#ffffff;text-decoration:underline;">privacy policy</a> or <a href="https://click.email.alaskaair.com/?qs=f72e27541684832401179d7d77bd57469ca68fc268ae20ab44c04dc4ddb8bd4fa3b17f22e47d4a2c8cf1535a1014521f913f6daf3ab07771dbae9f19b2acff7b"  style="color:#ffffff;text-decoration:underline;">contact us</a>.</p>
+            
+   
+   
+   <p style="margin:0;padding:0;margin-top: 24px;color:#ffffff;font-family:'AS Circular', Helvetica, Arial, sans-serif; font-size:14px;line-height:20px;text-align:left;"><a href="https://view.email.alaskaair.com/?qs=695f2659215fc1d2355a1ff133c683d94be6b27cf201f9bc0dbc09a75b26c9ca618d427f5d465d595684986a3455fd530c528d2ff21a395f7f7880ca768297a5180ccb3e8f7bf93710768997c05764af"  style="color:#ffffff;text-decoration:underline;">View in web</a></p>
+   
+   
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+        <!--/footer-->
+              </td>
+            </tr>
+         <!--/footer-->
+          </td>
+        </tr>
+      </table>
+      <!--[if mso]>       </td>       </tr>       </table>       <![endif]-->
+    </td>
+  </tr>
+  </table>
+  </div>
+    <!--ea.meta.campaign_name=PROD-TR-BookingConfirmation-AlaskaDollar-->
+<!--ea.meta.campaign_id=16439-->
+</body>
+</html>
+
+--GyuQVjnAvWCJ=_?:--
+
