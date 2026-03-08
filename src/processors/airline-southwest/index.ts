@@ -11,9 +11,16 @@ const CONFIRMATION_REGEX = /Confirmation #\s*([A-Z0-9]{6})/;
 
 /**
  * Matches departure and arrival airports from Southwest itineraries
- * Southwest shows simple lines like "SJC" and "SNA" for origin/destination
+ * Pattern looks for: airport code, newlines, plane icon, newlines, airport code
+ * Example structure:
+ *   SJC
+ *
+ *   [https://res.iluv.southwest.com/res/southwe_mkt_prod1/ico-plane.png]
+ *
+ *   SNA
  */
-const ROUTE_REGEX = /\b([A-Z]{3})\b[\s\S]*?\b([A-Z]{3})\b/;
+const ROUTE_REGEX =
+  /\b([A-Z]{3})\b\s*\n\s*\n\s*\[[^\]]*ico-plane(?:_large)?\.png[^\]]*\]\s*\n\s*\n\s*\b([A-Z]{3})\b/i;
 
 function process(email: Email) {
   if (!email.html) {
@@ -30,21 +37,16 @@ function process(email: Email) {
 
   const confirmation = confirmationMatch[1];
 
-  // Extract airport codes - filter out non-airport codes like "SWA", "FLY", "RSD"
-  const airportMatches = [...emailText.matchAll(/\b([A-Z]{3})\b/g)];
-  const airports = airportMatches
-    .map(m => m[1])
-    .filter(code => !['SWA', 'FLY', 'RSD', 'SRC'].includes(code));
+  // Extract route using context-aware pattern matching
+  // This looks for airport codes around the plane icon image
+  const routeMatch = emailText.match(ROUTE_REGEX);
 
-  // Take first two unique airports as origin and destination
-  const uniqueAirports = [...new Set(airports)];
-
-  if (uniqueAirports.length < 2) {
+  if (!routeMatch) {
     throw new Error('Failed to match route from Southwest receipt');
   }
 
-  const origin = uniqueAirports[0];
-  const destination = uniqueAirports[1];
+  const origin = routeMatch[1];
+  const destination = routeMatch[2];
 
   const note = `${origin} → ${destination} (${confirmation})`;
 
