@@ -463,7 +463,28 @@ If you want to enable Telegram notifications:
 - Alerts when actions are older than 15 days and haven't been matched to transactions
 - This helps you identify receipt emails that couldn't be automatically processed
 
-### 4.3 Optional: Sentry Error Tracking
+### 4.3 Optional: Discord Notifications
+
+Discord notifications provide the same old-action alerts as Telegram via a webhook.
+
+If you want to enable Discord notifications:
+
+#### Create a Discord Webhook
+
+1. Open the Discord server and channel where you want alerts
+2. Go to **Channel Settings** > **Integrations** > **Webhooks**
+3. Create a new webhook and copy the webhook URL
+4. Set the webhook URL in Cloudflare:
+   ```bash
+   wrangler secret put DISCORD_WEBHOOK_URL
+   ```
+
+**What notifications will I receive?**
+
+- Alerts when actions are older than 15 days and haven't been matched to transactions
+- This helps you identify receipt emails that couldn't be automatically processed
+
+### 4.4 Optional: Sentry Error Tracking
 
 If you want centralized error tracking (recommended for production use):
 
@@ -476,7 +497,7 @@ If you want centralized error tracking (recommended for production use):
    ```
    Paste your DSN when prompted (e.g., `https://...@...sentry.io/...`)
 
-### 4.4 Configuration Variables
+### 4.5 Configuration Variables
 
 Additional configuration is available in the source code:
 

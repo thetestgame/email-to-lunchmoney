@@ -3,6 +3,7 @@ import {subDays} from 'date-fns';
 import {beforeEach, describe, expect, it, vi} from 'vitest';
 
 import {checkOldActionEntries} from './old-actions-checker';
+import * as discord from './discord';
 import * as telegram from './telegram';
 
 describe('checkOldActionEntries', () => {
@@ -11,13 +12,16 @@ describe('checkOldActionEntries', () => {
 
     env.TELEGRAM_TOKEN = 'test_token';
     env.TELEGRAM_CHAT_ID = 'test_chat_id';
+    env.DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/123/abc';
 
     vi.spyOn(telegram, 'sendTelegramMessage').mockResolvedValue(undefined);
+    vi.spyOn(discord, 'sendDiscordMessage').mockResolvedValue(undefined);
   });
 
   it('should do nothing when no old actions exist', async () => {
     await checkOldActionEntries(env);
     expect(telegram.sendTelegramMessage).not.toHaveBeenCalled();
+    expect(discord.sendDiscordMessage).not.toHaveBeenCalled();
   });
 
   it('should notify about old action entries', async () => {
@@ -48,6 +52,8 @@ describe('checkOldActionEntries', () => {
 
     expect(telegram.sendTelegramMessage).toHaveBeenCalledOnce();
     expect(telegram.sendTelegramMessage).toHaveBeenCalledWith(env, expectedMessage);
+    expect(discord.sendDiscordMessage).toHaveBeenCalledOnce();
+    expect(discord.sendDiscordMessage).toHaveBeenCalledWith(env, expectedMessage);
 
     const {results} = await env.DB.prepare(
       'SELECT old_entry_notified FROM lunchmoney_actions WHERE source = ?'
@@ -115,6 +121,8 @@ describe('checkOldActionEntries', () => {
 
     expect(telegram.sendTelegramMessage).toHaveBeenCalledOnce();
     expect(telegram.sendTelegramMessage).toHaveBeenCalledWith(env, expectedMessage);
+    expect(discord.sendDiscordMessage).toHaveBeenCalledOnce();
+    expect(discord.sendDiscordMessage).toHaveBeenCalledWith(env, expectedMessage);
   });
 
   it('should not notify about recent actions', async () => {
@@ -131,6 +139,7 @@ describe('checkOldActionEntries', () => {
 
     await checkOldActionEntries(env);
     expect(telegram.sendTelegramMessage).not.toHaveBeenCalled();
+    expect(discord.sendDiscordMessage).not.toHaveBeenCalled();
   });
 
   it('should not notify about old actions that have already been notified', async () => {
@@ -147,6 +156,7 @@ describe('checkOldActionEntries', () => {
 
     await checkOldActionEntries(env);
     expect(telegram.sendTelegramMessage).not.toHaveBeenCalled();
+    expect(discord.sendDiscordMessage).not.toHaveBeenCalled();
   });
 
   it('should escape special markdown characters in source, payee, and note', async () => {
@@ -177,5 +187,7 @@ describe('checkOldActionEntries', () => {
 
     expect(telegram.sendTelegramMessage).toHaveBeenCalledOnce();
     expect(telegram.sendTelegramMessage).toHaveBeenCalledWith(env, expectedMessage);
+    expect(discord.sendDiscordMessage).toHaveBeenCalledOnce();
+    expect(discord.sendDiscordMessage).toHaveBeenCalledWith(env, expectedMessage);
   });
 });

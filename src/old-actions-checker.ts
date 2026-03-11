@@ -1,6 +1,7 @@
 import {subDays} from 'date-fns';
 import {escapeMarkdown as e} from 'telegram-escape';
 
+import {sendDiscordMessage} from './discord';
 import {sendTelegramMessage} from './telegram';
 import {LunchMoneyAction, LunchMoneyActionRow} from './types';
 
@@ -41,7 +42,7 @@ export function formatOldActionsMessage(oldActions: LunchMoneyActionRow[]): stri
 }
 
 /**
- * Check for action entries older than 2 weeks and notify via Telegram
+ * Check for action entries older than 2 weeks and notify via configured channels
  */
 export async function checkOldActionEntries(env: Env): Promise<void> {
   const thresholdAgo = subDays(new Date(), OLD_ACTION_THRESHOLD_DAYS);
@@ -64,7 +65,7 @@ export async function checkOldActionEntries(env: Env): Promise<void> {
   console.log(`Found ${oldActions.length} old action entries`);
 
   const message = formatOldActionsMessage(oldActions);
-  await sendTelegramMessage(env, message);
+  await Promise.all([sendTelegramMessage(env, message), sendDiscordMessage(env, message)]);
 
   // Mark all these actions as notified
   const actionIds = oldActions.map(action => action.id);
