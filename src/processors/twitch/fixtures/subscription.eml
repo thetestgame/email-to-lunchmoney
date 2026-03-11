@@ -1,0 +1,45 @@
+From: purchase-noreply@twitch.tv
+To: testuser@example.com
+Subject: Thanks for Subscribing, Test User
+Date: Fri, 06 Mar 2026 20:36:29 +0000
+Message-ID: <subscription@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="boundary-1"
+
+--boundary-1
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing with Twitch.  Your order details are:
+
+Description: Tier 1 - 1 Month Subscription - US
+Quantity:    1
+Total:       $5.99 per month
+
+Invoice 699104883
+Mar 6, 2026
+
+$5.99 --  Tier 1 - 1 Month Subscription - US
+           Mar 6 - Apr 6, 2026
+
+Subtotal:  $5.99
+Paid:      $6.32
+Total Due: $0.00
+
+--boundary-1
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <table id="invoice-table">
+      <tr>
+        <td>
+          <p>Tier 1 - 1 Month Subscription - US</p>
+          <p>Ray</p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+--boundary-1--

@@ -6,6 +6,21 @@ import {EmailProcessor, LunchMoneyMatch, LunchMoneyUpdate} from 'src/types';
 const INVOICE_ID_REGEX = /Invoice\s+#?(\d+)/i;
 const DESCRIPTION_REGEX = /^\$\d+(?:,\d{3})*\.\d{2}\s+--\s+(.+?)\s*$/m;
 const PAID_REGEX = /Paid:\s*\$(\d+(?:,\d{3})*\.\d{2})/i;
+const SUBSCRIPTION_CHANNEL_HTML_REGEX =
+  /<p[^>]*>\s*[^<\n]*Subscription[^<\n]*<\/p>\s*<p[^>]*>\s*([^<\n]+)\s*<\/p>/i;
+
+function extractSubscriptionChannel(email: Email) {
+  if (!email.html) {
+    return null;
+  }
+
+  const channelMatch = email.html.match(SUBSCRIPTION_CHANNEL_HTML_REGEX);
+  if (!channelMatch) {
+    return null;
+  }
+
+  return channelMatch[1].trim();
+}
 
 function process(email: Email) {
   const emailText = email.text ?? (email.html ? htmlToText(email.html) : null);
@@ -30,6 +45,7 @@ function process(email: Email) {
 
   const invoiceId = invoiceMatch[1];
   const description = descriptionMatch[1].trim().replace(/\s+/g, ' ');
+  const subscriptionChannel = extractSubscriptionChannel(email);
   const totalInCents = Math.round(Number(paidMatch[1].replace(/,/g, '')) * 100);
 
   const match: LunchMoneyMatch = {
@@ -40,7 +56,9 @@ function process(email: Email) {
   const updateAction: LunchMoneyUpdate = {
     type: 'update',
     match,
-    note: `${description} (${invoiceId})`,
+    note: subscriptionChannel
+      ? `${description}, ${subscriptionChannel} (${invoiceId})`
+      : `${description} (${invoiceId})`,
   };
 
   return Promise.resolve(updateAction);
