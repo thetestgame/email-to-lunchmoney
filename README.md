@@ -74,6 +74,10 @@ Support for the following emails is currently implemented
 - **Steam purchase emails**. Extracts the game name from purchase confirmation
   emails and adds it as a note to the Steam transaction.
 
+- **Twitch invoice receipts**. Extracts the paid amount and purchased item
+  description (for example, subscriptions or Bits) and adds it as a note to
+  the Twitch transaction.
+
 - **Uber rideshare receipts**. A note is added to each transaction with the
   start and end location, time of ride, and duration.
 

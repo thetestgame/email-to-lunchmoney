@@ -1,0 +1,99 @@
+Delivered-To: nxtlabs13+twitch@gmail.com
+Received: by 2002:a05:7508:515:b0:df:1da3:c9f0 with SMTP id j21csp1274427gbb;
+        Thu, 19 Feb 2026 18:47:24 -0800 (PST)
+X-Received: by 2002:ac8:7f48:0:b0:501:4cd0:a486 with SMTP id d75a77b69052e-506b4001023mr276134761cf.54.1771555644386;
+        Thu, 19 Feb 2026 18:47:24 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1771555644; cv=none;
+        d=google.com; s=arc-20240605;
+        b=IGIbQuPOXDZT/UCCuyaqkziRPBfIk51DJ8SILHMo5kd6hLbNgAPAHW9RSG/QNwLUAc
+         5tnkWtrEZFPkD92n1UAm03oEjMNQNWcnnIF69Y8nGvCwGIPccRkUD9YpwWJw5BiLrbkh
+         uHyR9/xOzniwXensZodV5EUpxS1grLZWEYoIdw8t+70LFoL1ASkeEEj/bt3QjVmUEd8y
+         +mnm2T3dZrTK8IGRsqPh9pm3sGfsxrE7BPaZ4h8M4lWW8zcFjT+78wCikUoNtNMnmR9O
+         d75BcUy1W3sEEgd7CBaDG65JdVAUJ4mrRen9RmTi1+3SJ0bPBLgS9iL/Fg+PQm3/VdJO
+         E2zQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=content-transfer-encoding:to:mime-version:subject:message-id:from
+         :date:dkim-signature:dkim-signature;
+        bh=mzAweEtG3tvcUkYLFReSsxYNT1AaOaPtex1giMwRjVQ=;
+        fh=mbYPMdyrtTfDgwCAY1jlFY1Ls8sclnSVMS4wK13cp44=;
+        b=YVuI99KgfAwj/7FZVbKV8FBVbjqjYZ78jKJEYEya/G1iT4blrnKVA0Zv7x+glvCdtL
+         4AzfAKihKK+E8QbDhbVzeFh2OL4Wf7GR+AXw9m0EMfolvKXk3neZ/mSNsfc6smWrVALd
+         rTRHG+6gKJu26/TPAR51DnhqQ3gPNFBBOi5lgRbVl6jZIrkZ063slGRe2e+xNCOjwjxB
+         Kia7uE5pb9Xat3WnZMjUxINGZwYRRefVitbHzcPyIS110DyfFNM/d9XnFKT6F/s+yi8z
+         XXJZJc+p/MIeRHJZiD5UqZA0oMRC7xrCwc02QeyH9RZPqnnvuJ66w8EZQ8R+Vwz2IrPd
+         0adw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@twitch.tv header.s=s1 header.b=DOr+zzQR;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=oBtho+QY;
+       spf=pass (google.com: domain of bounces+5594441-bf41-nxtlabs13+twitch=gmail.com@recurly.twitch.tv designates 167.89.64.215 as permitted sender) smtp.mailfrom="bounces+5594441-bf41-nxtlabs13+twitch=gmail.com@recurly.twitch.tv";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=twitch.tv
+Return-Path: <bounces+5594441-bf41-nxtlabs13+twitch=gmail.com@recurly.twitch.tv>
+Received: from o10.recurly.twitch.tv (o10.recurly.twitch.tv. [167.89.64.215])
+        by mx.google.com with ESMTPS id d75a77b69052e-506a19b16c7si227186681cf.324.2026.02.19.18.47.24
+        for <nxtlabs13+twitch@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 19 Feb 2026 18:47:24 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounces+5594441-bf41-nxtlabs13+twitch=gmail.com@recurly.twitch.tv designates 167.89.64.215 as permitted sender) client-ip=167.89.64.215;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@twitch.tv header.s=s1 header.b=DOr+zzQR;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=oBtho+QY;
+       spf=pass (google.com: domain of bounces+5594441-bf41-nxtlabs13+twitch=gmail.com@recurly.twitch.tv designates 167.89.64.215 as permitted sender) smtp.mailfrom="bounces+5594441-bf41-nxtlabs13+twitch=gmail.com@recurly.twitch.tv";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=twitch.tv
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=twitch.tv;
+	h=date:from:subject:mime-version:to:content-type:
+	content-transfer-encoding:cc:content-type:date:feedback-id:from:subject:to;
+	s=s1; bh=mzAweEtG3tvcUkYLFReSsxYNT1AaOaPtex1giMwRjVQ=;
+	b=DOr+zzQRHUkgOyUKmb8ab7fNBovs0oARnM3h8mRCyDFOCLPMHBY8LtAjGJH68oJDAtJ6
+	HIQrEKQ71ooCUCaZIFDnGaWixSKDDFSh/0sYY338yQedVy8HkAPH7VA4rTcXdtoL/87U/Q
+	IOf88eJ+HM5kmfGr+dKwwHCaK2i7q8BTSpxqscWysYQO3yDPdnVcjkRym2NAgrUnAMkfi3
+	nbTz/zi5c9TSWwSgHUoKwfIjbZP3REiKYxDinx3+/Wb7RLIhAltS21hjQmNZtNzzvXFBx0
+	/4Oz+kqDQYg6wmPX/cmWrrBhjpIlnsC6sjKR+Xx97PVovqZam54UvLhsIFnzcocQ==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info;
+	h=date:from:subject:mime-version:to:content-type:
+	content-transfer-encoding:cc:content-type:date:feedback-id:from:subject:to;
+	s=smtpapi; bh=mzAweEtG3tvcUkYLFReSsxYNT1AaOaPtex1giMwRjVQ=;
+	b=oBtho+QY2AcxaRBrIetvHWJqUZkBQEd8zcL5gkHqYbTWXoBNtJ21j/yvsERyV8RKnNAX
+	6W7Vq0QwDCYL8BjgAIatTmzgFOPTiKC6woj21wcq5OVJh0QM1BGLMykWgmA4BPdP2Kgxak
+	4eFWBzMU0fJwsNWRZAAGw3nBkiWnpC6qw=
+Received: by recvd-84c644f896-fkkds with SMTP id recvd-84c644f896-fkkds-1-6997CB3C-3
+	2026-02-20 02:47:24.035443404 +0000 UTC m=+5547305.928533904
+Received: from postfix-2.production1.recurly.net (unknown)
+	by geopod-ismtpd-3 (SG) with ESMTP id 2IkWmaHkRqmJDrmPU3OmRA
+	for <nxtlabs13+twitch@gmail.com>; Fri, 20 Feb 2026 02:47:23.989 +0000 (UTC)
+Date: Fri, 20 Feb 2026 02:47:24 +0000 (UTC)
+From: purchase-noreply@twitch.tv
+Message-ID: <6997cb3bb2a53_145601123647f6@emaily-consumer-6d9d78c978-plcw5.mail>
+Subject: Invoice Receipt
+Mime-Version: 1.0
+To: nxtlabs13+twitch@gmail.com
+Content-Type: multipart/alternative; boundary="--==_mimepart_6997cb3bb2643_145601123645cc"
+Content-Transfer-Encoding: 7bit
+
+----==_mimepart_6997cb3bb2643_145601123645cc
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+This email confirms your recent payment. Here are the
+details of your payment:
+
+Invoice 696026438
+Feb 20, 2026
+
+$7.00 --  500 Bits
+      Feb 20, 2026
+
+
+Subtotal:  $7.00
+Paid:      $7.39
+Total Due: $0.00
+
+Billed To:
+Jordan Maxwell
+54115 United States
+
+
+Please keep this email for your records.  If you have any
+questions, please contact us through https://help.twitch.tv/s/contactsupport.
+Thanks for your purchase.
+----==_mimepart_6997cb3bb2643_145601123645cc--
