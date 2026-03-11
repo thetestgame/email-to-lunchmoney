@@ -1,5 +1,5 @@
 /**
- * Extracts the raw message body from emails labeled with the configured label
+ * Extracts the raw message body from emails labeled with the configured monitorLabel
  * and POSTs them to the configured Worker endpoint.
  *
  * This Google App Script exists purely due to a limitation with gmails filter
@@ -10,7 +10,9 @@
  * corrupt email structure and attachments during transmission.
  *
  * Configuration:
- * - GMAIL_LABEL: The Gmail label to monitor (e.g., "Fwd / Lunch Money")
+ * - GMAIL_MONITOR_LABEL: The Gmail monitorLabel to monitor (e.g., "Lunch Money / Incoming")
+ * - GMAIL_PROCESSED_LABEL: The Gmail label to apply to successfully processed emails (e.g., "Lunch Money / Processed")
+ * - GMAIL_ERROR_LABEL: The Gmail label to apply to emails that failed processing (e.g., "Lunch Money / Errors")
  * - INGEST_URL: The Worker endpoint URL (e.g., "https://email-to-lunchmoney.your-subdomain.workers.dev/ingest")
  * - INGEST_TOKEN: Authentication token for the Worker endpoint
  *
@@ -18,21 +20,23 @@
  */
 function findAndForwardEmails() {
   const scriptProperties = PropertiesService.getScriptProperties();
-  const label = scriptProperties.getProperty('GMAIL_LABEL');
+  const monitorLabel = scriptProperties.getProperty('GMAIL_MONITOR_LABEL');
+  const processedLabel = scriptProperties.getProperty('GMAIL_PROCESSED_LABEL');
+  const errorLabel = scriptProperties.getProperty('GMAIL_ERROR_LABEL');
   const ingestUrl = scriptProperties.getProperty('INGEST_URL');
   const ingestToken = scriptProperties.getProperty('INGEST_TOKEN');
 
-  if (!label || !ingestUrl || !ingestToken) {
+  if (!monitorLabel || !ingestUrl || !ingestToken) {
     throw new Error(
-      'Missing required script properties. Please set GMAIL_LABEL, INGEST_URL, and INGEST_TOKEN in Project Settings > Script Properties.'
+      'Missing required script properties. Please set GMAIL_MONITOR_LABEL, INGEST_URL, and INGEST_TOKEN in Project Settings > Script Properties.'
     );
   }
 
-  const gmailLabel = GmailApp.getUserLabelByName(label);
+  const gmailLabel = GmailApp.getUserLabelByName(monitorLabel);
 
   if (!gmailLabel) {
     throw new Error(
-      `Gmail label "${label}" not found. Please create the label or update the GMAIL_LABEL property.`
+      `Gmail monitorLabel "${monitorLabel}" not found. Please create the monitorLabel or update the GMAIL_MONITOR_LABEL property.`
     );
   }
 
@@ -69,17 +73,28 @@ function findAndForwardEmails() {
       if (statusCode === 202) {
         Logger.log(`Successfully sent email: ${subject}`);
         thread.removeLabel(gmailLabel);
+
+        // On success, add processed label if configured and remove monitor label to avoid reprocessing
+        if (processedLabel) {
+          const processedGmailLabel = GmailApp.getUserLabelByName(processedLabel) || GmailApp.createLabel(processedLabel);
+          thread.addLabel(processedGmailLabel);
+        }
       } else {
         const responseBody = response.getContentText();
         Logger.log(
           `Failed to send email "${subject}". Status: ${statusCode}, Response: ${responseBody}`
         );
-        // Remove label even on failure to avoid reprocessing (per design decision)
+        // Remove monitorLabel even on failure to avoid reprocessing (per design decision)
+        // and add our error label for manual review
+        if (errorLabel) {
+          const errorGmailLabel = GmailApp.getUserLabelByName(errorLabel) || GmailApp.createLabel(errorLabel);
+          thread.addLabel(errorGmailLabel);
+        }
         thread.removeLabel(gmailLabel);
       }
     } catch (error) {
       Logger.log(`Error sending email "${subject}": ${error}`);
-      // Remove label even on error to avoid reprocessing
+      // Remove monitorLabel even on error to avoid reprocessing
       thread.removeLabel(gmailLabel);
     }
   }
