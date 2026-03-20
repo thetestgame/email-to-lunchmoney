@@ -93,7 +93,7 @@ every small fee into its own line item.
  */
 export async function extractInvoice(
   pdfText: string,
-  env: Env
+  env: Env,
 ): Promise<CloudflareInvoice> {
   const client = new OpenAI({apiKey: env.OPENAI_API_KEY});
 

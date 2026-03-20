@@ -166,7 +166,7 @@ If tests fail after sanitization, you may need to adjust your parser to be more 
 ## Code Style
 
 - Use TypeScript with strict type checking
-- Format code with Prettier: `npx prettier --write .`
+- Format code with oxfmt: `npx oxfmt --write .`
 - Lint with ESLint: `npm run lint`
 - Type check: `npx tsc --noEmit`
 

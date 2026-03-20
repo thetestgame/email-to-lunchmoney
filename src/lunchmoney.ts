@@ -29,7 +29,7 @@ function hasNote(note: string | null) {
 
 export async function processActions(env: Env) {
   const stmt = env.DB.prepare(
-    'SELECT * FROM lunchmoney_actions ORDER BY date_created ASC'
+    'SELECT * FROM lunchmoney_actions ORDER BY date_created ASC',
   );
   const actionsResult = await stmt.all<LunchMoneyActionRow>();
   const actions = actionsResult.results;
@@ -76,7 +76,7 @@ export async function processActions(env: Env) {
           !assignedTransactions.includes(txn.id) &&
           !hasNote(txn.notes) &&
           txn.payee === action.match.expectedPayee &&
-          txn.amount === (action.match.expectedTotal / 100).toFixed(4)
+          txn.amount === (action.match.expectedTotal / 100).toFixed(4),
       );
 
     // if we can't find the transaction skip it

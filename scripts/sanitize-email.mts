@@ -120,7 +120,7 @@ function sanitizeEmail(
   content: string,
   originalEmail: string,
   originalUsername: string,
-  options: SanitizeOptions = {}
+  options: SanitizeOptions = {},
 ): string {
   // Parse headers and body
   const {headers, body, lineEnding} = parseHeaders(content);
@@ -187,13 +187,13 @@ function sanitizeEmail(
   // Redact username (including with zero-width breaks in HTML)
   sanitizedBody = sanitizedBody.replace(
     usernameWithBreaksRegex,
-    redactedUsernameWithBreaks
+    redactedUsernameWithBreaks,
   );
   sanitizedBody = sanitizedBody.replace(usernameRegex, REDACTED_USERNAME);
 
   // Redact invoice/transaction numbers (long numeric strings)
   sanitizedBody = sanitizedBody.replace(/\b\d{15,20}\b/g, match =>
-    '1'.repeat(match.length)
+    '1'.repeat(match.length),
   );
 
   // Redact personal name if provided
@@ -215,18 +215,18 @@ function sanitizeEmail(
   // Matches patterns like: ending in 1234, ****1234, XXXX 1234, xxxx1234, last 4: 5678
   sanitizedBody = sanitizedBody.replace(
     /(\*{4}|[xX]{4}|\bXXXX|\bending in|\blast 4:?)\s*\d{4}\b/gi,
-    `$1 ${REDACTED_CC_LAST4}`
+    `$1 ${REDACTED_CC_LAST4}`,
   );
   // Catch standalone last 4 in payment contexts (more conservative)
   sanitizedBody = sanitizedBody.replace(
     /(card|visa|mastercard|amex|discover|payment method).*?\b\d{4}\b/gi,
-    match => match.replace(/\d{4}/, REDACTED_CC_LAST4)
+    match => match.replace(/\d{4}/, REDACTED_CC_LAST4),
   );
 
   // Redact URL tokens and query parameters (sparams, check parameters)
   sanitizedBody = sanitizedBody.replace(
     /(sparams=3D)[A-Za-z0-9_-]+/g,
-    '$1REDACTED_SPARAMS'
+    '$1REDACTED_SPARAMS',
   );
   sanitizedBody = sanitizedBody.replace(/(check=3D)[A-Fa-f0-9]+/g, '$1REDACTED_CHECK');
 
@@ -260,7 +260,7 @@ function parseArgs(args: string[]): {
 
   if (files.length < 1) {
     console.error(
-      'Usage: npx tsx scripts/sanitize-email.mts <input.eml> [output.eml] [options]'
+      'Usage: npx tsx scripts/sanitize-email.mts <input.eml> [output.eml] [options]',
     );
     console.error('');
     console.error('If output.eml is not specified, the input file will be overwritten.');
@@ -273,10 +273,10 @@ function parseArgs(args: string[]): {
     console.error('Examples:');
     console.error('  npx tsx scripts/sanitize-email.mts email.eml');
     console.error(
-      '  npx tsx scripts/sanitize-email.mts email.eml --name "John Doe" --address "123 Main St"'
+      '  npx tsx scripts/sanitize-email.mts email.eml --name "John Doe" --address "123 Main St"',
     );
     console.error(
-      '  npx tsx scripts/sanitize-email.mts original.eml output.eml --city "New York, NY 10001"'
+      '  npx tsx scripts/sanitize-email.mts original.eml output.eml --city "New York, NY 10001"',
     );
     process.exit(1);
   }
@@ -301,7 +301,7 @@ function main() {
 
     if (email === 'user@example.com') {
       console.warn(
-        'Warning: Could not extract email from To: header. Some sensitive data may not be redacted.'
+        'Warning: Could not extract email from To: header. Some sensitive data may not be redacted.',
       );
     }
 
@@ -331,7 +331,7 @@ function main() {
       console.log(`\n✓ Sanitized email written to: ${outputFile}`);
     }
     console.log(
-      'Please review the output file to ensure all sensitive data has been removed.'
+      'Please review the output file to ensure all sensitive data has been removed.',
     );
   } catch (error) {
     if (error instanceof Error) {

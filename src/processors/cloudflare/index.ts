@@ -16,7 +16,7 @@ async function extractPdfText(pdfBuffer: ArrayBuffer): Promise<string> {
       const page = await pdf.getPage(pageNum);
       const textContent = await page.getTextContent();
       return textContent.items.map(item => ('str' in item ? item.str : '')).join(' ');
-    })
+    }),
   );
 
   return pageTexts.join('\n').trim();
@@ -32,7 +32,7 @@ function makeItemNote(item: CloudflareLineItem, invoiceId: string): string {
 
 async function process(email: Email, env: Env) {
   const pdfAttachment = email.attachments?.find(
-    attachment => attachment.mimeType === 'application/pdf'
+    attachment => attachment.mimeType === 'application/pdf',
   );
 
   if (!pdfAttachment) {

@@ -10,14 +10,6 @@
     "lint": "eslint src/**/*.ts test/**/*.ts",
     "cf-typegen": "wrangler types"
   },
-  "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.12.6",
-    "@types/html-to-text": "^9.0.4",
-    "@types/node": "^25.0.10",
-    "typescript": "^5.5.2",
-    "vitest": "~3.2.0",
-    "wrangler": "^4.24.0"
-  },
   "dependencies": {
     "@evanpurkhiser/eslint-config": "^0.27.0",
     "@sentry/cloudflare": "^9.36.0",
@@ -28,8 +20,16 @@
     "openai": "^5.8.3",
     "pdfjs-serverless": "^1.1.0",
     "postal-mime": "^2.4.4",
-    "prettier": "^3.6.2",
     "telegram-escape": "^1.1.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.12.6",
+    "@types/html-to-text": "^9.0.4",
+    "@types/node": "^25.0.10",
+    "oxfmt": "^0.41.0",
+    "typescript": "^5.5.2",
+    "vitest": "~3.2.0",
+    "wrangler": "^4.24.0"
   },
   "volta": {
     "node": "22.11.0"

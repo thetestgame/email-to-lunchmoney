@@ -199,13 +199,13 @@ describe('processActions', () => {
 
     // Insert actions with different creation dates to test chronological ordering
     await env.DB.prepare(
-      'INSERT INTO lunchmoney_actions (source, action, date_created) VALUES (?, ?, ?)'
+      'INSERT INTO lunchmoney_actions (source, action, date_created) VALUES (?, ?, ?)',
     )
       .bind('test', JSON.stringify(actions[0]), '2025-01-01 10:00:00')
       .run();
 
     await env.DB.prepare(
-      'INSERT INTO lunchmoney_actions (source, action, date_created) VALUES (?, ?, ?)'
+      'INSERT INTO lunchmoney_actions (source, action, date_created) VALUES (?, ?, ?)',
     )
       .bind('test', JSON.stringify(actions[1]), '2025-01-02 10:00:00')
       .run();
@@ -309,7 +309,7 @@ describe('processActions', () => {
 
     for (const action of actions) {
       await env.DB.prepare(
-        'INSERT INTO lunchmoney_actions (source, action) VALUES (?, ?)'
+        'INSERT INTO lunchmoney_actions (source, action) VALUES (?, ?)',
       )
         .bind('test', JSON.stringify(action))
         .run();
@@ -344,12 +344,12 @@ describe('processActions', () => {
 
     // Verify the remaining action is the second one
     const remainingAction = JSON.parse(
-      remainingActions.results[0].action
+      remainingActions.results[0].action,
     ) as LunchMoneyAction;
 
     expect(remainingAction.type).toBe('update');
     expect(remainingAction.type === 'update' && remainingAction.note).toBe(
-      'Second action - should not match same transaction'
+      'Second action - should not match same transaction',
     );
   });
 

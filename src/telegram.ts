@@ -24,7 +24,7 @@ export async function sendTelegramMessage(env: Env, message: string): Promise<vo
 
   const response = await fetch(
     `https://api.telegram.org/bot${token}/sendMessage`,
-    options
+    options,
   );
 
   if (!response.ok) {

@@ -24,7 +24,7 @@ function findAndForwardEmails() {
 
   if (!label || !ingestUrl || !ingestToken) {
     throw new Error(
-      'Missing required script properties. Please set GMAIL_LABEL, INGEST_URL, and INGEST_TOKEN in Project Settings > Script Properties.'
+      'Missing required script properties. Please set GMAIL_LABEL, INGEST_URL, and INGEST_TOKEN in Project Settings > Script Properties.',
     );
   }
 
@@ -32,7 +32,7 @@ function findAndForwardEmails() {
 
   if (!gmailLabel) {
     throw new Error(
-      `Gmail label "${label}" not found. Please create the label or update the GMAIL_LABEL property.`
+      `Gmail label "${label}" not found. Please create the label or update the GMAIL_LABEL property.`,
     );
   }
 
@@ -72,7 +72,7 @@ function findAndForwardEmails() {
       } else {
         const responseBody = response.getContentText();
         Logger.log(
-          `Failed to send email "${subject}". Status: ${statusCode}, Response: ${responseBody}`
+          `Failed to send email "${subject}". Status: ${statusCode}, Response: ${responseBody}`,
         );
         // Remove label even on failure to avoid reprocessing (per design decision)
         thread.removeLabel(gmailLabel);

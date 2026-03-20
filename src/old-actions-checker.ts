@@ -13,7 +13,7 @@ export function formatOldActionsMessage(oldActions: LunchMoneyActionRow[]): stri
   const lines = [`💸 *${e('Unprocessed email-to-lunchmoney actions')}*`, ''];
 
   lines.push(
-    `Found ${oldActions.length} action entries older than ${OLD_ACTION_THRESHOLD_DAYS} days:`
+    `Found ${oldActions.length} action entries older than ${OLD_ACTION_THRESHOLD_DAYS} days:`,
   );
   lines.push('');
 
@@ -31,7 +31,7 @@ export function formatOldActionsMessage(oldActions: LunchMoneyActionRow[]): stri
       action.type === 'update'
         ? `Note: ${e(action.note)}`
         : `Splits: ${action.split.length} items`,
-      ''
+      '',
     );
   }
 
@@ -75,7 +75,7 @@ export async function checkOldActionEntries(env: Env): Promise<void> {
       UPDATE lunchmoney_actions
       SET old_entry_notified = TRUE
       WHERE id IN (${placeholders})
-    `
+    `,
     )
       .bind(...actionIds)
       .run();

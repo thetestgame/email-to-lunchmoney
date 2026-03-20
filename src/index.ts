@@ -101,7 +101,7 @@ app.use(
   '/ingest',
   bearerAuth({
     verifyToken: async (token, c) => token === c.env.INGEST_TOKEN,
-  })
+  }),
 );
 
 /**
@@ -139,7 +139,7 @@ const worker: ExportedHandler<Env> = withSentry(
     integrations: [consoleLoggingIntegration({levels: ['log', 'warn', 'error']})],
     enableLogs: true,
   }),
-  handlers
+  handlers,
 );
 
 export default worker;

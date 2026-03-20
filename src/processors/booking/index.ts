@@ -55,7 +55,7 @@ function process(email: Email) {
   }
   if (!checkInMatch || !checkOutMatch) {
     throw new Error(
-      'Failed to match check-in / check-out dates from Booking.com receipt'
+      'Failed to match check-in / check-out dates from Booking.com receipt',
     );
   }
 
@@ -68,7 +68,7 @@ function process(email: Email) {
 
   // Calculate number of nights
   const nights = Math.round(
-    (checkOutDate.getTime() - checkInDate.getTime()) / (1000 * 60 * 60 * 24)
+    (checkOutDate.getTime() - checkInDate.getTime()) / (1000 * 60 * 60 * 24),
   );
 
   const totalCents = Math.round(parseFloat(amountMatch[1].replace(/,/g, '')) * 100);

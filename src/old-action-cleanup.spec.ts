@@ -14,7 +14,7 @@ describe('cleanupNotifiedActions', () => {
       '{"type": "update", "match": {"expectedPayee": "Test", "expectedTotal": 1000}, "note": "Test"}';
 
     await env.DB.prepare(
-      'INSERT INTO lunchmoney_actions (source, action, date_created, old_entry_notified) VALUES (?, ?, ?, ?)'
+      'INSERT INTO lunchmoney_actions (source, action, date_created, old_entry_notified) VALUES (?, ?, ?, ?)',
     )
       .bind(source, action, daysAgo(daysOld), oldEntryNotified ? 1 : 0)
       .run();
@@ -22,7 +22,7 @@ describe('cleanupNotifiedActions', () => {
 
   async function getActionCount() {
     const {results} = await env.DB.prepare(
-      'SELECT COUNT(*) as count FROM lunchmoney_actions'
+      'SELECT COUNT(*) as count FROM lunchmoney_actions',
     ).all();
     return results[0].count as number;
   }
@@ -72,7 +72,7 @@ describe('cleanupNotifiedActions', () => {
     await cleanupNotifiedActions(env);
 
     const {results} = await env.DB.prepare(
-      'SELECT source FROM lunchmoney_actions ORDER BY source'
+      'SELECT source FROM lunchmoney_actions ORDER BY source',
     ).all();
 
     expect(results.length).toBe(3);

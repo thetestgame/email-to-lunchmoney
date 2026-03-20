@@ -52,7 +52,7 @@ export interface LunchMoneyTransaction {
 
 // Helper function to create custom transactions for testing
 export function createTestTransaction(
-  overrides: Partial<LunchMoneyTransaction> = {}
+  overrides: Partial<LunchMoneyTransaction> = {},
 ): LunchMoneyTransaction {
   const baseTransaction: LunchMoneyTransaction = {
     id: 123,

@@ -39,7 +39,7 @@ export function extractOrderBlock(emailText: string): string | null {
 export function computeItemTaxes(items: AmazonOrderItem[], totalCents: number): number[] {
   const subtotalCents = items.reduce(
     (sum, item) => sum + item.priceEachCents * item.quantity,
-    0
+    0,
   );
 
   const totalTaxCents = totalCents - subtotalCents;
